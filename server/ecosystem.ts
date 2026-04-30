@@ -631,7 +631,7 @@ export function registerEcosystemRoutes(app: Express) {
   app.post("/api/trustvault/webhook", async (req: Request, res: Response) => {
     try {
       const { event, projectId, status, downloadUrl, outputMediaId, error: errMsg } = req.body;
-      console.log(`[TrustVault Webhook] ${event} �” project ${projectId} �” status: ${status}`);
+      console.log(`[TrustVault Webhook] ${event} ” project ${projectId} ” status: ${status}`);
       if (event === "render.complete") {
         console.log(`[TrustVault] Render complete: mediaId=${outputMediaId}, url=${downloadUrl}`);
       }

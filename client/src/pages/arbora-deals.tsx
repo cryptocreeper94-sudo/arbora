@@ -52,7 +52,7 @@ export default function ArboraDeals() {
   const clientsList = clients || [];
 
   const totalValue = dealsList.reduce((s, d) => s + (d.value || 0), 0);
-  const getClientName = (cId: number | null) => cId ? clientsList.find((c) => c.id === cId)?.name || "Unknown" : "�”";
+  const getClientName = (cId: number | null) => cId ? clientsList.find((c) => c.id === cId)?.name || "Unknown" : "”";
 
   const createDeal = useMutation({
     mutationFn: async (data: Record<string, unknown>) => {
