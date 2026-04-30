@@ -24,7 +24,7 @@ export const tennesseeLocations = [
     name: "Cedars of Lebanon State Park",
     slug: "cedars-of-lebanon-state-park",
     type: "state_park",
-    description: "Nestled in the heart of Wilson County, Cedars of Lebanon State Park preserves one of the largest remaining red cedar forests in the United States ” a living relic of the vast cedar glades that once blanketed Middle Tennessee's limestone basin. Across 900 acres of fragrant cedar woodland and rare limestone glade ecosystems, visitors discover a landscape unlike anywhere else in the Southeast. The park's cedar glades harbor dozens of plant species found nowhere else on Earth, including the Tennessee coneflower, once thought extinct and now a celebrated conservation success story. Miles of trails wind through cathedral-like groves where ancient Eastern red cedars stand sentinel over carpets of limestone fern and glade wildflowers. The park's eight miles of hiking trails range from gentle woodland strolls to immersive backcountry loops, while the Dixon Merritt Nature Trail offers an accessible introduction to glade ecology. A spring-fed swimming pool, horseback riding trails, and well-appointed cabins make this a year-round destination for families and nature enthusiasts alike. The surrounding cedar forest teems with wild turkey, white-tailed deer, and a remarkable diversity of songbirds, while the limestone glows golden in late afternoon light ” a photographer's paradise in every season.",
+    description: "Nestled in the heart of Wilson County, Cedars of Lebanon State Park preserves one of the largest remaining red cedar forests in the United States " a living relic of the vast cedar glades that once blanketed Middle Tennessee's limestone basin. Across 900 acres of fragrant cedar woodland and rare limestone glade ecosystems, visitors discover a landscape unlike anywhere else in the Southeast. The park's cedar glades harbor dozens of plant species found nowhere else on Earth, including the Tennessee coneflower, once thought extinct and now a celebrated conservation success story. Miles of trails wind through cathedral-like groves where ancient Eastern red cedars stand sentinel over carpets of limestone fern and glade wildflowers. The park's eight miles of hiking trails range from gentle woodland strolls to immersive backcountry loops, while the Dixon Merritt Nature Trail offers an accessible introduction to glade ecology. A spring-fed swimming pool, horseback riding trails, and well-appointed cabins make this a year-round destination for families and nature enthusiasts alike. The surrounding cedar forest teems with wild turkey, white-tailed deer, and a remarkable diversity of songbirds, while the limestone glows golden in late afternoon light " a photographer's paradise in every season.",
     editorialSummary: "One of America's largest remaining red cedar forests, protecting globally rare limestone glade ecosystems found nowhere else on Earth.",
     address: "328 Cedar Forest Rd",
     city: "Lebanon",
@@ -39,7 +39,7 @@ export const tennesseeLocations = [
     seasons: ["spring", "summer", "fall", "winter"],
     tags: ["cedar forest", "limestone glades", "endemic species", "Tennessee coneflower", "horseback riding", "family friendly", "Wilson County"],
     difficulty: "easy",
-    regulations: "No entrance fee. Cabin and campsite reservations available online. Pets allowed on leash in designated areas. No foraging of rare glade plants ” many are federally protected. Horseback riding on designated trails only.",
+    regulations: "No entrance fee. Cabin and campsite reservations available online. Pets allowed on leash in designated areas. No foraging of rare glade plants " many are federally protected. Horseback riding on designated trails only.",
     website: "https://tnstateparks.com/parks/cedars-of-lebanon",
     phone: "(615) 443-2769",
     bookingUrl: "https://reserve.tnstateparks.com",
@@ -59,12 +59,12 @@ export const tennesseeLocations = [
       acreage: 900,
       knownFor: "Largest remaining Eastern red cedar forest in the US with globally rare limestone glade ecosystems",
       foraging: {
-        permitted: "Limited ” surrounding areas outside park boundaries offer seasonal foraging opportunities",
+        permitted: "Limited " surrounding areas outside park boundaries offer seasonal foraging opportunities",
         springEdibles: ["ramps (wild leeks) in nearby woodlands", "dandelion greens", "wild violets", "chickweed"],
         summerEdibles: ["blackberries along forest edges", "wild black raspberries", "wood sorrel", "elderberries"],
         fallEdibles: ["persimmons along roadsides", "black walnuts", "hickory nuts", "pawpaws along creek bottoms"],
         mushrooms: ["morels near dead elms (spring)", "chanterelles in oak-cedar mix (summer)", "chicken of the woods on dead hardwoods"],
-        caution: "Tennessee coneflower and other glade endemics are federally protected ” never harvest plants from the limestone glades. Foraging is restricted within state park boundaries."
+        caution: "Tennessee coneflower and other glade endemics are federally protected " never harvest plants from the limestone glades. Foraging is restricted within state park boundaries."
       },
       historicalNote: "Named by early settlers who compared the dense cedar forests to the biblical cedars of Lebanon. The Civilian Conservation Corps built many of the park's original structures in the 1930s."
     },
@@ -73,7 +73,7 @@ export const tennesseeLocations = [
     name: "South Cumberland State Park",
     slug: "south-cumberland-state-park",
     type: "state_park",
-    description: "Sprawling across more than 30,000 acres of the Cumberland Plateau's rugged eastern escarpment, South Cumberland State Park is Tennessee's largest and most wild state park ” a vast mosaic of sandstone gorges, primeval hemlock forests, and thundering waterfalls that rivals any landscape in the Appalachian chain. The park's crown jewel is the legendary Fiery Gizzard Trail, consistently ranked among the top hiking trails in America, a punishing 12.5-mile odyssey through boulder fields, past crystal swimming holes, and along knife-edge ridgelines with views stretching to the distant Smokies. Foster Falls plunges 60 feet into a natural amphitheater of moss-draped stone, drawing rock climbers from across the nation to its overhanging sandstone walls. Grundy Forest's old-growth hemlocks tower above a labyrinth of cascading creeks, while Savage Gulf's 55-foot Stone Door provides a dramatic portal into one of the deepest gorges east of the Mississippi. This is Tennessee at its most untamed ” a landscape of cathedral forests, rare salamanders, and silence so deep you can hear the mountain breathe.",
+    description: "Sprawling across more than 30,000 acres of the Cumberland Plateau's rugged eastern escarpment, South Cumberland State Park is Tennessee's largest and most wild state park " a vast mosaic of sandstone gorges, primeval hemlock forests, and thundering waterfalls that rivals any landscape in the Appalachian chain. The park's crown jewel is the legendary Fiery Gizzard Trail, consistently ranked among the top hiking trails in America, a punishing 12.5-mile odyssey through boulder fields, past crystal swimming holes, and along knife-edge ridgelines with views stretching to the distant Smokies. Foster Falls plunges 60 feet into a natural amphitheater of moss-draped stone, drawing rock climbers from across the nation to its overhanging sandstone walls. Grundy Forest's old-growth hemlocks tower above a labyrinth of cascading creeks, while Savage Gulf's 55-foot Stone Door provides a dramatic portal into one of the deepest gorges east of the Mississippi. This is Tennessee at its most untamed " a landscape of cathedral forests, rare salamanders, and silence so deep you can hear the mountain breathe.",
     editorialSummary: "Tennessee's largest state park, featuring the legendary Fiery Gizzard Trail, Foster Falls, and some of the deepest gorges east of the Mississippi.",
     address: "11745 US-41",
     city: "Monteagle",
@@ -108,7 +108,7 @@ export const tennesseeLocations = [
       acreage: 30845,
       knownFor: "Fiery Gizzard Trail (top-rated US hiking), Foster Falls rock climbing, Savage Gulf gorges, Stone Door overlook",
       foraging: {
-        permitted: "Restricted within park ” surrounding Cumberland Plateau areas are rich foraging territory",
+        permitted: "Restricted within park " surrounding Cumberland Plateau areas are rich foraging territory",
         springEdibles: ["ramps in cove hardwood forests", "toothwort", "spring beauty corms", "wild ginger"],
         summerEdibles: ["blackberries along trail edges", "serviceberries", "wild blueberries on plateau ridges", "wood sorrel"],
         fallEdibles: ["pawpaws in gulf bottoms", "persimmons", "black walnuts", "chinquapin nuts"],
@@ -121,7 +121,7 @@ export const tennesseeLocations = [
     name: "Burgess Falls State Park",
     slug: "burgess-falls-state-park",
     type: "state_park",
-    description: "Few parks in the American South deliver such concentrated natural drama as Burgess Falls, where the Falling Water River descends through a succession of four increasingly spectacular waterfalls over the course of a single mile-and-a-half trail. The journey begins gently, with a broad cascade shimmering over ledges of ancient limestone, then builds to a crescendo at the park's namesake ” a breathtaking 136-foot curtain of whitewater thundering into a turquoise plunge pool carved from 300-million-year-old rock. The trail hugs the river's edge through a corridor of towering tulip poplars, sycamores, and hemlocks, with each bend revealing a new cascade more dramatic than the last. Spring brings carpets of trillium and bloodroot to the forest floor, while autumn transforms the gorge into a gallery of scarlet and gold reflected in the emerald pools below. A designated State Natural Area, Burgess Falls protects one of Middle Tennessee's most pristine riverine ecosystems ” a sanctuary for great blue herons, belted kingfishers, and the occasional river otter spotted playing in the pools beneath the falls.",
+    description: "Few parks in the American South deliver such concentrated natural drama as Burgess Falls, where the Falling Water River descends through a succession of four increasingly spectacular waterfalls over the course of a single mile-and-a-half trail. The journey begins gently, with a broad cascade shimmering over ledges of ancient limestone, then builds to a crescendo at the park's namesake " a breathtaking 136-foot curtain of whitewater thundering into a turquoise plunge pool carved from 300-million-year-old rock. The trail hugs the river's edge through a corridor of towering tulip poplars, sycamores, and hemlocks, with each bend revealing a new cascade more dramatic than the last. Spring brings carpets of trillium and bloodroot to the forest floor, while autumn transforms the gorge into a gallery of scarlet and gold reflected in the emerald pools below. A designated State Natural Area, Burgess Falls protects one of Middle Tennessee's most pristine riverine ecosystems " a sanctuary for great blue herons, belted kingfishers, and the occasional river otter spotted playing in the pools beneath the falls.",
     editorialSummary: "A dramatic mile-long trail past four successive waterfalls culminating in a thundering 136-foot cascade into a turquoise gorge.",
     address: "8559 Burgess Falls Dr",
     city: "Sparta",
@@ -136,7 +136,7 @@ export const tennesseeLocations = [
     seasons: ["spring", "summer", "fall", "winter"],
     tags: ["waterfalls", "gorge", "photography", "short hike", "family friendly", "swimming holes"],
     difficulty: "moderate",
-    regulations: "No entrance fee. Trail to base of falls involves steep stairs ” use caution. Swimming at your own risk. No cliff jumping. Pets on leash allowed.",
+    regulations: "No entrance fee. Trail to base of falls involves steep stairs " use caution. Swimming at your own risk. No cliff jumping. Pets on leash allowed.",
     website: "https://tnstateparks.com/parks/burgess-falls",
     phone: "(931) 432-5312",
     bookingUrl: null,
@@ -161,7 +161,7 @@ export const tennesseeLocations = [
         summerEdibles: ["blackberries along forest edges", "elderberries near water"],
         fallEdibles: ["persimmons in surrounding areas", "black walnuts"],
         mushrooms: ["oyster mushrooms on fallen hardwoods", "turkey tail (medicinal)"],
-        caution: "This is a State Natural Area ” harvesting plants is prohibited within park boundaries."
+        caution: "This is a State Natural Area " harvesting plants is prohibited within park boundaries."
       }
     },
   },
@@ -169,8 +169,8 @@ export const tennesseeLocations = [
     name: "Radnor Lake State Park",
     slug: "radnor-lake-state-park",
     type: "state_park",
-    description: "An emerald oasis just six miles from the honky-tonks of Broadway, Radnor Lake State Park stands as living proof that true wilderness can thrive within earshot of a major American city. This 1,368-acre State Natural Area cradles an 85-acre lake in a bowl of forested hills where white-tailed deer step delicately through morning mist, great horned owls call from century-old oaks, and wild turkeys strut along trails mere minutes from Nashville's skyline. The lake was originally impounded in 1914 by the Louisville & Nashville Railroad to provide water for steam engines, and the surrounding forest has been regenerating into mature hardwood woodland ever since. Today, six miles of trails loop through a tapestry of upland oak-hickory forest, cedar glades, and lakeshore wetlands that support over 240 species of birds ” making Radnor one of the premier birding destinations in the interior Southeast. The park's strict protections ” no jogging, no pets, no bicycles, no swimming ” create an atmosphere of contemplative stillness rare in modern America. At dawn, when fog lifts off the lake and a barred owl's call echoes through the hollow, Nashville feels a thousand miles away.",
-    editorialSummary: "Nashville's crown jewel of urban wilderness ” a serene lake sanctuary harboring 240+ bird species just minutes from downtown.",
+    description: "An emerald oasis just six miles from the honky-tonks of Broadway, Radnor Lake State Park stands as living proof that true wilderness can thrive within earshot of a major American city. This 1,368-acre State Natural Area cradles an 85-acre lake in a bowl of forested hills where white-tailed deer step delicately through morning mist, great horned owls call from century-old oaks, and wild turkeys strut along trails mere minutes from Nashville's skyline. The lake was originally impounded in 1914 by the Louisville & Nashville Railroad to provide water for steam engines, and the surrounding forest has been regenerating into mature hardwood woodland ever since. Today, six miles of trails loop through a tapestry of upland oak-hickory forest, cedar glades, and lakeshore wetlands that support over 240 species of birds " making Radnor one of the premier birding destinations in the interior Southeast. The park's strict protections " no jogging, no pets, no bicycles, no swimming " create an atmosphere of contemplative stillness rare in modern America. At dawn, when fog lifts off the lake and a barred owl's call echoes through the hollow, Nashville feels a thousand miles away.",
+    editorialSummary: "Nashville's crown jewel of urban wilderness " a serene lake sanctuary harboring 240+ bird species just minutes from downtown.",
     address: "1160 Otter Creek Rd",
     city: "Nashville",
     state: "TN",
@@ -204,7 +204,7 @@ export const tennesseeLocations = [
       acreage: 1368,
       knownFor: "Premier urban wilderness and birding destination with 240+ bird species, just 6 miles from downtown Nashville",
       foraging: {
-        permitted: "Prohibited ” Radnor Lake is a Class II State Natural Area with strict no-harvest protections",
+        permitted: "Prohibited " Radnor Lake is a Class II State Natural Area with strict no-harvest protections",
         notableFlora: ["spring ephemeral wildflowers (trillium, bloodroot, hepatica)", "native orchids", "cardinal flower along lakeshore"],
         caution: "All plants, fungi, and natural materials are fully protected. This is an observation-only natural area."
       }
@@ -214,7 +214,7 @@ export const tennesseeLocations = [
     name: "Roan Mountain State Park",
     slug: "roan-mountain-state-park",
     type: "state_park",
-    description: "Rising to 6,285 feet along the Tennessee-North Carolina border, the Roan Highlands are among the most botanically spectacular mountains in eastern North America ” and Roan Mountain State Park provides the gateway to this extraordinary landscape. Each June, the world's largest natural rhododendron garden erupts into bloom across 600 acres of mountainside, painting the high balds in swaths of pink and magenta that have drawn pilgrims since the days when a grand resort hotel graced the summit in the 1880s. But Roan Mountain's wonders extend far beyond rhododendron season. The park's grassy balds ” mysterious treeless meadows whose origins still puzzle scientists ” offer 360-degree panoramas stretching from Mount Mitchell to the Virginia highlands, while rare spruce-fir forests cloak the upper elevations in a boreal ecosystem more typical of Canada than the American South. The 2,006-acre park at the mountain's base wraps around the headwaters of the Doe River, where native brook trout flash in pools shaded by old-growth hemlocks. Winter brings crystalline hoarfrost and snow-covered balds that rival any alpine scene on the continent, while spring carpets the forest floor in a procession of wildflowers ” trout lily, bloodroot, and the rare Gray's lily, found only in these mountains.",
+    description: "Rising to 6,285 feet along the Tennessee-North Carolina border, the Roan Highlands are among the most botanically spectacular mountains in eastern North America " and Roan Mountain State Park provides the gateway to this extraordinary landscape. Each June, the world's largest natural rhododendron garden erupts into bloom across 600 acres of mountainside, painting the high balds in swaths of pink and magenta that have drawn pilgrims since the days when a grand resort hotel graced the summit in the 1880s. But Roan Mountain's wonders extend far beyond rhododendron season. The park's grassy balds " mysterious treeless meadows whose origins still puzzle scientists " offer 360-degree panoramas stretching from Mount Mitchell to the Virginia highlands, while rare spruce-fir forests cloak the upper elevations in a boreal ecosystem more typical of Canada than the American South. The 2,006-acre park at the mountain's base wraps around the headwaters of the Doe River, where native brook trout flash in pools shaded by old-growth hemlocks. Winter brings crystalline hoarfrost and snow-covered balds that rival any alpine scene on the continent, while spring carpets the forest floor in a procession of wildflowers " trout lily, bloodroot, and the rare Gray's lily, found only in these mountains.",
     editorialSummary: "Gateway to the highest peaks on the Tennessee-North Carolina border, home to the world's largest natural rhododendron garden and mysterious grassy balds.",
     address: "527 Hwy 143",
     city: "Roan Mountain",
@@ -229,7 +229,7 @@ export const tennesseeLocations = [
     seasons: ["spring", "summer", "fall", "winter"],
     tags: ["rhododendron", "grassy balds", "high elevation", "wildflowers", "Appalachian Trail", "spruce-fir forest"],
     difficulty: "moderate",
-    regulations: "No entrance fee. Backcountry camping by permit on Appalachian Trail. Weather changes rapidly at summit ” come prepared. Rhododendron Gardens managed by US Forest Service.",
+    regulations: "No entrance fee. Backcountry camping by permit on Appalachian Trail. Weather changes rapidly at summit " come prepared. Rhododendron Gardens managed by US Forest Service.",
     website: "https://tnstateparks.com/parks/roan-mountain",
     phone: "(423) 772-0190",
     bookingUrl: "https://reserve.tnstateparks.com",
@@ -249,7 +249,7 @@ export const tennesseeLocations = [
       acreage: 2006,
       knownFor: "World's largest natural rhododendron garden (600 acres), mysterious grassy balds, rare spruce-fir forest, Appalachian Trail access",
       foraging: {
-        permitted: "Limited within park ” Cherokee National Forest lands nearby offer foraging opportunities with permit",
+        permitted: "Limited within park " Cherokee National Forest lands nearby offer foraging opportunities with permit",
         springEdibles: ["ramps in cove hardwood forests (abundant in Southern Appalachians)", "toothwort", "wild leeks", "spring beauty"],
         summerEdibles: ["wild blueberries on high balds", "blackberries", "serviceberries at elevation", "wood sorrel"],
         fallEdibles: ["American chestnuts (blight-resistant survivors)", "black walnuts at lower elevations", "hickory nuts"],
@@ -262,7 +262,7 @@ export const tennesseeLocations = [
     name: "Reelfoot Lake State Park",
     slug: "reelfoot-lake-state-park",
     type: "state_park",
-    description: "Born of catastrophe and now a cradle of extraordinary life, Reelfoot Lake is Tennessee's only natural lake ” created in the winter of 1811-1812 when a series of massive earthquakes along the New Madrid Fault caused the Mississippi River to run backward and the land to sink, filling a vast depression with water. Today, this 15,000-acre shallow lake is a flooded forest of ghostly bald cypress trees draped in Spanish moss, their ancient knees rising from tea-dark water like sentinels of a drowned world. From December through March, Reelfoot becomes the winter home of one of the largest concentrations of American bald eagles in the interior United States, drawing thousands of visitors for ranger-led eagle tours aboard heated pontoon boats. The lake's labyrinthine channels harbor some of the finest crappie and bluegill fishing in the nation, while its marshes and mudflats support vast colonies of wading birds ” great blue herons, great egrets, and the occasional American white pelican wheeling overhead in spiraling flocks. At sunset, when the cypress silhouettes blaze against a crimson sky and a bald eagle glides to its roost on silent wings, Reelfoot Lake feels less like a place and more like a vision from another century.",
+    description: "Born of catastrophe and now a cradle of extraordinary life, Reelfoot Lake is Tennessee's only natural lake " created in the winter of 1811-1812 when a series of massive earthquakes along the New Madrid Fault caused the Mississippi River to run backward and the land to sink, filling a vast depression with water. Today, this 15,000-acre shallow lake is a flooded forest of ghostly bald cypress trees draped in Spanish moss, their ancient knees rising from tea-dark water like sentinels of a drowned world. From December through March, Reelfoot becomes the winter home of one of the largest concentrations of American bald eagles in the interior United States, drawing thousands of visitors for ranger-led eagle tours aboard heated pontoon boats. The lake's labyrinthine channels harbor some of the finest crappie and bluegill fishing in the nation, while its marshes and mudflats support vast colonies of wading birds " great blue herons, great egrets, and the occasional American white pelican wheeling overhead in spiraling flocks. At sunset, when the cypress silhouettes blaze against a crimson sky and a bald eagle glides to its roost on silent wings, Reelfoot Lake feels less like a place and more like a vision from another century.",
     editorialSummary: "Tennessee's only natural lake, born from the 1811 earthquakes that reversed the Mississippi, now a bald eagle sanctuary and cypress swamp wonderland.",
     address: "2595 Hwy 21 E",
     city: "Tiptonville",
@@ -297,21 +297,21 @@ export const tennesseeLocations = [
       acreage: 25000,
       knownFor: "Tennessee's only natural lake created by the 1811 New Madrid earthquakes, winter bald eagle concentration, world-class crappie fishing, flooded cypress forest",
       foraging: {
-        permitted: "Limited ” some foraging in surrounding areas; check regulations",
+        permitted: "Limited " some foraging in surrounding areas; check regulations",
         springEdibles: ["dandelion greens in meadows", "wild garlic", "cattail shoots along lake margins", "chickweed"],
         summerEdibles: ["blackberries", "mulberries (abundant in West TN)", "elderberries along lake edges", "wild plums"],
         fallEdibles: ["persimmons (prolific in West Tennessee)", "pecans", "black walnuts", "muscadines"],
         mushrooms: ["oyster mushrooms on fallen cypress and hardwoods", "morels near dead elms (spring)", "chicken of the woods"],
         caution: "Lake levels fluctuate. Foraging from boats requires caution. Cypress swamp areas may be difficult to navigate on foot."
       },
-      historicalNote: "Created when the New Madrid earthquakes of 1811-1812 ” the most powerful earthquakes in recorded North American history ” caused the land to drop 5-20 feet and the Mississippi River to temporarily flow backward."
+      historicalNote: "Created when the New Madrid earthquakes of 1811-1812 " the most powerful earthquakes in recorded North American history " caused the land to drop 5-20 feet and the Mississippi River to temporarily flow backward."
     },
   },
   {
     name: "Montgomery Bell State Park",
     slug: "montgomery-bell-state-park",
     type: "state_park",
-    description: "Set among the rolling hills of Dickson County, Montgomery Bell State Park is Middle Tennessee's premier year-round retreat ” a 3,850-acre refuge of hardwood forests, tranquil lakes, and restored 19th-century iron industry heritage. Three spring-fed lakes mirror the surrounding canopy of oak, hickory, and sweetgum, their still surfaces broken only by the rings of rising bluegill and the languid glide of great blue herons. The park's 117-room Lodge at Lake Acorn, extensively renovated and reopened, offers full-service comfort with a restaurant overlooking the water, while 28 miles of trails wind through forests where iron furnace ruins stand as silent monuments to the industrial empire of ironmaster Montgomery Bell, whose operations helped arm the Confederacy and shape the region's economy. The park's peaceful atmosphere belies its historical significance ” the Cumberland Presbyterian Church was organized here in 1810, and Bell's iron operations represented one of the most advanced industrial complexes in the antebellum South. Today, golfers enjoy the rolling 18-hole course, paddlers explore the quiet coves of Lake Woodhaven, and families gather at the lakeside swimming beach as fireflies emerge at dusk to light the forest like a galaxy of earthbound stars.",
+    description: "Set among the rolling hills of Dickson County, Montgomery Bell State Park is Middle Tennessee's premier year-round retreat " a 3,850-acre refuge of hardwood forests, tranquil lakes, and restored 19th-century iron industry heritage. Three spring-fed lakes mirror the surrounding canopy of oak, hickory, and sweetgum, their still surfaces broken only by the rings of rising bluegill and the languid glide of great blue herons. The park's 117-room Lodge at Lake Acorn, extensively renovated and reopened, offers full-service comfort with a restaurant overlooking the water, while 28 miles of trails wind through forests where iron furnace ruins stand as silent monuments to the industrial empire of ironmaster Montgomery Bell, whose operations helped arm the Confederacy and shape the region's economy. The park's peaceful atmosphere belies its historical significance " the Cumberland Presbyterian Church was organized here in 1810, and Bell's iron operations represented one of the most advanced industrial complexes in the antebellum South. Today, golfers enjoy the rolling 18-hole course, paddlers explore the quiet coves of Lake Woodhaven, and families gather at the lakeside swimming beach as fireflies emerge at dusk to light the forest like a galaxy of earthbound stars.",
     editorialSummary: "Middle Tennessee's flagship retreat featuring three serene lakes, a full-service lodge, historic iron furnaces, and championship golf amid rolling hardwood forests.",
     address: "1020 Jackson Hill Rd",
     city: "Burns",
@@ -326,7 +326,7 @@ export const tennesseeLocations = [
     seasons: ["spring", "summer", "fall", "winter"],
     tags: ["lodge", "golf", "lakes", "historic", "iron furnaces", "family friendly", "Middle Tennessee"],
     difficulty: "easy",
-    regulations: "No entrance fee. Lodge and cabin reservations available online. Golf course open to public ” tee time reservations recommended. Fishing license required. Boats limited to electric motors.",
+    regulations: "No entrance fee. Lodge and cabin reservations available online. Golf course open to public " tee time reservations recommended. Fishing license required. Boats limited to electric motors.",
     website: "https://tnstateparks.com/parks/montgomery-bell",
     phone: "(615) 797-9052",
     bookingUrl: "https://reserve.tnstateparks.com",
@@ -346,12 +346,12 @@ export const tennesseeLocations = [
       acreage: 3850,
       knownFor: "Full-service lakeside lodge, championship golf course, historic iron furnaces, three spring-fed lakes, Cumberland Presbyterian Church birthplace",
       foraging: {
-        permitted: "Restricted within park ” surrounding Middle TN countryside offers seasonal foraging",
+        permitted: "Restricted within park " surrounding Middle TN countryside offers seasonal foraging",
         springEdibles: ["wild garlic and onions in meadows", "dandelion greens", "violets", "chickweed"],
         summerEdibles: ["blackberries along forest edges", "elderberries", "wild black raspberries"],
         fallEdibles: ["persimmons", "black walnuts", "hickory nuts (shagbark and shellbark)", "pawpaws along creek bottoms"],
         mushrooms: ["morels near dead elms and ash (spring)", "chanterelles in oak-hickory forest (summer)", "chicken of the woods on oak stumps"],
-        caution: "Foraging restricted within park boundaries. Iron furnace ruins area is historically sensitive ” stay on trails."
+        caution: "Foraging restricted within park boundaries. Iron furnace ruins area is historically sensitive " stay on trails."
       }
     },
   },
@@ -359,8 +359,8 @@ export const tennesseeLocations = [
     name: "Natchez Trace State Park",
     slug: "natchez-trace-state-park",
     type: "state_park",
-    description: "Stretching across 48,000 acres of reclaimed Depression-era farmland in the Western Highland Rim, Natchez Trace State Park is one of the largest state parks in Tennessee and a testament to the land's capacity for renewal. What was once overfarmed, eroded terrain ” so exhausted that it was among the first properties acquired by the federal Resettlement Administration in the 1930s ” has regenerated into a vast tapestry of mature hardwood and pine forest, rolling meadows, and four lakes that together create the finest equestrian park in the state. With 250 miles of horseback riding trails winding through forests and across gentle ridgelines, Natchez Trace draws riders from across the Southeast to its purpose-built wrangler campgrounds. The Pin Oak Lodge perches above one of the park's lakes, its 47 renovated rooms offering comfortable accommodations with panoramic water views. For anglers, the four lakes yield bass, bluegill, and catfish in a setting of almost preternatural quiet. The park's very existence tells the story of conservation at its most hopeful: land that was destroyed by poor agricultural practices, healed by the Civilian Conservation Corps, and returned to a wildness that now shelters deer, turkey, bobcat, and the occasional bald eagle soaring above the pine canopy.",
-    editorialSummary: "Tennessee's premier equestrian destination ” 48,000 acres of restored forest with 250 miles of riding trails, four lakes, and the historic Pin Oak Lodge.",
+    description: "Stretching across 48,000 acres of reclaimed Depression-era farmland in the Western Highland Rim, Natchez Trace State Park is one of the largest state parks in Tennessee and a testament to the land's capacity for renewal. What was once overfarmed, eroded terrain " so exhausted that it was among the first properties acquired by the federal Resettlement Administration in the 1930s " has regenerated into a vast tapestry of mature hardwood and pine forest, rolling meadows, and four lakes that together create the finest equestrian park in the state. With 250 miles of horseback riding trails winding through forests and across gentle ridgelines, Natchez Trace draws riders from across the Southeast to its purpose-built wrangler campgrounds. The Pin Oak Lodge perches above one of the park's lakes, its 47 renovated rooms offering comfortable accommodations with panoramic water views. For anglers, the four lakes yield bass, bluegill, and catfish in a setting of almost preternatural quiet. The park's very existence tells the story of conservation at its most hopeful: land that was destroyed by poor agricultural practices, healed by the Civilian Conservation Corps, and returned to a wildness that now shelters deer, turkey, bobcat, and the occasional bald eagle soaring above the pine canopy.",
+    editorialSummary: "Tennessee's premier equestrian destination " 48,000 acres of restored forest with 250 miles of riding trails, four lakes, and the historic Pin Oak Lodge.",
     address: "24845 Natchez Trace Rd",
     city: "Wildersville",
     state: "TN",
@@ -394,12 +394,12 @@ export const tennesseeLocations = [
       acreage: 48000,
       knownFor: "Tennessee's finest equestrian park with 250 miles of riding trails, Pin Oak Lodge, and four fishing lakes on beautifully restored Depression-era farmland",
       foraging: {
-        permitted: "Some foraging allowed in designated areas ” check with rangers",
+        permitted: "Some foraging allowed in designated areas " check with rangers",
         springEdibles: ["wild onions in meadows", "dandelion greens", "violets", "poke sallet (young shoots only, must be boiled)"],
         summerEdibles: ["blackberries (abundant on forest edges)", "wild plums", "elderberries", "muscadine grapes"],
         fallEdibles: ["persimmons (prolific)", "black walnuts", "hickory nuts", "pawpaws along streams", "muscadine grapes"],
         mushrooms: ["morels in disturbed areas near dead trees (spring)", "chanterelles in oak-hickory forest", "chicken of the woods", "puffballs in meadows"],
-        caution: "48,000 acres means remote areas ” carry water, map, and tell someone your plans. Watch for poison ivy along trail edges."
+        caution: "48,000 acres means remote areas " carry water, map, and tell someone your plans. Watch for poison ivy along trail edges."
       }
     },
   },
@@ -407,7 +407,7 @@ export const tennesseeLocations = [
     name: "Rock Island State Park",
     slug: "rock-island-state-park",
     type: "state_park",
-    description: "Where the Caney Fork River, Collins River, and Rocky River converge at the foot of the Cumberland Plateau, Rock Island State Park presides over one of Tennessee's most dramatic riverscapes ” a collision of whitewater, sandstone gorges, and thundering cascades that has drawn visitors since the early 1800s. The park's centerpiece is the Great Falls, where the Caney Fork plunges over a broad horseshoe dam into a swirling emerald pool surrounded by towering sandstone bluffs. Below the falls, Twin Falls drops in twin ribbons of white through a narrow gorge, accessible by a trail that descends through layers of geological time exposed in the canyon walls. The park's natural swimming areas ” broad pools of crystalline water at the base of cascades ” are among the most popular wild swimming spots in the state, drawing crowds on summer weekends who come to float in water so clear you can count the pebbles twenty feet down. Above the gorges, the park's uplands offer quiet hiking through mixed hardwood forest and along the rim of the Caney Fork Gorge, with overlooks that frame the river's emerald ribbon hundreds of feet below. The remains of a 19th-century textile mill add historical texture to a landscape that has been harnessing the power of falling water for centuries.",
+    description: "Where the Caney Fork River, Collins River, and Rocky River converge at the foot of the Cumberland Plateau, Rock Island State Park presides over one of Tennessee's most dramatic riverscapes " a collision of whitewater, sandstone gorges, and thundering cascades that has drawn visitors since the early 1800s. The park's centerpiece is the Great Falls, where the Caney Fork plunges over a broad horseshoe dam into a swirling emerald pool surrounded by towering sandstone bluffs. Below the falls, Twin Falls drops in twin ribbons of white through a narrow gorge, accessible by a trail that descends through layers of geological time exposed in the canyon walls. The park's natural swimming areas " broad pools of crystalline water at the base of cascades " are among the most popular wild swimming spots in the state, drawing crowds on summer weekends who come to float in water so clear you can count the pebbles twenty feet down. Above the gorges, the park's uplands offer quiet hiking through mixed hardwood forest and along the rim of the Caney Fork Gorge, with overlooks that frame the river's emerald ribbon hundreds of feet below. The remains of a 19th-century textile mill add historical texture to a landscape that has been harnessing the power of falling water for centuries.",
     editorialSummary: "A dramatic convergence of three rivers with thundering waterfalls, natural swimming holes, and sandstone gorges at the edge of the Cumberland Plateau.",
     address: "82 Beach Rd",
     city: "Rock Island",
@@ -422,7 +422,7 @@ export const tennesseeLocations = [
     seasons: ["spring", "summer", "fall", "winter"],
     tags: ["waterfalls", "swimming holes", "gorge", "kayaking", "confluence", "Great Falls"],
     difficulty: "moderate",
-    regulations: "No entrance fee. Swimming at your own risk ” no lifeguards. Cabin reservations online. Water levels fluctuate with dam releases ” check schedule before swimming or wading.",
+    regulations: "No entrance fee. Swimming at your own risk " no lifeguards. Cabin reservations online. Water levels fluctuate with dam releases " check schedule before swimming or wading.",
     website: "https://tnstateparks.com/parks/rock-island",
     phone: "(931) 686-2471",
     bookingUrl: "https://reserve.tnstateparks.com",
@@ -442,7 +442,7 @@ export const tennesseeLocations = [
       acreage: 883,
       knownFor: "Great Falls, Twin Falls, natural swimming holes, convergence of three rivers, sandstone gorge overlooks",
       foraging: {
-        permitted: "Restricted within park ” surrounding Cumberland Plateau edges offer foraging",
+        permitted: "Restricted within park " surrounding Cumberland Plateau edges offer foraging",
         springEdibles: ["ramps in moist cove forests", "wild ginger along streams", "toothwort", "spring cress in shallow water"],
         summerEdibles: ["blackberries", "serviceberries", "wild black raspberries"],
         fallEdibles: ["pawpaws along river bottoms", "persimmons", "black walnuts"],
@@ -455,7 +455,7 @@ export const tennesseeLocations = [
     name: "Cummins Falls State Park",
     slug: "cummins-falls-state-park",
     type: "state_park",
-    description: "Hidden in a narrow gorge of the Blackburn Fork River in Jackson County, Cummins Falls is Tennessee's eighth largest waterfall and one of the state's most rewarding natural adventures. The 75-foot cascade crashes over a broad limestone ledge into a deep, crystalline swimming hole of almost surreal blue-green clarity ” a natural infinity pool carved into bedrock over millennia. What makes Cummins Falls extraordinary is the journey to reach it: a rugged, unimproved trail that crosses the river multiple times, scrambles over river boulders, and wades through knee-deep pools before revealing the falls in a sudden, breathtaking reveal around a final bend. This is not a drive-up waterfall ” it's an earned experience, and the effort makes the reward all the sweeter. The gorge's microclimate creates a lush, fern-draped environment where maidenhair ferns cling to mist-soaked rock faces and water-polished limestone glows in every shade of cream and gold. Designated a State Park in 2012 after years of grassroots advocacy, Cummins Falls now requires an access permit for the gorge ” a necessary measure to protect both the fragile environment and the visitors who come to experience one of Tennessee's most magical natural sanctuaries.",
+    description: "Hidden in a narrow gorge of the Blackburn Fork River in Jackson County, Cummins Falls is Tennessee's eighth largest waterfall and one of the state's most rewarding natural adventures. The 75-foot cascade crashes over a broad limestone ledge into a deep, crystalline swimming hole of almost surreal blue-green clarity " a natural infinity pool carved into bedrock over millennia. What makes Cummins Falls extraordinary is the journey to reach it: a rugged, unimproved trail that crosses the river multiple times, scrambles over river boulders, and wades through knee-deep pools before revealing the falls in a sudden, breathtaking reveal around a final bend. This is not a drive-up waterfall " it's an earned experience, and the effort makes the reward all the sweeter. The gorge's microclimate creates a lush, fern-draped environment where maidenhair ferns cling to mist-soaked rock faces and water-polished limestone glows in every shade of cream and gold. Designated a State Park in 2012 after years of grassroots advocacy, Cummins Falls now requires an access permit for the gorge " a necessary measure to protect both the fragile environment and the visitors who come to experience one of Tennessee's most magical natural sanctuaries.",
     editorialSummary: "Tennessee's eighth largest waterfall, a 75-foot cascade into a stunning blue-green swimming hole accessible only by a rugged river-crossing trail.",
     address: "390 Cummins Falls Ln",
     city: "Cookeville",
@@ -470,7 +470,7 @@ export const tennesseeLocations = [
     seasons: ["spring", "summer", "fall"],
     tags: ["waterfall", "swimming hole", "adventure hike", "river crossing", "gorge", "permit required"],
     difficulty: "hard",
-    regulations: "Free access permit required for gorge area ” obtain online before visiting. Limited daily permits. River crossings required ” water shoes essential. No alcohol. Pets not recommended. Check water levels before going ” gorge access closes during high water.",
+    regulations: "Free access permit required for gorge area " obtain online before visiting. Limited daily permits. River crossings required " water shoes essential. No alcohol. Pets not recommended. Check water levels before going " gorge access closes during high water.",
     website: "https://tnstateparks.com/parks/cummins-falls",
     phone: "(931) 268-7307",
     bookingUrl: null,
@@ -503,7 +503,7 @@ export const tennesseeLocations = [
     name: "Pickwick Landing State Park",
     slug: "pickwick-landing-state-park",
     type: "state_park",
-    description: "Where the Tennessee River widens into the vast blue expanse of Pickwick Lake in the far southwestern corner of the state, Pickwick Landing State Park offers Tennessee's finest waterfront resort experience. The park's inn perches on a bluff overlooking 43,100 acres of impounded river ” a shimmering inland sea created by Pickwick Dam that stretches to the horizons of Alabama and Mississippi. Championship smallmouth bass fishing draws anglers from across the nation, while the park's full-service marina, sand beach, and lakeside golf course make it a complete vacation destination. The surrounding countryside is steeped in Civil War history ” the Battle of Shiloh was fought just miles away ” and the Tennessee River itself was a critical strategic corridor throughout the war. Today, the park's 1,400 acres blend modern resort amenities with natural beauty: sunsets over the lake paint the sky in watercolors of peach and violet, while bald eagles patrol the dam tailwaters and osprey dive for shad in the open water. The renovated inn and lakeside cabins provide comfortable bases for exploring the river's quiet coves by kayak, fishing the rocky points for trophy bass, or simply watching the barges glide past on their ancient river highway.",
+    description: "Where the Tennessee River widens into the vast blue expanse of Pickwick Lake in the far southwestern corner of the state, Pickwick Landing State Park offers Tennessee's finest waterfront resort experience. The park's inn perches on a bluff overlooking 43,100 acres of impounded river " a shimmering inland sea created by Pickwick Dam that stretches to the horizons of Alabama and Mississippi. Championship smallmouth bass fishing draws anglers from across the nation, while the park's full-service marina, sand beach, and lakeside golf course make it a complete vacation destination. The surrounding countryside is steeped in Civil War history " the Battle of Shiloh was fought just miles away " and the Tennessee River itself was a critical strategic corridor throughout the war. Today, the park's 1,400 acres blend modern resort amenities with natural beauty: sunsets over the lake paint the sky in watercolors of peach and violet, while bald eagles patrol the dam tailwaters and osprey dive for shad in the open water. The renovated inn and lakeside cabins provide comfortable bases for exploring the river's quiet coves by kayak, fishing the rocky points for trophy bass, or simply watching the barges glide past on their ancient river highway.",
     editorialSummary: "Tennessee's premier lakeside resort park on the vast Tennessee River, offering championship fishing, marina, golf, and stunning sunset views over Pickwick Lake.",
     address: "Hwy 57",
     city: "Counce",
@@ -538,7 +538,7 @@ export const tennesseeLocations = [
       acreage: 1400,
       knownFor: "Championship smallmouth bass fishing on the Tennessee River, full-service marina, lakeside inn and golf course, spectacular sunset views",
       foraging: {
-        permitted: "Some foraging in surrounding areas ” check local regulations",
+        permitted: "Some foraging in surrounding areas " check local regulations",
         springEdibles: ["wild garlic", "dandelion greens", "chickweed", "wild mustard"],
         summerEdibles: ["blackberries (abundant)", "wild plums", "elderberries", "muscadine grapes"],
         fallEdibles: ["persimmons", "pecans (southern TN has native pecans)", "black walnuts", "hickory nuts"],
@@ -551,7 +551,7 @@ export const tennesseeLocations = [
     name: "Cumberland Mountain State Park",
     slug: "cumberland-mountain-state-park",
     type: "state_park",
-    description: "Perched atop the Cumberland Plateau in Crossville, Cumberland Mountain State Park is a living monument to the Civilian Conservation Corps and one of the most beautifully crafted parks in the Tennessee system. The park's signature stone and timber structures ” built by CCC workers during the 1930s from native Crab Orchard stone ” are so expertly constructed that they were placed on the National Register of Historic Places, and they remain among the finest examples of Depression-era rustic architecture in America. Seven original stone cabins offer overnight guests the rare experience of sleeping in historic buildings that embody the craftsmanship of a bygone era, with walls of hand-cut stone two feet thick and massive stone fireplaces that have warmed visitors for nine decades. Byrd Lake, a 50-acre impoundment nestled in a bowl of mixed hardwood forest, serves as the park's centerpiece ” its mirror-still surface reflecting the surrounding canopy in autumn's full glory. The Bear Trace at Cumberland Mountain golf course has been ranked among the top ten public courses in North America by Golf Magazine, its rolling fairways carved through native forest with views stretching across the plateau. Mountain biking trails weave through the forest understory, and the park's trail system connects to the larger Cumberland Trail ” a still-growing footpath that will eventually stretch 300 miles from Cumberland Gap to Chattanooga.",
+    description: "Perched atop the Cumberland Plateau in Crossville, Cumberland Mountain State Park is a living monument to the Civilian Conservation Corps and one of the most beautifully crafted parks in the Tennessee system. The park's signature stone and timber structures " built by CCC workers during the 1930s from native Crab Orchard stone " are so expertly constructed that they were placed on the National Register of Historic Places, and they remain among the finest examples of Depression-era rustic architecture in America. Seven original stone cabins offer overnight guests the rare experience of sleeping in historic buildings that embody the craftsmanship of a bygone era, with walls of hand-cut stone two feet thick and massive stone fireplaces that have warmed visitors for nine decades. Byrd Lake, a 50-acre impoundment nestled in a bowl of mixed hardwood forest, serves as the park's centerpiece " its mirror-still surface reflecting the surrounding canopy in autumn's full glory. The Bear Trace at Cumberland Mountain golf course has been ranked among the top ten public courses in North America by Golf Magazine, its rolling fairways carved through native forest with views stretching across the plateau. Mountain biking trails weave through the forest understory, and the park's trail system connects to the larger Cumberland Trail " a still-growing footpath that will eventually stretch 300 miles from Cumberland Gap to Chattanooga.",
     editorialSummary: "A masterpiece of CCC rustic architecture atop the Cumberland Plateau, with historic stone cabins, a top-10 golf course, and connections to the Cumberland Trail.",
     address: "24 Office Dr",
     city: "Crossville",
@@ -586,12 +586,12 @@ export const tennesseeLocations = [
       acreage: 1720,
       knownFor: "National Register CCC stone architecture, Bear Trace championship golf (top 10 NA), historic stone cabins, Cumberland Trail access",
       foraging: {
-        permitted: "Limited ” Cumberland Plateau surrounding the park offers excellent foraging opportunities",
+        permitted: "Limited " Cumberland Plateau surrounding the park offers excellent foraging opportunities",
         springEdibles: ["ramps on plateau slopes", "toothwort", "wild ginger", "spring beauty", "creasy greens (wild cress)"],
         summerEdibles: ["blackberries", "wild blueberries on sandstone outcrops", "serviceberries", "wood sorrel"],
         fallEdibles: ["pawpaws along streams", "persimmons", "black walnuts", "hickory nuts", "chinquapin nuts"],
         mushrooms: ["morels near tulip poplar (spring)", "chanterelles in mixed oak forest (summer)", "hen of the woods on old oaks (fall)", "black trumpets in beech groves"],
-        caution: "Cumberland Plateau sandstone ledges can be slippery. Some areas contain rare glade plants ” do not harvest from any glade habitat."
+        caution: "Cumberland Plateau sandstone ledges can be slippery. Some areas contain rare glade plants " do not harvest from any glade habitat."
       }
     },
   },
@@ -599,8 +599,8 @@ export const tennesseeLocations = [
     name: "Paris Landing State Park",
     slug: "paris-landing-state-park",
     type: "state_park",
-    description: "Commanding 841 acres along the western shore of Kentucky Lake ” the largest man-made lake east of the Mississippi at 160,000 acres ” Paris Landing State Park is West Tennessee's gateway to one of America's greatest freshwater playgrounds. The park's full-service marina, lakeside inn with panoramic dining, and championship golf course create a resort experience rivaling any in the Southeast, while the lake itself stretches to the horizon in every direction, its island-dotted waters offering seemingly infinite coves and channels for exploration. Kentucky Lake's legendary fishing draws tens of thousands of anglers annually for its bass, crappie, and catfish, while the lake's broad waters accommodate everything from sailing and water skiing to houseboat cruises. The park's swim beach, framed by shade trees and overlooking the lake's blue expanse, provides the quintessential summer afternoon, while autumn brings brilliant foliage reflected in the calm waters and the distinctive calls of migrating waterfowl. At sunset, when the western sky ignites over the lake and the water turns to liquid gold, Paris Landing delivers a spectacle that no photograph can fully capture ” a daily reminder of why Tennessee's park system consistently ranks among the finest in the nation.",
-    editorialSummary: "West Tennessee's lakeside resort on Kentucky Lake ” the largest man-made lake east of the Mississippi ” with marina, inn, golf, and legendary fishing.",
+    description: "Commanding 841 acres along the western shore of Kentucky Lake " the largest man-made lake east of the Mississippi at 160,000 acres " Paris Landing State Park is West Tennessee's gateway to one of America's greatest freshwater playgrounds. The park's full-service marina, lakeside inn with panoramic dining, and championship golf course create a resort experience rivaling any in the Southeast, while the lake itself stretches to the horizon in every direction, its island-dotted waters offering seemingly infinite coves and channels for exploration. Kentucky Lake's legendary fishing draws tens of thousands of anglers annually for its bass, crappie, and catfish, while the lake's broad waters accommodate everything from sailing and water skiing to houseboat cruises. The park's swim beach, framed by shade trees and overlooking the lake's blue expanse, provides the quintessential summer afternoon, while autumn brings brilliant foliage reflected in the calm waters and the distinctive calls of migrating waterfowl. At sunset, when the western sky ignites over the lake and the water turns to liquid gold, Paris Landing delivers a spectacle that no photograph can fully capture " a daily reminder of why Tennessee's park system consistently ranks among the finest in the nation.",
+    editorialSummary: "West Tennessee's lakeside resort on Kentucky Lake " the largest man-made lake east of the Mississippi " with marina, inn, golf, and legendary fishing.",
     address: "16055 Hwy 79 N",
     city: "Buchanan",
     state: "TN",
@@ -639,7 +639,7 @@ export const tennesseeLocations = [
         summerEdibles: ["blackberries", "mulberries", "elderberries", "wild plums", "muscadine grapes"],
         fallEdibles: ["persimmons", "pecans", "black walnuts", "hickory nuts", "pawpaws"],
         mushrooms: ["morels near dead elms (spring)", "chanterelles in hardwood bottoms", "chicken of the woods on oak"],
-        caution: "TVA manages lands around Kentucky Lake ” foraging allowed in reasonable quantities (10% rule) for personal use only, never commercial."
+        caution: "TVA manages lands around Kentucky Lake " foraging allowed in reasonable quantities (10% rule) for personal use only, never commercial."
       }
     },
   },
@@ -647,7 +647,7 @@ export const tennesseeLocations = [
     name: "Frozen Head State Park",
     slug: "frozen-head-state-park",
     type: "state_park",
-    description: "Deep in the rugged Cumberland Mountains of Morgan County, Frozen Head State Park protects 24,000 acres of some of the most remote and biologically rich forest in the eastern United States. The park takes its name from Frozen Head Mountain, whose 3,324-foot summit ” the highest point on the Cumberland Plateau ” collects ice and frost long after the surrounding lowlands have warmed to spring. This is wild, uncompromising mountain country: steep-sided hollows cloak old-growth hemlock and poplar, more than a dozen waterfalls cascade through rhododendron-choked gorges, and the park's 80+ miles of trails traverse terrain so challenging that it hosts the legendary Barkley Marathons ” an invitation-only ultramarathon so brutal that in most years no runner finishes at all. But Frozen Head rewards those who venture beyond the trailhead with treasures found nowhere else: spring wildflower displays rivaling the Great Smokies, breeding populations of rare cerulean warblers in the canopy overhead, and a silence so complete that on still mornings you can hear the wingbeats of ravens passing above the ridge. The park's rehabilitation from decades of coal mining damage makes its current wildness all the more remarkable ” proof that given time and protection, even the most scarred landscapes can return to glory.",
+    description: "Deep in the rugged Cumberland Mountains of Morgan County, Frozen Head State Park protects 24,000 acres of some of the most remote and biologically rich forest in the eastern United States. The park takes its name from Frozen Head Mountain, whose 3,324-foot summit " the highest point on the Cumberland Plateau " collects ice and frost long after the surrounding lowlands have warmed to spring. This is wild, uncompromising mountain country: steep-sided hollows cloak old-growth hemlock and poplar, more than a dozen waterfalls cascade through rhododendron-choked gorges, and the park's 80+ miles of trails traverse terrain so challenging that it hosts the legendary Barkley Marathons " an invitation-only ultramarathon so brutal that in most years no runner finishes at all. But Frozen Head rewards those who venture beyond the trailhead with treasures found nowhere else: spring wildflower displays rivaling the Great Smokies, breeding populations of rare cerulean warblers in the canopy overhead, and a silence so complete that on still mornings you can hear the wingbeats of ravens passing above the ridge. The park's rehabilitation from decades of coal mining damage makes its current wildness all the more remarkable " proof that given time and protection, even the most scarred landscapes can return to glory.",
     editorialSummary: "24,000 acres of wild Cumberland Mountain wilderness, home to the infamous Barkley Marathons, stunning spring wildflowers, and the highest point on the Cumberland Plateau.",
     address: "964 Flat Fork Rd",
     city: "Wartburg",
@@ -662,7 +662,7 @@ export const tennesseeLocations = [
     seasons: ["spring", "summer", "fall"],
     tags: ["Barkley Marathons", "wilderness", "wildflowers", "Cumberland Mountains", "remote", "ultramarathon", "old-growth"],
     difficulty: "hard",
-    regulations: "No entrance fee. Backcountry camping by permit only ” register at trailhead. Weather changes rapidly at elevation. Some trails closed seasonally for wildlife management. No motorized vehicles on trails.",
+    regulations: "No entrance fee. Backcountry camping by permit only " register at trailhead. Weather changes rapidly at elevation. Some trails closed seasonally for wildlife management. No motorized vehicles on trails.",
     website: "https://tnstateparks.com/parks/frozen-head",
     phone: "(423) 346-3318",
     bookingUrl: null,
@@ -682,12 +682,12 @@ export const tennesseeLocations = [
       acreage: 24000,
       knownFor: "Barkley Marathons ultramarathon, highest point on Cumberland Plateau, spectacular spring wildflowers, remote wilderness hiking, coal mining rehabilitation success story",
       foraging: {
-        permitted: "Limited foraging allowed in some areas ” check with rangers",
+        permitted: "Limited foraging allowed in some areas " check with rangers",
         springEdibles: ["ramps (prolific in rich cove forests)", "wild ginger", "toothwort", "spring beauty", "trout lily leaves"],
         summerEdibles: ["blackberries on old mining roads", "wild blueberries at elevation", "serviceberries", "wood sorrel"],
         fallEdibles: ["pawpaws in rich hollows", "persimmons at lower elevations", "black walnuts", "hickory nuts"],
-        mushrooms: ["morels near tulip poplar and dead ash (spring ” Frozen Head is legendary morel territory)", "chanterelles (summer)", "hen of the woods (fall)", "black trumpets in beech forests"],
-        caution: "Remote terrain ” carry map, compass, and supplies. Timber rattlesnakes present on rocky slopes. Some old mining areas may have unstable ground."
+        mushrooms: ["morels near tulip poplar and dead ash (spring " Frozen Head is legendary morel territory)", "chanterelles (summer)", "hen of the woods (fall)", "black trumpets in beech forests"],
+        caution: "Remote terrain " carry map, compass, and supplies. Timber rattlesnakes present on rocky slopes. Some old mining areas may have unstable ground."
       }
     },
   },
@@ -695,8 +695,8 @@ export const tennesseeLocations = [
     name: "Meeman-Shelby Forest State Park",
     slug: "meeman-shelby-forest-state-park",
     type: "state_park",
-    description: "Rising from the Mississippi River floodplain just 13 miles north of downtown Memphis, Meeman-Shelby Forest State Park preserves 12,539 acres of bottomland hardwood forest and cypress swamp ” one of the largest intact tracts of old-growth floodplain forest remaining in the lower Mississippi Valley. This is the forest primeval: towering bald cypress trees draped in resurrection fern stand knee-deep in black water, their buttressed trunks reaching skyward through a canopy so dense that the forest floor lies in perpetual twilight. Poplar Tree Lake, an oxbow lake left behind by the river's ancient wanderings, provides still-water paddling through corridors of cypress and tupelo, while the park's 20 miles of trails wind through a living encyclopedia of bottomland ecology ” sweetgum, overcup oak, swamp chestnut oak, and persimmon rising from soil enriched by millennia of Mississippi floods. For birders, Meeman-Shelby is a revelation: prothonotary warblers flash golden among the cypress knees, barred owls trade eerie calls across the swamp, and during migration seasons the forest canopy comes alive with warblers, tanagers, and vireos refueling on their journey along the Mississippi Flyway. The park's proximity to Memphis makes it an urban wilderness of extraordinary importance ” a remnant of the vast forests that once lined the entire lower Mississippi.",
-    editorialSummary: "12,500 acres of primeval Mississippi bottomland forest and cypress swamp just north of Memphis ” a critical remnant of the great river's vanished wilderness.",
+    description: "Rising from the Mississippi River floodplain just 13 miles north of downtown Memphis, Meeman-Shelby Forest State Park preserves 12,539 acres of bottomland hardwood forest and cypress swamp " one of the largest intact tracts of old-growth floodplain forest remaining in the lower Mississippi Valley. This is the forest primeval: towering bald cypress trees draped in resurrection fern stand knee-deep in black water, their buttressed trunks reaching skyward through a canopy so dense that the forest floor lies in perpetual twilight. Poplar Tree Lake, an oxbow lake left behind by the river's ancient wanderings, provides still-water paddling through corridors of cypress and tupelo, while the park's 20 miles of trails wind through a living encyclopedia of bottomland ecology " sweetgum, overcup oak, swamp chestnut oak, and persimmon rising from soil enriched by millennia of Mississippi floods. For birders, Meeman-Shelby is a revelation: prothonotary warblers flash golden among the cypress knees, barred owls trade eerie calls across the swamp, and during migration seasons the forest canopy comes alive with warblers, tanagers, and vireos refueling on their journey along the Mississippi Flyway. The park's proximity to Memphis makes it an urban wilderness of extraordinary importance " a remnant of the vast forests that once lined the entire lower Mississippi.",
+    editorialSummary: "12,500 acres of primeval Mississippi bottomland forest and cypress swamp just north of Memphis " a critical remnant of the great river's vanished wilderness.",
     address: "910 Riddick Rd",
     city: "Millington",
     state: "TN",
@@ -710,7 +710,7 @@ export const tennesseeLocations = [
     seasons: ["spring", "summer", "fall", "winter"],
     tags: ["bottomland forest", "cypress swamp", "Mississippi River", "birding", "Memphis", "old-growth", "kayaking"],
     difficulty: "easy",
-    regulations: "No entrance fee. Some trails flood seasonally ” check conditions before hiking bottomland trails. Fishing license required. Horseback riding on designated trails only.",
+    regulations: "No entrance fee. Some trails flood seasonally " check conditions before hiking bottomland trails. Fishing license required. Horseback riding on designated trails only.",
     website: "https://tnstateparks.com/parks/meeman-shelby",
     phone: "(901) 876-5756",
     bookingUrl: "https://reserve.tnstateparks.com",
@@ -730,12 +730,12 @@ export const tennesseeLocations = [
       acreage: 12539,
       knownFor: "One of the largest intact bottomland hardwood forests in the lower Mississippi Valley, cypress swamp paddling, Mississippi Flyway birding, urban wilderness near Memphis",
       foraging: {
-        permitted: "Some foraging allowed ” check with rangers for current regulations",
+        permitted: "Some foraging allowed " check with rangers for current regulations",
         springEdibles: ["wild garlic in floodplain meadows", "cattail shoots along lake edges", "chickweed", "dandelion"],
         summerEdibles: ["blackberries", "mulberries (very abundant in bottomland)", "elderberries", "wild plums", "muscadine grapes"],
         fallEdibles: ["persimmons (thick stands throughout the park)", "pecans", "black walnuts", "hickory nuts", "pawpaws along creek bottoms"],
         mushrooms: ["oyster mushrooms on fallen hardwoods (year-round)", "morels near dead elms and cottonwoods (spring)", "chicken of the woods on oak", "lion's mane on beech (rare but present)"],
-        caution: "Bottomland areas flood regularly ” check conditions. Poison ivy extremely abundant in floodplain forest. Watch for water moccasins near cypress swamps."
+        caution: "Bottomland areas flood regularly " check conditions. Poison ivy extremely abundant in floodplain forest. Watch for water moccasins near cypress swamps."
       }
     },
   },
@@ -743,7 +743,7 @@ export const tennesseeLocations = [
     name: "Standing Stone State Park",
     slug: "standing-stone-state-park",
     type: "state_park",
-    description: "Named for a legendary 12-foot stone monolith that once served as a boundary marker between Cherokee and Shawnee hunting grounds on the Cumberland Plateau, Standing Stone State Park occupies 855 acres of gentle upland forest surrounding the 69-acre Standing Stone Lake. This is the quiet Tennessee ” no thundering waterfalls or dramatic gorges, but rather a place of small, accumulated beauties: sunlight filtering through a canopy of sugar maple and white oak, the liquid song of a wood thrush echoing through the hollow, the soft plop of a painted turtle sliding from a sun-warmed log. The park's cabins ” a mix of vintage CCC-era rustic and modern deluxe ” overlook the lake through screens of dogwood and redbud that ignite with blossoms each April. A seasonal swimming pool and lakeside boat dock provide summer recreation, while miles of trails wind through forests rich in wildflowers, ferns, and the distinctive layered sandstone formations that characterize the plateau's geology. Standing Stone represents what a state park can be at its most essential: a place of refuge and renewal, where the rhythms of the natural world reassert themselves over the noise of modern life.",
+    description: "Named for a legendary 12-foot stone monolith that once served as a boundary marker between Cherokee and Shawnee hunting grounds on the Cumberland Plateau, Standing Stone State Park occupies 855 acres of gentle upland forest surrounding the 69-acre Standing Stone Lake. This is the quiet Tennessee " no thundering waterfalls or dramatic gorges, but rather a place of small, accumulated beauties: sunlight filtering through a canopy of sugar maple and white oak, the liquid song of a wood thrush echoing through the hollow, the soft plop of a painted turtle sliding from a sun-warmed log. The park's cabins " a mix of vintage CCC-era rustic and modern deluxe " overlook the lake through screens of dogwood and redbud that ignite with blossoms each April. A seasonal swimming pool and lakeside boat dock provide summer recreation, while miles of trails wind through forests rich in wildflowers, ferns, and the distinctive layered sandstone formations that characterize the plateau's geology. Standing Stone represents what a state park can be at its most essential: a place of refuge and renewal, where the rhythms of the natural world reassert themselves over the noise of modern life.",
     editorialSummary: "A peaceful Cumberland Plateau retreat named for an ancient Cherokee-Shawnee boundary stone, offering quiet lakeside cabins and gentle forest trails.",
     address: "1674 Standing Stone Park Hwy",
     city: "Hilham",
@@ -778,12 +778,12 @@ export const tennesseeLocations = [
       acreage: 855,
       knownFor: "Named for ancient Cherokee-Shawnee boundary stone, peaceful lakeside setting, CCC-era cabins, Cumberland Plateau wildflowers, gentle family hiking",
       foraging: {
-        permitted: "Limited ” surrounding Cumberland Plateau areas offer foraging opportunities",
+        permitted: "Limited " surrounding Cumberland Plateau areas offer foraging opportunities",
         springEdibles: ["ramps in moist cove forests", "wild ginger", "creasy greens (wild cress)", "toothwort", "violets"],
         summerEdibles: ["blackberries (abundant on plateau)", "wild blueberries on sandstone outcrops", "elderberries"],
         fallEdibles: ["persimmons", "black walnuts", "hickory nuts (shagbark)", "pawpaws along streams"],
-        mushrooms: ["morels (spring ” good territory on the upper plateau)", "chanterelles in oak forests (summer)", "hen of the woods (fall)", "puffballs in meadows"],
-        caution: "Standing Stone area is prime copperhead habitat ” watch where you step in rocky areas."
+        mushrooms: ["morels (spring " good territory on the upper plateau)", "chanterelles in oak forests (summer)", "hen of the woods (fall)", "puffballs in meadows"],
+        caution: "Standing Stone area is prime copperhead habitat " watch where you step in rocky areas."
       }
     },
   },
@@ -791,7 +791,7 @@ export const tennesseeLocations = [
     name: "Edgar Evins State Park",
     slug: "edgar-evins-state-park",
     type: "state_park",
-    description: "Perched on a wooded peninsula jutting into the emerald waters of Center Hill Lake, Edgar Evins State Park offers a unique combination of highland forest hiking and deep-water lake recreation in the scenic Upper Cumberland region. The park's 6,000 acres of forested ridgeline and lakeshore embrace a landscape shaped by the ancient forces that carved the Highland Rim ” steep, wooded ravines descending to quiet lake coves where morning fog hangs in veils of silver above water so clear you can see the rocky bottom thirty feet below. Center Hill Lake itself, a 18,220-acre reservoir of the Caney Fork River, has earned a reputation as one of Tennessee's cleanest and most beautiful lakes, its cool, deep waters supporting a thriving population of walleye, smallmouth bass, and striped bass. The park's marina provides boat rentals and slip access, while the Millennium Trail winds along the ridge through mature oak-hickory forest with periodic overlooks offering sweeping views across the lake to the distant plateau. Rustic cabins tucked into the forest canopy provide accommodation that feels genuinely remote despite the park's easy access from Interstate 40. At the junction of the Cumberland Plateau and the Highland Rim, Edgar Evins occupies a transitional landscape where upland and lowland ecosystems meet ” creating exceptional biological diversity in a setting of uncommon beauty.",
+    description: "Perched on a wooded peninsula jutting into the emerald waters of Center Hill Lake, Edgar Evins State Park offers a unique combination of highland forest hiking and deep-water lake recreation in the scenic Upper Cumberland region. The park's 6,000 acres of forested ridgeline and lakeshore embrace a landscape shaped by the ancient forces that carved the Highland Rim " steep, wooded ravines descending to quiet lake coves where morning fog hangs in veils of silver above water so clear you can see the rocky bottom thirty feet below. Center Hill Lake itself, a 18,220-acre reservoir of the Caney Fork River, has earned a reputation as one of Tennessee's cleanest and most beautiful lakes, its cool, deep waters supporting a thriving population of walleye, smallmouth bass, and striped bass. The park's marina provides boat rentals and slip access, while the Millennium Trail winds along the ridge through mature oak-hickory forest with periodic overlooks offering sweeping views across the lake to the distant plateau. Rustic cabins tucked into the forest canopy provide accommodation that feels genuinely remote despite the park's easy access from Interstate 40. At the junction of the Cumberland Plateau and the Highland Rim, Edgar Evins occupies a transitional landscape where upland and lowland ecosystems meet " creating exceptional biological diversity in a setting of uncommon beauty.",
     editorialSummary: "A forested peninsula on crystal-clear Center Hill Lake, offering deep-water fishing, marina access, and Highland Rim forest trails in the Upper Cumberland.",
     address: "1630 Edgar Evins State Park Rd",
     city: "Silver Point",
@@ -806,7 +806,7 @@ export const tennesseeLocations = [
     seasons: ["spring", "summer", "fall", "winter"],
     tags: ["Center Hill Lake", "fishing", "marina", "clear water", "walleye", "Upper Cumberland"],
     difficulty: "moderate",
-    regulations: "No entrance fee. Fishing license required. Marina services seasonal. Cabin reservations online. Some trails steep with exposed roots ” proper footwear recommended.",
+    regulations: "No entrance fee. Fishing license required. Marina services seasonal. Cabin reservations online. Some trails steep with exposed roots " proper footwear recommended.",
     website: "https://tnstateparks.com/parks/edgar-evins",
     phone: "(931) 858-2114",
     bookingUrl: "https://reserve.tnstateparks.com",
@@ -826,12 +826,12 @@ export const tennesseeLocations = [
       acreage: 6000,
       knownFor: "Crystal-clear Center Hill Lake, walleye fishing, forested peninsula setting, Highland Rim-Cumberland Plateau transition zone",
       foraging: {
-        permitted: "Limited within park ” surrounding Highland Rim and plateau areas excellent for foraging",
+        permitted: "Limited within park " surrounding Highland Rim and plateau areas excellent for foraging",
         springEdibles: ["ramps in cove forests", "wild ginger", "toothwort", "chickweed", "spring beauty"],
         summerEdibles: ["blackberries along trail edges", "elderberries near lake margins", "serviceberries"],
         fallEdibles: ["pawpaws in ravine bottoms", "persimmons", "black walnuts", "hickory nuts"],
         mushrooms: ["morels near tulip poplars (spring)", "chanterelles in oak-hickory forest (summer)", "oyster mushrooms on fallen hardwoods"],
-        caution: "Steep ravines near lake ” stay on trails. Center Hill Lake has cold, deep water ” use caution swimming."
+        caution: "Steep ravines near lake " stay on trails. Center Hill Lake has cold, deep water " use caution swimming."
       }
     },
   },
@@ -839,7 +839,7 @@ export const tennesseeLocations = [
     name: "Savage Gulf State Natural Area",
     slug: "savage-gulf-state-natural-area",
     type: "state_park",
-    description: "Within the greater South Cumberland State Park system, Savage Gulf State Natural Area protects one of the most awe-inspiring geological features in the eastern United States ” a system of deep sandstone gorges carved over millions of years by the Savage Creek, Collins River, and their tributaries into the Cumberland Plateau. The Stone Door, a massive crack in the plateau rim that served as a passageway for Native Americans descending into the gulf, remains the park's most famous feature ” a narrow slot canyon that opens onto a vertiginous overlook 900 feet above the gulf floor. From this natural portal, the view stretches across a sea of unbroken forest filling the gorge below, a canopy so vast and primeval it recalls what much of the eastern United States looked like before European settlement. The gulf system encompasses three major gorges and over 55 miles of trails ranging from gentle rim walks to strenuous descents to the creek-laced floor, where virgin hemlock and tulip poplar tower above streams flowing over beds of ancient sandstone. Greeter Falls, a stunning double waterfall accessible by a shorter trail, provides a more approachable introduction to the gulf's grandeur. Savage Gulf is a landscape that demands time, preparation, and respect ” and rewards those who give it with experiences that etch themselves permanently into memory.",
+    description: "Within the greater South Cumberland State Park system, Savage Gulf State Natural Area protects one of the most awe-inspiring geological features in the eastern United States " a system of deep sandstone gorges carved over millions of years by the Savage Creek, Collins River, and their tributaries into the Cumberland Plateau. The Stone Door, a massive crack in the plateau rim that served as a passageway for Native Americans descending into the gulf, remains the park's most famous feature " a narrow slot canyon that opens onto a vertiginous overlook 900 feet above the gulf floor. From this natural portal, the view stretches across a sea of unbroken forest filling the gorge below, a canopy so vast and primeval it recalls what much of the eastern United States looked like before European settlement. The gulf system encompasses three major gorges and over 55 miles of trails ranging from gentle rim walks to strenuous descents to the creek-laced floor, where virgin hemlock and tulip poplar tower above streams flowing over beds of ancient sandstone. Greeter Falls, a stunning double waterfall accessible by a shorter trail, provides a more approachable introduction to the gulf's grandeur. Savage Gulf is a landscape that demands time, preparation, and respect " and rewards those who give it with experiences that etch themselves permanently into memory.",
     editorialSummary: "One of the deepest gorge systems east of the Mississippi, featuring the iconic Stone Door passage, 900-foot cliffs, and 55 miles of wilderness trails.",
     address: "3157 SR 399",
     city: "Palmer",
@@ -874,11 +874,11 @@ export const tennesseeLocations = [
       acreage: 15590,
       knownFor: "Stone Door overlook (iconic plateau passage), 900-foot gorge walls, Greeter Falls, 55 miles of trails, old-growth forest, one of deepest gorges east of the Mississippi",
       foraging: {
-        permitted: "Restricted ” this is a State Natural Area with strict no-harvest protections",
+        permitted: "Restricted " this is a State Natural Area with strict no-harvest protections",
         notableFlora: ["old-growth hemlock and tulip poplar in gorge bottoms", "rare Cumberland Plateau endemics on cliff faces", "diverse fern communities including walking fern and maidenhair"],
         springEdibles: ["In surrounding areas: ramps, toothwort, wild ginger"],
-        mushrooms: ["Observation only within SNA ” surrounding plateau forests offer morels, chanterelles, and hen of the woods"],
-        caution: "All plants and fungi protected within State Natural Area boundaries. Gorge environment is ecologically fragile. Cliff edges are unguarded ” extreme caution required."
+        mushrooms: ["Observation only within SNA " surrounding plateau forests offer morels, chanterelles, and hen of the woods"],
+        caution: "All plants and fungi protected within State Natural Area boundaries. Gorge environment is ecologically fragile. Cliff edges are unguarded " extreme caution required."
       }
     },
   },
@@ -888,8 +888,8 @@ export const tennesseeLocations = [
     name: "Big South Fork National River and Recreation Area",
     slug: "big-south-fork-nrra",
     type: "national_park",
-    description: "Straddling the Tennessee-Kentucky border in the northern Cumberland Plateau, Big South Fork National River and Recreation Area protects 125,000 acres of the most spectacular river gorge system in the southeastern United States. The Big South Fork of the Cumberland River and its tributaries have carved a labyrinth of sandstone gorges, natural arches, rock shelters, and towering bluffs through 300 million years of plateau geology ” creating a landscape so rugged and inaccessible that it remained one of the last true wilderness areas east of the Mississippi well into the 20th century. Over 150 miles of trails traverse terrain ranging from gentle riverside paths to challenging gorge rim routes, while the river itself offers Class III-IV whitewater paddling through corridors of sheer sandstone that glow amber and rose in afternoon light. Natural arches ” including the iconic Twin Arches, the largest natural bridge system east of the Rockies ” pierce the plateau rim like portals to another world. The Bandy Creek area provides developed camping and visitor facilities, while the Blue Heron Mining Community interprets the harsh lives of coal miners who worked these remote hollows into the 1960s. For horseback riders, over 180 miles of equestrian trails make Big South Fork one of the premier riding destinations in the eastern United States.",
-    editorialSummary: "125,000 acres of spectacular Cumberland Plateau gorges, natural arches, whitewater rivers, and the Twin Arches ” the largest natural bridge system in the eastern US.",
+    description: "Straddling the Tennessee-Kentucky border in the northern Cumberland Plateau, Big South Fork National River and Recreation Area protects 125,000 acres of the most spectacular river gorge system in the southeastern United States. The Big South Fork of the Cumberland River and its tributaries have carved a labyrinth of sandstone gorges, natural arches, rock shelters, and towering bluffs through 300 million years of plateau geology " creating a landscape so rugged and inaccessible that it remained one of the last true wilderness areas east of the Mississippi well into the 20th century. Over 150 miles of trails traverse terrain ranging from gentle riverside paths to challenging gorge rim routes, while the river itself offers Class III-IV whitewater paddling through corridors of sheer sandstone that glow amber and rose in afternoon light. Natural arches " including the iconic Twin Arches, the largest natural bridge system east of the Rockies " pierce the plateau rim like portals to another world. The Bandy Creek area provides developed camping and visitor facilities, while the Blue Heron Mining Community interprets the harsh lives of coal miners who worked these remote hollows into the 1960s. For horseback riders, over 180 miles of equestrian trails make Big South Fork one of the premier riding destinations in the eastern United States.",
+    editorialSummary: "125,000 acres of spectacular Cumberland Plateau gorges, natural arches, whitewater rivers, and the Twin Arches " the largest natural bridge system in the eastern US.",
     address: "4564 Leatherwood Rd",
     city: "Oneida",
     state: "TN",
@@ -903,7 +903,7 @@ export const tennesseeLocations = [
     seasons: ["spring", "summer", "fall", "winter"],
     tags: ["Twin Arches", "natural arches", "whitewater", "gorges", "horseback riding", "Cumberland Plateau", "wilderness"],
     difficulty: "moderate",
-    regulations: "No entrance fee. Backcountry camping by permit. Whitewater difficulty varies with water level ” check conditions. Hunting allowed in designated areas during season. Coggins test required for horses.",
+    regulations: "No entrance fee. Backcountry camping by permit. Whitewater difficulty varies with water level " check conditions. Hunting allowed in designated areas during season. Coggins test required for horses.",
     website: "https://www.nps.gov/biso/index.htm",
     phone: "(423) 286-7275",
     bookingUrl: "https://www.recreation.gov",
@@ -923,12 +923,12 @@ export const tennesseeLocations = [
       acreage: 125000,
       knownFor: "Twin Arches (largest natural bridge system east of Rockies), Class III-IV whitewater, 150+ miles of trails, premier horseback riding, Blue Heron ghost mining town",
       foraging: {
-        permitted: "Personal-use foraging of fruits, nuts, and berries allowed ” no digging or uprooting plants. Mushroom gathering allowed for personal consumption.",
+        permitted: "Personal-use foraging of fruits, nuts, and berries allowed " no digging or uprooting plants. Mushroom gathering allowed for personal consumption.",
         springEdibles: ["ramps (prolific in rich cove forests)", "wild ginger", "toothwort", "spring beauty", "creasy greens (wild cress)", "wild leeks"],
         summerEdibles: ["blackberries (abundant on old roads and clearings)", "wild blueberries on plateau rim", "serviceberries", "elderberries"],
         fallEdibles: ["pawpaws in gorge bottoms (excellent habitat)", "persimmons", "black walnuts", "hickory nuts", "chinquapin nuts"],
-        mushrooms: ["morels near dead ash and tulip poplar (spring ” Big South Fork is premier morel territory)", "chanterelles in oak forests (summer)", "chicken of the woods on dead oaks", "hen of the woods (fall)", "black trumpets in beech groves"],
-        caution: "NPS regulations: collect only for personal use, never commercial. No digging or uprooting. Ginseng harvest prohibited. Remote terrain ” carry map and supplies."
+        mushrooms: ["morels near dead ash and tulip poplar (spring " Big South Fork is premier morel territory)", "chanterelles in oak forests (summer)", "chicken of the woods on dead oaks", "hen of the woods (fall)", "black trumpets in beech groves"],
+        caution: "NPS regulations: collect only for personal use, never commercial. No digging or uprooting. Ginseng harvest prohibited. Remote terrain " carry map and supplies."
       }
     },
   },
@@ -936,7 +936,7 @@ export const tennesseeLocations = [
     name: "Obed Wild and Scenic River",
     slug: "obed-wild-scenic-river",
     type: "national_park",
-    description: "Designated as one of only 226 Wild and Scenic Rivers in the National Park system, the Obed River and its tributary Clear Creek have carved deep, narrow gorges through the Cumberland Plateau east of Crossville ” creating a corridor of extraordinary natural beauty that harbors some of the finest rock climbing and whitewater paddling in the Southeast. The river's gorges are intimate and dramatic: sheer sandstone walls rising 80 to 500 feet above boulder-strewn rapids, their faces adorned with curtains of wild hydrangea, hemlock, and rhododendron that soften the raw geometry of the stone. World-class rock climbing routes line the gorge walls, drawing climbers from across the nation to crack systems and overhanging faces of bullet-hard Rockcastle conglomerate. When water levels are right, the Obed and Clear Creek offer technical Class III-IV whitewater through continuous boulder gardens ” a wild, committing run through gorges so deep and narrow that once you launch, the only way out is downstream. Below the rapids, quiet pools of emerald water invite swimming, while the surrounding plateau forests support populations of rare mussels, hellbender salamanders, and a diversity of aquatic life that earned the rivers their Wild and Scenic designation.",
+    description: "Designated as one of only 226 Wild and Scenic Rivers in the National Park system, the Obed River and its tributary Clear Creek have carved deep, narrow gorges through the Cumberland Plateau east of Crossville " creating a corridor of extraordinary natural beauty that harbors some of the finest rock climbing and whitewater paddling in the Southeast. The river's gorges are intimate and dramatic: sheer sandstone walls rising 80 to 500 feet above boulder-strewn rapids, their faces adorned with curtains of wild hydrangea, hemlock, and rhododendron that soften the raw geometry of the stone. World-class rock climbing routes line the gorge walls, drawing climbers from across the nation to crack systems and overhanging faces of bullet-hard Rockcastle conglomerate. When water levels are right, the Obed and Clear Creek offer technical Class III-IV whitewater through continuous boulder gardens " a wild, committing run through gorges so deep and narrow that once you launch, the only way out is downstream. Below the rapids, quiet pools of emerald water invite swimming, while the surrounding plateau forests support populations of rare mussels, hellbender salamanders, and a diversity of aquatic life that earned the rivers their Wild and Scenic designation.",
     editorialSummary: "A National Wild and Scenic River cutting deep gorges through the Cumberland Plateau, offering world-class rock climbing and technical whitewater in an intimate canyon setting.",
     address: "208 N Maiden St",
     city: "Wartburg",
@@ -951,7 +951,7 @@ export const tennesseeLocations = [
     seasons: ["spring", "summer", "fall"],
     tags: ["wild and scenic river", "rock climbing", "whitewater", "gorge", "Cumberland Plateau", "bouldering"],
     difficulty: "hard",
-    regulations: "No entrance fee. Rock climbing does not require permit but registration recommended. Whitewater paddling for experienced only ” no outfitter services within park. Water levels change rapidly. Swimming at your own risk.",
+    regulations: "No entrance fee. Rock climbing does not require permit but registration recommended. Whitewater paddling for experienced only " no outfitter services within park. Water levels change rapidly. Swimming at your own risk.",
     website: "https://www.nps.gov/obed/index.htm",
     phone: "(423) 346-6294",
     bookingUrl: null,
@@ -976,7 +976,7 @@ export const tennesseeLocations = [
         summerEdibles: ["blackberries along rim trails", "serviceberries", "wild blueberries on plateau"],
         fallEdibles: ["pawpaws in gorge bottoms", "black walnuts", "hickory nuts"],
         mushrooms: ["morels near dead hardwoods (spring)", "chanterelles in oak forests", "oyster mushrooms on fallen trees"],
-        caution: "Gorge walls are steep and dangerous ” stay on trails. River access points are limited. No ginseng harvest on NPS land."
+        caution: "Gorge walls are steep and dangerous " stay on trails. River access points are limited. No ginseng harvest on NPS land."
       }
     },
   },
@@ -984,7 +984,7 @@ export const tennesseeLocations = [
     name: "Stones River National Battlefield",
     slug: "stones-river-national-battlefield",
     type: "national_park",
-    description: "On the frozen fields outside Murfreesboro in the closing days of 1862, the Union Army of the Cumberland and the Confederate Army of Tennessee clashed in one of the bloodiest battles of the Civil War ” a three-day struggle that produced nearly 24,000 casualties and helped secure Union control of Middle Tennessee. Today, Stones River National Battlefield preserves 570 acres of this hallowed ground, where limestone cedar glades and open meadows are dotted with cannon positions, monuments, and the somber ranks of white headstones in Stones River National Cemetery ” the oldest national cemetery established during the Civil War. The park's auto tour and walking trails guide visitors through the battle's key phases: the devastating Confederate dawn attack through the Round Forest, the desperate Union stand along the Nashville Pike, and the final Union assault across McFadden's Ford that decided the battle's outcome. The landscape itself tells the story ” the cedar glades that provided concealment, the limestone outcrops that served as natural breastworks, and the river crossing where the battle reached its climax. Beyond its military significance, the battlefield preserves some of the finest remaining examples of Middle Tennessee's rare cedar glade ecosystem, supporting several plant species found nowhere else on Earth.",
+    description: "On the frozen fields outside Murfreesboro in the closing days of 1862, the Union Army of the Cumberland and the Confederate Army of Tennessee clashed in one of the bloodiest battles of the Civil War " a three-day struggle that produced nearly 24,000 casualties and helped secure Union control of Middle Tennessee. Today, Stones River National Battlefield preserves 570 acres of this hallowed ground, where limestone cedar glades and open meadows are dotted with cannon positions, monuments, and the somber ranks of white headstones in Stones River National Cemetery " the oldest national cemetery established during the Civil War. The park's auto tour and walking trails guide visitors through the battle's key phases: the devastating Confederate dawn attack through the Round Forest, the desperate Union stand along the Nashville Pike, and the final Union assault across McFadden's Ford that decided the battle's outcome. The landscape itself tells the story " the cedar glades that provided concealment, the limestone outcrops that served as natural breastworks, and the river crossing where the battle reached its climax. Beyond its military significance, the battlefield preserves some of the finest remaining examples of Middle Tennessee's rare cedar glade ecosystem, supporting several plant species found nowhere else on Earth.",
     editorialSummary: "Hallowed Civil War battlefield preserving the site of one of the war's bloodiest engagements, featuring the oldest national military cemetery and rare cedar glade ecosystems.",
     address: "3501 Old Nashville Hwy",
     city: "Murfreesboro",
@@ -999,7 +999,7 @@ export const tennesseeLocations = [
     seasons: ["spring", "summer", "fall", "winter"],
     tags: ["Civil War", "battlefield", "cemetery", "history", "cedar glades", "Murfreesboro", "monuments"],
     difficulty: "easy",
-    regulations: "Free admission. Open daily dawn to dusk, visitor center 9-5. No metal detecting. Stay on marked trails in glade areas ” plants are federally protected. Bicycles on paved trails only.",
+    regulations: "Free admission. Open daily dawn to dusk, visitor center 9-5. No metal detecting. Stay on marked trails in glade areas " plants are federally protected. Bicycles on paved trails only.",
     website: "https://www.nps.gov/stri/index.htm",
     phone: "(615) 893-9501",
     bookingUrl: null,
@@ -1019,9 +1019,9 @@ export const tennesseeLocations = [
       acreage: 570,
       knownFor: "One of the bloodiest Civil War battles (23,515 casualties), oldest national military cemetery, rare cedar glade ecosystem with federally protected endemic plants",
       foraging: {
-        permitted: "Prohibited ” national battlefield and protected ecosystem",
+        permitted: "Prohibited " national battlefield and protected ecosystem",
         notableFlora: ["Tennessee coneflower (federally protected)", "limestone fame flower", "cedar glade St. John's wort", "Nashville breadroot"],
-        caution: "All plants and natural materials are fully protected on NPS land. Cedar glade plants include several federally endangered species ” never disturb."
+        caution: "All plants and natural materials are fully protected on NPS land. Cedar glade plants include several federally endangered species " never disturb."
       }
     },
   },
@@ -1029,7 +1029,7 @@ export const tennesseeLocations = [
     name: "Andrew Johnson National Historic Site",
     slug: "andrew-johnson-national-historic-site",
     type: "national_park",
-    description: "In the mountain town of Greeneville, the story of America's seventeenth president ” and one of its most controversial ” unfolds across a cluster of preserved buildings that trace Andrew Johnson's remarkable rise from impoverished tailor's apprentice to the presidency of a fractured nation. The site preserves Johnson's modest tailor shop, where the self-educated craftsman taught himself to read with the help of his wife Eliza; his family homestead, furnished with original artifacts from the turbulent Reconstruction era; and the hillside cemetery where Johnson lies beneath a monument topped by an eagle clutching the Constitution. Johnson's is a uniquely American story of radical social mobility, political courage, and deep controversy ” the only president ever impeached until the modern era, a Southern Unionist who defied the Confederacy and then clashed with his own party over the direction of Reconstruction. The surrounding town of Greeneville, one of the oldest settlements in Tennessee, provides a charming East Tennessee mountain backdrop, with views of the Blue Ridge foothills and a historic downtown that still carries echoes of the antebellum era.",
+    description: "In the mountain town of Greeneville, the story of America's seventeenth president " and one of its most controversial " unfolds across a cluster of preserved buildings that trace Andrew Johnson's remarkable rise from impoverished tailor's apprentice to the presidency of a fractured nation. The site preserves Johnson's modest tailor shop, where the self-educated craftsman taught himself to read with the help of his wife Eliza; his family homestead, furnished with original artifacts from the turbulent Reconstruction era; and the hillside cemetery where Johnson lies beneath a monument topped by an eagle clutching the Constitution. Johnson's is a uniquely American story of radical social mobility, political courage, and deep controversy " the only president ever impeached until the modern era, a Southern Unionist who defied the Confederacy and then clashed with his own party over the direction of Reconstruction. The surrounding town of Greeneville, one of the oldest settlements in Tennessee, provides a charming East Tennessee mountain backdrop, with views of the Blue Ridge foothills and a historic downtown that still carries echoes of the antebellum era.",
     editorialSummary: "The preserved homes, tailor shop, and burial site of America's seventeenth president in the historic East Tennessee mountain town of Greeneville.",
     address: "121 Monument Ave",
     city: "Greeneville",
@@ -1044,7 +1044,7 @@ export const tennesseeLocations = [
     seasons: ["spring", "summer", "fall", "winter"],
     tags: ["presidential history", "Civil War", "Reconstruction", "East Tennessee", "museum", "historic site"],
     difficulty: "easy",
-    regulations: "Free admission. Guided tours available ” check schedule. Museum and homestead hours vary seasonally. No photography inside historic buildings.",
+    regulations: "Free admission. Guided tours available " check schedule. Museum and homestead hours vary seasonally. No photography inside historic buildings.",
     website: "https://www.nps.gov/anjo/index.htm",
     phone: "(423) 638-3551",
     bookingUrl: null,
@@ -1064,7 +1064,7 @@ export const tennesseeLocations = [
       acreage: 17,
       knownFor: "Home and tailor shop of 17th President Andrew Johnson, Reconstruction-era history, only Southern senator to remain loyal to the Union",
       foraging: {
-        permitted: "Not applicable ” urban historic site",
+        permitted: "Not applicable " urban historic site",
         nearbyForaging: "East Tennessee's Appalachian foothills surrounding Greeneville offer excellent foraging: ramps, morels, pawpaws, wild blueberries, and chanterelles in nearby Cherokee National Forest."
       }
     },
@@ -1075,7 +1075,7 @@ export const tennesseeLocations = [
     name: "Anakeesta",
     slug: "anakeesta-gatlinburg",
     type: "private_park",
-    description: "Rising above downtown Gatlinburg on Anakeesta Mountain, this mountaintop theme park and nature experience blends Smoky Mountain wilderness with imaginative adventure in a way that feels both thrilling and respectful of its stunning alpine setting. The Treetop Skywalk ” a 880-foot elevated walkway suspended among the ancient hardwood canopy ” offers eye-level encounters with a forest that clings to the steep mountainside in defiant beauty, every branch draped in lichens and resurrection fern. Far below, the AnaVista Tower provides 360-degree panoramas that sweep from the Great Smoky Mountains' blue ridges to the twinkling lights of Gatlinburg's strip, a visual essay in the contrast between wilderness and tourism that defines this corner of Appalachia. The Dueling Zipline Adventure sends riders soaring over the forest canopy at speeds that blur the distinction between flight and falling, while Memorial Forest ” a living tribute of native trees ” grounds the experience in quiet reflection. Treehouse Village showcases whimsical structures nested among the treetops, each one a marvel of rustic engineering and childlike imagination. The mountain's native gardens bloom with rhododendron, mountain laurel, and azalea from April through June, painting the slopes in watercolors of pink, white, and flame orange. Evening transforms Anakeesta into a firefly's dreamscape, with thousands of LED lights illuminating the canopy walkway in patterns that echo the synchronized fireflies for which the Smokies are world-famous.",
+    description: "Rising above downtown Gatlinburg on Anakeesta Mountain, this mountaintop theme park and nature experience blends Smoky Mountain wilderness with imaginative adventure in a way that feels both thrilling and respectful of its stunning alpine setting. The Treetop Skywalk " a 880-foot elevated walkway suspended among the ancient hardwood canopy " offers eye-level encounters with a forest that clings to the steep mountainside in defiant beauty, every branch draped in lichens and resurrection fern. Far below, the AnaVista Tower provides 360-degree panoramas that sweep from the Great Smoky Mountains' blue ridges to the twinkling lights of Gatlinburg's strip, a visual essay in the contrast between wilderness and tourism that defines this corner of Appalachia. The Dueling Zipline Adventure sends riders soaring over the forest canopy at speeds that blur the distinction between flight and falling, while Memorial Forest " a living tribute of native trees " grounds the experience in quiet reflection. Treehouse Village showcases whimsical structures nested among the treetops, each one a marvel of rustic engineering and childlike imagination. The mountain's native gardens bloom with rhododendron, mountain laurel, and azalea from April through June, painting the slopes in watercolors of pink, white, and flame orange. Evening transforms Anakeesta into a firefly's dreamscape, with thousands of LED lights illuminating the canopy walkway in patterns that echo the synchronized fireflies for which the Smokies are world-famous.",
     editorialSummary: "A mountaintop nature experience above Gatlinburg featuring the 880-foot Treetop Skywalk, canopy ziplines, and panoramic Smoky Mountain views from 2,000 feet.",
     address: "576 Parkway Suite 1",
     city: "Gatlinburg",
@@ -1090,7 +1090,7 @@ export const tennesseeLocations = [
     seasons: ["spring", "summer", "fall", "winter"],
     tags: ["treetop walk", "Gatlinburg", "Smoky Mountains", "family friendly", "zipline", "canopy", "adventure park"],
     difficulty: "easy",
-    regulations: "Ticket required for entry. Season passes available. Weather-dependent operations ” check conditions. No outside food. Service animals welcome.",
+    regulations: "Ticket required for entry. Season passes available. Weather-dependent operations " check conditions. No outside food. Service animals welcome.",
     website: "https://www.anakeesta.com",
     phone: "(865) 325-2400",
     bookingUrl: "https://www.anakeesta.com/tickets",
@@ -1110,7 +1110,7 @@ export const tennesseeLocations = [
       acreage: 70,
       knownFor: "880-foot Treetop Skywalk, Dueling Ziplines, AnaVista Tower, Treehouse Village, mountaintop dining with panoramic Smoky Mountain views",
       foraging: {
-        permitted: "Not permitted ” private attraction property",
+        permitted: "Not permitted " private attraction property",
         nearbyForaging: "The surrounding Great Smoky Mountains National Park (within minutes) offers exceptional foraging: ramps, sochan, blackberries, and fall nuts. Cherokee National Forest to the east provides additional foraging in season."
       }
     },
@@ -1119,8 +1119,8 @@ export const tennesseeLocations = [
     name: "Ruby Falls",
     slug: "ruby-falls-chattanooga",
     type: "scenic_attraction",
-    description: "Deep within the ancient limestone heart of Lookout Mountain, Ruby Falls harbors one of America's most extraordinary natural wonders ” a 145-foot underground waterfall thundering through a cavern that has remained sealed from the outside world for millions of years. The journey begins with an elevator descent 260 feet into solid rock, then follows a winding passage through a subterranean gallery of stalactites, stalagmites, flowstone draperies, and formations so fantastical they seem sculpted by a hand more patient than time itself. Around each bend, the cave reveals new architectural marvels: crystal-clear pools reflecting formations overhead, columns where stalactites and stalagmites have merged over millennia, and delicate soda straws so fragile a whisper might shatter them. The climax ” the waterfall itself ” appears suddenly in a vast cathedral chamber, its waters plummeting from an opening in the ceiling into a pool surrounded by carefully designed lighting that transforms the cascade into a spectacle of color and shadow. Above ground, the Lookout Mountain Tower provides breathtaking views of the Tennessee Valley stretching to the horizon, a landscape carved by the same ancient waters that hollowed the caverns below. The ZIPstream Aerial Adventure and High Point climbing wall offer above-ground thrills for those who prefer their adventures in open air. Ruby Falls has captivated visitors since its discovery in 1928 by explorer Leo Lambert, making it one of the longest continuously operated underground attractions in the United States.",
-    editorialSummary: "America's tallest and deepest underground waterfall ” a 145-foot cascade hidden 260 feet beneath Lookout Mountain, surrounded by millions of years of cave formations.",
+    description: "Deep within the ancient limestone heart of Lookout Mountain, Ruby Falls harbors one of America's most extraordinary natural wonders " a 145-foot underground waterfall thundering through a cavern that has remained sealed from the outside world for millions of years. The journey begins with an elevator descent 260 feet into solid rock, then follows a winding passage through a subterranean gallery of stalactites, stalagmites, flowstone draperies, and formations so fantastical they seem sculpted by a hand more patient than time itself. Around each bend, the cave reveals new architectural marvels: crystal-clear pools reflecting formations overhead, columns where stalactites and stalagmites have merged over millennia, and delicate soda straws so fragile a whisper might shatter them. The climax " the waterfall itself " appears suddenly in a vast cathedral chamber, its waters plummeting from an opening in the ceiling into a pool surrounded by carefully designed lighting that transforms the cascade into a spectacle of color and shadow. Above ground, the Lookout Mountain Tower provides breathtaking views of the Tennessee Valley stretching to the horizon, a landscape carved by the same ancient waters that hollowed the caverns below. The ZIPstream Aerial Adventure and High Point climbing wall offer above-ground thrills for those who prefer their adventures in open air. Ruby Falls has captivated visitors since its discovery in 1928 by explorer Leo Lambert, making it one of the longest continuously operated underground attractions in the United States.",
+    editorialSummary: "America's tallest and deepest underground waterfall " a 145-foot cascade hidden 260 feet beneath Lookout Mountain, surrounded by millions of years of cave formations.",
     address: "1720 Scenic Hwy",
     city: "Chattanooga",
     state: "TN",
@@ -1134,7 +1134,7 @@ export const tennesseeLocations = [
     seasons: ["spring", "summer", "fall", "winter"],
     tags: ["underground waterfall", "Lookout Mountain", "cave", "Chattanooga", "geological wonder", "family friendly", "landmark"],
     difficulty: "easy",
-    regulations: "Ticket required. Guided tours only ” no unaccompanied cave access. Cave temperature is constant 60°F ” bring a light jacket. No flash photography. ADA accessible to waterfall via elevator.",
+    regulations: "Ticket required. Guided tours only " no unaccompanied cave access. Cave temperature is constant 60°F " bring a light jacket. No flash photography. ADA accessible to waterfall via elevator.",
     website: "https://www.rubyfalls.com",
     phone: "(423) 821-2544",
     bookingUrl: "https://www.rubyfalls.com/tickets",
@@ -1154,7 +1154,7 @@ export const tennesseeLocations = [
       acreage: 200,
       knownFor: "Tallest underground waterfall open to the public in the US (145 feet), 260-foot elevator descent, Lookout Mountain Tower views, cave formations dating millions of years",
       foraging: {
-        permitted: "Not permitted ” private attraction property",
+        permitted: "Not permitted " private attraction property",
         nearbyForaging: "Lookout Mountain's surrounding forests and nearby Raccoon Mountain offer seasonal foraging: pawpaws in creek bottoms, persimmons, black walnuts, and muscadine grapes. Prentice Cooper State Forest (15 minutes) has excellent mushroom hunting."
       }
     },
@@ -1163,7 +1163,7 @@ export const tennesseeLocations = [
     name: "Tennessee Safari Park",
     slug: "tennessee-safari-park",
     type: "private_park",
-    description: "Sprawling across the rolling farmland of West Tennessee near the quiet town of Alamo, Tennessee Safari Park offers one of the most immersive drive-through wildlife encounters in the American South. Over 700 exotic and endangered animals from six continents roam freely across more than 200 acres of open pasture, woodland, and wetland ” creating an experience closer to an African game drive than a traditional zoo. The three-mile driving loop winds past herds of zebra grazing alongside American bison, giraffes stretching their improbable necks toward offered treats, and ostriches sprinting alongside vehicles with startling speed and comic determination. Feed buckets provided at the entrance transform every family car into a safari vehicle, and the animals ” acclimated to visitors but never fully domesticated ” approach with a curiosity that erases the barrier between observer and observed. Beyond the drive-through, a walk-through area houses a petting zoo where goats, lambs, and miniature donkeys compete for attention with the unrestrained enthusiasm that only baby animals can muster. Exotic bird aviaries, camel rides, and seasonal festivals round out an experience that manages to be simultaneously educational and pure, uncomplicated fun. For West Tennessee ” a region better known for cotton fields and catfish ponds ” the Safari Park is an unexpected treasure that draws families from across the Mid-South.",
+    description: "Sprawling across the rolling farmland of West Tennessee near the quiet town of Alamo, Tennessee Safari Park offers one of the most immersive drive-through wildlife encounters in the American South. Over 700 exotic and endangered animals from six continents roam freely across more than 200 acres of open pasture, woodland, and wetland " creating an experience closer to an African game drive than a traditional zoo. The three-mile driving loop winds past herds of zebra grazing alongside American bison, giraffes stretching their improbable necks toward offered treats, and ostriches sprinting alongside vehicles with startling speed and comic determination. Feed buckets provided at the entrance transform every family car into a safari vehicle, and the animals " acclimated to visitors but never fully domesticated " approach with a curiosity that erases the barrier between observer and observed. Beyond the drive-through, a walk-through area houses a petting zoo where goats, lambs, and miniature donkeys compete for attention with the unrestrained enthusiasm that only baby animals can muster. Exotic bird aviaries, camel rides, and seasonal festivals round out an experience that manages to be simultaneously educational and pure, uncomplicated fun. For West Tennessee " a region better known for cotton fields and catfish ponds " the Safari Park is an unexpected treasure that draws families from across the Mid-South.",
     editorialSummary: "A 200-acre drive-through wildlife safari in West Tennessee where 700+ exotic and endangered animals from six continents roam freely across open pastures.",
     address: "1674 Hwy 412 W",
     city: "Alamo",
@@ -1178,7 +1178,7 @@ export const tennesseeLocations = [
     seasons: ["spring", "summer", "fall"],
     tags: ["safari", "exotic animals", "drive-through", "family friendly", "West Tennessee", "wildlife", "endangered species"],
     difficulty: "easy",
-    regulations: "Ticket required. Stay in vehicle during drive-through. Windows may be rolled down but do not exit vehicle. Feed only provided food. No pets allowed. Seasonal hours ” check website.",
+    regulations: "Ticket required. Stay in vehicle during drive-through. Windows may be rolled down but do not exit vehicle. Feed only provided food. No pets allowed. Seasonal hours " check website.",
     website: "https://www.tennesseesafaripark.com",
     phone: "(731) 696-4423",
     bookingUrl: "https://www.tennesseesafaripark.com",
@@ -1198,7 +1198,7 @@ export const tennesseeLocations = [
       acreage: 200,
       knownFor: "Drive-through safari with 700+ animals, giraffe feeding, camel rides, petting zoo, one of the largest drive-through safaris in the Southeast",
       foraging: {
-        permitted: "Not applicable ” wildlife park",
+        permitted: "Not applicable " wildlife park",
         nearbyForaging: "West Tennessee's bottomland hardwood forests are prime territory for persimmons, pawpaws, muscadine grapes, and pecans. Hatchie National Wildlife Refuge (30 minutes) offers wild plum, mulberry, and fall nut gathering."
       }
     },
@@ -1209,7 +1209,7 @@ export const tennesseeLocations = [
     name: "Cheekwood Estate & Gardens",
     slug: "cheekwood-estate-gardens",
     type: "botanical_garden",
-    description: "Crowning a limestone bluff eight miles southwest of downtown Nashville, Cheekwood Estate & Gardens is a 55-acre masterwork where American art, botanical splendor, and the rolling Tennessee landscape converge in a setting of uncommon elegance. Built in the 1930s for the Cheek family ” whose Maxwell House coffee fortune funded this Georgian mansion of Tennessee limestone ” the estate has evolved into one of the Southeast's most celebrated botanical gardens and art museums. Twelve distinct garden areas flow across the property's natural contours: the Bracken Foundation Children's Garden ignites young imaginations with interactive water features and plant tunnels, while the Japanese Garden offers contemplative stillness around a koi-filled stream that murmurs through mossy boulders beneath a canopy of Japanese maples ablaze in autumn scarlet. The Carell Woodland Sculpture Trail weaves contemporary art installations through a mature forest of tulip poplars, beeches, and oaks ” a gallery without walls where art and nature exist in continuous dialogue. Spring brings one of Nashville's most spectacular displays: over 150,000 tulips, daffodils, and hyacinths blooming in choreographed waves of color that transform the formal gardens into a living Impressionist canvas. The estate's seasons each carry their own signature ” summer's riot of daylilies and roses, fall's fiery foliage against the mansion's warm limestone, winter's ethereal Holiday LIGHTS celebration that draws hundreds of thousands through a mile of illuminated gardens. The museum collection ranges from American paintings and decorative arts to contemporary sculpture, while the property's working greenhouse and nursery supply rare and heirloom plants to visitors who wish to carry a piece of Cheekwood home.",
+    description: "Crowning a limestone bluff eight miles southwest of downtown Nashville, Cheekwood Estate & Gardens is a 55-acre masterwork where American art, botanical splendor, and the rolling Tennessee landscape converge in a setting of uncommon elegance. Built in the 1930s for the Cheek family " whose Maxwell House coffee fortune funded this Georgian mansion of Tennessee limestone " the estate has evolved into one of the Southeast's most celebrated botanical gardens and art museums. Twelve distinct garden areas flow across the property's natural contours: the Bracken Foundation Children's Garden ignites young imaginations with interactive water features and plant tunnels, while the Japanese Garden offers contemplative stillness around a koi-filled stream that murmurs through mossy boulders beneath a canopy of Japanese maples ablaze in autumn scarlet. The Carell Woodland Sculpture Trail weaves contemporary art installations through a mature forest of tulip poplars, beeches, and oaks " a gallery without walls where art and nature exist in continuous dialogue. Spring brings one of Nashville's most spectacular displays: over 150,000 tulips, daffodils, and hyacinths blooming in choreographed waves of color that transform the formal gardens into a living Impressionist canvas. The estate's seasons each carry their own signature " summer's riot of daylilies and roses, fall's fiery foliage against the mansion's warm limestone, winter's ethereal Holiday LIGHTS celebration that draws hundreds of thousands through a mile of illuminated gardens. The museum collection ranges from American paintings and decorative arts to contemporary sculpture, while the property's working greenhouse and nursery supply rare and heirloom plants to visitors who wish to carry a piece of Cheekwood home.",
     editorialSummary: "Nashville's premier 55-acre botanical garden and art museum, featuring 12 distinct gardens, 150,000 spring tulips, woodland sculpture trails, and a 1930s limestone mansion.",
     address: "1200 Forrest Park Dr",
     city: "Nashville",
@@ -1224,7 +1224,7 @@ export const tennesseeLocations = [
     seasons: ["spring", "summer", "fall", "winter"],
     tags: ["botanical garden", "Nashville", "art museum", "tulips", "sculpture trail", "mansion", "wedding venue", "holiday lights"],
     difficulty: "easy",
-    regulations: "Ticket required. Members free. No picnicking on lawns. Service animals only. Photography for personal use ” commercial shoots require permit. Seasonal hours.",
+    regulations: "Ticket required. Members free. No picnicking on lawns. Service animals only. Photography for personal use " commercial shoots require permit. Seasonal hours.",
     website: "https://www.cheekwood.org",
     phone: "(615) 356-8000",
     bookingUrl: "https://www.cheekwood.org/visit/buy-tickets",
@@ -1244,7 +1244,7 @@ export const tennesseeLocations = [
       acreage: 55,
       knownFor: "150,000 spring tulips, 12 distinct garden rooms, Carell Woodland Sculpture Trail, 1930s Maxwell House coffee mansion, Holiday LIGHTS winter festival",
       foraging: {
-        permitted: "Not permitted ” cultivated botanical garden",
+        permitted: "Not permitted " cultivated botanical garden",
         nearbyForaging: "Nashville's Percy Warner Park and Radnor Lake (both within 10 minutes) offer excellent urban foraging: pawpaws along creek bottoms, wild persimmons, black walnuts, and spring greens including chickweed and violet leaves."
       }
     },
@@ -1255,7 +1255,7 @@ export const tennesseeLocations = [
     name: "Ijams Nature Center",
     slug: "ijams-nature-center-knoxville",
     type: "recreation_area",
-    description: "Stretched along the southern bank of the Tennessee River just four miles from downtown Knoxville, Ijams Nature Center encompasses 315 acres of reclaimed quarry land, mature forest, and riverfront habitat that together form one of the finest urban nature preserves in the American South. What was once an industrial landscape of marble quarries and limestone extraction has been transformed ” through decades of patient ecological restoration ” into a wild corridor that would be remarkable anywhere, and is extraordinary within sight of a city skyline. The centerpiece is Mead's Quarry, a flooded former marble quarry whose emerald waters are now a beloved swimming and paddling destination, its sheer rock walls rising 40 feet from crystal-clear water that shifts from jade to sapphire depending on the season and angle of light. Over 12 miles of trails wind through river bluff forests thick with tulip poplar and sycamore, past natural springs and limestone outcrops adorned with walking fern and wild columbine, and along the Tennessee River's rocky shoreline where great blue herons fish in morning mist. The Will Skelton Greenway connects Ijams to Knoxville's broader urban trail network, making it possible to ride a bicycle from downtown to deep woods in twenty minutes. The Navul Trail ” constructed on the abandoned right-of-way of an old naval mine facility ” threads through a unique landscape where concrete bunkers are slowly being reclaimed by oak and hickory forest, a poignant meditation on nature's patient victory over industry. Ijams' environmental education programs, canoe and kayak rentals, rock climbing walls, and mountain bike trails make this the outdoor heartbeat of Knoxville ” a place where the city exhales into the wild and the wild breathes back.",
+    description: "Stretched along the southern bank of the Tennessee River just four miles from downtown Knoxville, Ijams Nature Center encompasses 315 acres of reclaimed quarry land, mature forest, and riverfront habitat that together form one of the finest urban nature preserves in the American South. What was once an industrial landscape of marble quarries and limestone extraction has been transformed " through decades of patient ecological restoration " into a wild corridor that would be remarkable anywhere, and is extraordinary within sight of a city skyline. The centerpiece is Mead's Quarry, a flooded former marble quarry whose emerald waters are now a beloved swimming and paddling destination, its sheer rock walls rising 40 feet from crystal-clear water that shifts from jade to sapphire depending on the season and angle of light. Over 12 miles of trails wind through river bluff forests thick with tulip poplar and sycamore, past natural springs and limestone outcrops adorned with walking fern and wild columbine, and along the Tennessee River's rocky shoreline where great blue herons fish in morning mist. The Will Skelton Greenway connects Ijams to Knoxville's broader urban trail network, making it possible to ride a bicycle from downtown to deep woods in twenty minutes. The Navul Trail " constructed on the abandoned right-of-way of an old naval mine facility " threads through a unique landscape where concrete bunkers are slowly being reclaimed by oak and hickory forest, a poignant meditation on nature's patient victory over industry. Ijams' environmental education programs, canoe and kayak rentals, rock climbing walls, and mountain bike trails make this the outdoor heartbeat of Knoxville " a place where the city exhales into the wild and the wild breathes back.",
     editorialSummary: "315 acres of urban wilderness in Knoxville featuring the stunning emerald Mead's Quarry, 12 miles of trails, river bluffs, and one of the South's finest nature education centers.",
     address: "2915 Island Home Ave",
     city: "Knoxville",
@@ -1270,7 +1270,7 @@ export const tennesseeLocations = [
     seasons: ["spring", "summer", "fall", "winter"],
     tags: ["urban wilderness", "Knoxville", "quarry swimming", "marble quarry", "nature center", "mountain biking", "river trails"],
     difficulty: "easy",
-    regulations: "Free trail access. Quarry swimming and boat rentals are fee-based. No glass containers. Dogs on leash. Mountain bike trails one-way. Quarry swimming seasonal ” no lifeguards.",
+    regulations: "Free trail access. Quarry swimming and boat rentals are fee-based. No glass containers. Dogs on leash. Mountain bike trails one-way. Quarry swimming seasonal " no lifeguards.",
     website: "https://www.ijams.org",
     phone: "(865) 577-4717",
     bookingUrl: "https://www.ijams.org/visit",
@@ -1290,7 +1290,7 @@ export const tennesseeLocations = [
       acreage: 315,
       knownFor: "Mead's Quarry emerald swimming hole, 12 miles of urban wilderness trails, kayaking on the Tennessee River, environmental education, Will Skelton Greenway connection",
       foraging: {
-        permitted: "Limited ” educational foraging walks offered through programming. No personal harvesting of plants on Ijams property.",
+        permitted: "Limited " educational foraging walks offered through programming. No personal harvesting of plants on Ijams property.",
         nearbyForaging: "The Tennessee River corridor and surrounding South Knoxville ridges offer excellent foraging: pawpaws along river bottoms, wild persimmons, autumn olives (invasive but abundant), and spring greens including sochan, creasy greens, and wild garlic."
       }
     },
@@ -1299,8 +1299,8 @@ export const tennesseeLocations = [
     name: "Shelby Farms Park",
     slug: "shelby-farms-park-memphis",
     type: "recreation_area",
-    description: "Encompassing 4,500 acres in the heart of the Memphis metropolitan area, Shelby Farms Park is one of the largest urban parks in the United States ” five times the size of New York's Central Park and a testament to Memphis's ambitious vision for urban green space. What began as a county penal farm has been transformed into a world-class recreational landscape that seamlessly blends natural habitat preservation with active outdoor recreation across a terrain of rolling meadows, mature hardwood forests, and the shimmering expanse of Hyde Lake. The Shelby Farms Greenline ” a paved multi-use trail stretching over 10 miles from midtown Memphis to the park's western boundary ” serves as the primary artery of Memphis's growing greenway network, drawing joggers, cyclists, and rollerbladers through a linear park that connects neighborhoods to nature. Within the park, 40 miles of trails accommodate every ambition: paved paths for families with strollers, singletrack for mountain bikers seeking technical challenge, and equestrian trails winding through bottomland hardwood forests where red-tailed hawks circle overhead and white-tailed deer browse at forest edges. The Go Ape aerial adventure course sends visitors swinging through the forest canopy on ziplines and Tarzan swings, while Hyde Lake offers paddleboarding, kayaking, and fishing for largemouth bass and catfish. Woodland Discovery Playground ” one of the most imaginative public playgrounds in the South ” features climbing structures, water play, and nature-inspired play elements designed to reconnect children with the outdoors. The park's buffalo herd ” a small group of American bison grazing in view of the Memphis skyline ” serves as a living reminder of the tallgrass prairie ecosystem that once covered this region, a landscape so thoroughly transformed by agriculture that its echoes are now curated curiosities.",
-    editorialSummary: "One of America's largest urban parks at 4,500 acres ” five times the size of Central Park ” featuring 40 miles of trails, a bison herd, Hyde Lake, and Memphis's greenway hub.",
+    description: "Encompassing 4,500 acres in the heart of the Memphis metropolitan area, Shelby Farms Park is one of the largest urban parks in the United States " five times the size of New York's Central Park and a testament to Memphis's ambitious vision for urban green space. What began as a county penal farm has been transformed into a world-class recreational landscape that seamlessly blends natural habitat preservation with active outdoor recreation across a terrain of rolling meadows, mature hardwood forests, and the shimmering expanse of Hyde Lake. The Shelby Farms Greenline " a paved multi-use trail stretching over 10 miles from midtown Memphis to the park's western boundary " serves as the primary artery of Memphis's growing greenway network, drawing joggers, cyclists, and rollerbladers through a linear park that connects neighborhoods to nature. Within the park, 40 miles of trails accommodate every ambition: paved paths for families with strollers, singletrack for mountain bikers seeking technical challenge, and equestrian trails winding through bottomland hardwood forests where red-tailed hawks circle overhead and white-tailed deer browse at forest edges. The Go Ape aerial adventure course sends visitors swinging through the forest canopy on ziplines and Tarzan swings, while Hyde Lake offers paddleboarding, kayaking, and fishing for largemouth bass and catfish. Woodland Discovery Playground " one of the most imaginative public playgrounds in the South " features climbing structures, water play, and nature-inspired play elements designed to reconnect children with the outdoors. The park's buffalo herd " a small group of American bison grazing in view of the Memphis skyline " serves as a living reminder of the tallgrass prairie ecosystem that once covered this region, a landscape so thoroughly transformed by agriculture that its echoes are now curated curiosities.",
+    editorialSummary: "One of America's largest urban parks at 4,500 acres " five times the size of Central Park " featuring 40 miles of trails, a bison herd, Hyde Lake, and Memphis's greenway hub.",
     address: "6903 Great View Dr N",
     city: "Memphis",
     state: "TN",
@@ -1334,7 +1334,7 @@ export const tennesseeLocations = [
       acreage: 4500,
       knownFor: "One of largest urban parks in the US (5x Central Park), Shelby Farms Greenline, American bison herd, Hyde Lake paddling, Woodland Discovery Playground, Go Ape adventure course",
       foraging: {
-        permitted: "Limited ” no harvesting of protected plants. Wild fruit and nut gathering tolerated for personal use.",
+        permitted: "Limited " no harvesting of protected plants. Wild fruit and nut gathering tolerated for personal use.",
         nearbyForaging: "Memphis-area bottomland hardwood forests offer excellent foraging: muscadine grapes, wild persimmons, pecans, pawpaws in river bottoms, and prolific blackberry patches along old field edges. Meeman-Shelby Forest State Park (20 minutes) provides superior mushroom and wild edible opportunities."
       }
     },
@@ -1343,7 +1343,7 @@ export const tennesseeLocations = [
     name: "Bays Mountain Park & Planetarium",
     slug: "bays-mountain-park-kingsport",
     type: "recreation_area",
-    description: "Nestled in a mountain basin surrounded by 3,550 acres of protected Appalachian forest in the Tri-Cities region, Bays Mountain Park stands as one of the largest city-owned nature preserves in the United States ” and quite possibly the most surprising. That a small city like Kingsport, Tennessee would possess a nature reserve of this scale and quality speaks to a deep regional reverence for the mountain landscapes that define upper East Tennessee. The park's centerpiece is a 44-acre lake encircled by old-growth forest where eastern hemlock, white pine, and tulip poplar tower above a lush understory of rhododendron and mountain laurel. Over 40 miles of trails traverse terrain ranging from lakeside boardwalks to rugged ridge-top paths with views that stretch across the Holston Valley to the distant Blue Ridge. The nature center houses a state-of-the-art planetarium ” the largest in the Tri-Cities region ” where laser shows and astronomical programs illuminate the same night skies that Appalachian settlers navigated by centuries ago. A raptor center shelters non-releasable birds of prey ” bald eagles, red-tailed hawks, great horned owls ” offering intimate encounters with raptors that would otherwise be glimpsed only as silhouettes against mountain horizons. The park's wolf enclosure, featuring a pack of gray wolves, provides one of the few opportunities in Tennessee to observe these apex predators in a naturalistic setting. A working farmstead demonstrates the agricultural heritage of the Appalachian highlands, while the barge ride across the lake offers the singular experience of floating through mountain forest in absolute silence, the only sound the drip of water from the paddle and the distant call of a wood thrush echoing through the hollow.",
+    description: "Nestled in a mountain basin surrounded by 3,550 acres of protected Appalachian forest in the Tri-Cities region, Bays Mountain Park stands as one of the largest city-owned nature preserves in the United States " and quite possibly the most surprising. That a small city like Kingsport, Tennessee would possess a nature reserve of this scale and quality speaks to a deep regional reverence for the mountain landscapes that define upper East Tennessee. The park's centerpiece is a 44-acre lake encircled by old-growth forest where eastern hemlock, white pine, and tulip poplar tower above a lush understory of rhododendron and mountain laurel. Over 40 miles of trails traverse terrain ranging from lakeside boardwalks to rugged ridge-top paths with views that stretch across the Holston Valley to the distant Blue Ridge. The nature center houses a state-of-the-art planetarium " the largest in the Tri-Cities region " where laser shows and astronomical programs illuminate the same night skies that Appalachian settlers navigated by centuries ago. A raptor center shelters non-releasable birds of prey " bald eagles, red-tailed hawks, great horned owls " offering intimate encounters with raptors that would otherwise be glimpsed only as silhouettes against mountain horizons. The park's wolf enclosure, featuring a pack of gray wolves, provides one of the few opportunities in Tennessee to observe these apex predators in a naturalistic setting. A working farmstead demonstrates the agricultural heritage of the Appalachian highlands, while the barge ride across the lake offers the singular experience of floating through mountain forest in absolute silence, the only sound the drip of water from the paddle and the distant call of a wood thrush echoing through the hollow.",
     editorialSummary: "3,550 acres of city-owned Appalachian wilderness featuring a mountain lake, 40 miles of trails, planetarium, wolf pack, raptor center, and barge rides through old-growth forest.",
     address: "853 Bays Mountain Park Rd",
     city: "Kingsport",
@@ -1358,7 +1358,7 @@ export const tennesseeLocations = [
     seasons: ["spring", "summer", "fall", "winter"],
     tags: ["city park", "Kingsport", "Appalachian", "wolves", "planetarium", "raptor center", "mountain lake", "old growth"],
     difficulty: "easy",
-    regulations: "Small vehicle entry fee. Trail use free for walkers ” mountain bikes on designated trails only. Fishing license required. Planetarium and barge rides ticketed separately. No swimming in lake.",
+    regulations: "Small vehicle entry fee. Trail use free for walkers " mountain bikes on designated trails only. Fishing license required. Planetarium and barge rides ticketed separately. No swimming in lake.",
     website: "https://www.baysmountain.com",
     phone: "(423) 229-9447",
     bookingUrl: null,
@@ -1378,7 +1378,7 @@ export const tennesseeLocations = [
       acreage: 3550,
       knownFor: "Largest city-owned park in Tennessee, gray wolf pack, raptor center, planetarium, 44-acre mountain lake, barge rides, 40+ miles of trails",
       foraging: {
-        permitted: "Not permitted ” city nature preserve. Educational foraging programs offered seasonally.",
+        permitted: "Not permitted " city nature preserve. Educational foraging programs offered seasonally.",
         nearbyForaging: "The surrounding Holston Mountain and Cherokee National Forest (20 minutes east) offer outstanding Appalachian foraging: ramps, morels, chanterelles, sochan, wild blueberries on balds, and prolific pawpaw groves in stream hollows."
       }
     },
@@ -1387,8 +1387,8 @@ export const tennesseeLocations = [
     name: "Ocoee Whitewater Center",
     slug: "ocoee-whitewater-center",
     type: "recreation_area",
-    description: "Built for the 1996 Atlanta Olympic Games as the venue for canoe and kayak slalom events, the Ocoee Whitewater Center occupies a spectacular stretch of the Ocoee River gorge in the Cherokee National Forest of southeast Tennessee ” where the river carves through Precambrian metamorphic rock in a continuous series of Class III-IV rapids that rank among the most exhilarating commercially rafted whitewater in the eastern United States. The Olympic legacy course ” a man-made channel carved alongside the natural river ” remains in use as a training venue for competitive paddlers, its gates still hanging above technical drops that challenged the world's finest athletes. But the true glory of the Ocoee lies in the natural river itself: five miles of continuous whitewater through a forested gorge where rhodendron-draped boulders the size of houses create hydraulics, pour-overs, and standing waves that have earned rapid names like 'Broken Nose,' 'Double Trouble,' and 'Hell Hole.' Multiple licensed outfitters launch guided raft trips daily during release season, making the Ocoee accessible to first-time rafters and seasoned paddlers alike. When the river isn't running, the gorge transforms into a hiking and mountain biking destination of considerable beauty, with the Thunder Rock Trail climbing through oak-hickory forest to overlooks where the river appears as a silver ribbon threading through an impossibly green gorge. The Forest Service visitor center interprets both the Olympic history and the gorge's geological story ” a tale of continental collision, mountain building, and the patient work of water that spans a billion years.",
-    editorialSummary: "Site of the 1996 Olympic whitewater events, offering Class III-IV rapids through a stunning Cherokee National Forest gorge ” the Southeast's premier rafting destination.",
+    description: "Built for the 1996 Atlanta Olympic Games as the venue for canoe and kayak slalom events, the Ocoee Whitewater Center occupies a spectacular stretch of the Ocoee River gorge in the Cherokee National Forest of southeast Tennessee " where the river carves through Precambrian metamorphic rock in a continuous series of Class III-IV rapids that rank among the most exhilarating commercially rafted whitewater in the eastern United States. The Olympic legacy course " a man-made channel carved alongside the natural river " remains in use as a training venue for competitive paddlers, its gates still hanging above technical drops that challenged the world's finest athletes. But the true glory of the Ocoee lies in the natural river itself: five miles of continuous whitewater through a forested gorge where rhodendron-draped boulders the size of houses create hydraulics, pour-overs, and standing waves that have earned rapid names like 'Broken Nose,' 'Double Trouble,' and 'Hell Hole.' Multiple licensed outfitters launch guided raft trips daily during release season, making the Ocoee accessible to first-time rafters and seasoned paddlers alike. When the river isn't running, the gorge transforms into a hiking and mountain biking destination of considerable beauty, with the Thunder Rock Trail climbing through oak-hickory forest to overlooks where the river appears as a silver ribbon threading through an impossibly green gorge. The Forest Service visitor center interprets both the Olympic history and the gorge's geological story " a tale of continental collision, mountain building, and the patient work of water that spans a billion years.",
+    editorialSummary: "Site of the 1996 Olympic whitewater events, offering Class III-IV rapids through a stunning Cherokee National Forest gorge " the Southeast's premier rafting destination.",
     address: "3550 US-64",
     city: "Copperhill",
     state: "TN",
@@ -1402,7 +1402,7 @@ export const tennesseeLocations = [
     seasons: ["spring", "summer", "fall"],
     tags: ["Olympic venue", "whitewater", "rafting", "Cherokee National Forest", "Ocoee River", "kayaking", "adventure"],
     difficulty: "moderate",
-    regulations: "Rafting with licensed outfitters recommended for general public. Private boaters must register. Water release schedule determines river runability ” check TVA schedule. Fishing license required. Some trails seasonal.",
+    regulations: "Rafting with licensed outfitters recommended for general public. Private boaters must register. Water release schedule determines river runability " check TVA schedule. Fishing license required. Some trails seasonal.",
     website: "https://www.fs.usda.gov/recarea/cherokee/recarea/?recid=35289",
     phone: "(423) 338-3300",
     bookingUrl: null,
@@ -1427,7 +1427,7 @@ export const tennesseeLocations = [
         summerEdibles: ["blackberries (prolific on old logging roads)", "wild blueberries on higher ridges", "elderberries along river margins"],
         fallEdibles: ["pawpaws in river bottoms", "persimmons", "hickory nuts", "black walnuts", "chinquapins"],
         mushrooms: ["morels near tulip poplar and dead ash (spring)", "chanterelles in oak forests (summer)", "chicken of the woods", "hen of the woods (fall)", "oyster mushrooms on dead hardwoods"],
-        caution: "Cherokee National Forest rules apply: personal use only, no commercial harvest, no ginseng without permit. River gorge terrain is steep ” forage cautiously."
+        caution: "Cherokee National Forest rules apply: personal use only, no commercial harvest, no ginseng without permit. River gorge terrain is steep " forage cautiously."
       }
     },
   },
@@ -1435,8 +1435,8 @@ export const tennesseeLocations = [
     name: "Dollywood",
     slug: "dollywood-pigeon-forge",
     type: "private_park",
-    description: "Rising from the foothills of the Great Smoky Mountains in Pigeon Forge, Dollywood is far more than Tennessee's most-visited ticketed attraction ” it is a cultural institution that preserves and celebrates the Appalachian mountain heritage of its namesake, Dolly Parton, while delivering world-class thrill rides, live entertainment, and festival programming that consistently earns it recognition among the top theme parks in America. Spread across 160 acres of forested hillside, the park's architecture reflects the rustic beauty of an Appalachian mountain village, with log structures, working blacksmith shops, glass-blowing studios, and craftspeople demonstrating traditions that stretch back to the earliest settlers of these mountains. The Craftsman's Valley area alone features over a dozen master artisans practicing skills ” candle dipping, leather working, wagon making ” that would otherwise exist only in museum exhibits. But Dollywood's heart beats loudest in its music: the park's stages host over 40 live shows daily during peak season, from bluegrass and gospel to country and rock, in venues ranging from intimate chapel settings to the 4,000-seat Celebrity Theater. The ride collection balances family-friendly attractions with genuine adrenaline machines ” Wild Eagle, the nation's first wing coaster, sends riders soaring above the treetops with an unobstructed view of the Smoky Mountain foothills, while Lightning Rod, the world's first launched wooden roller coaster, rockets from zero to 73 mph in the time it takes to draw a breath. The adjacent Dollywood's Splash Country water park and the DreamMore Resort extend the experience beyond the gates. Seasonal festivals ” Festival of Nations in spring, Smoky Mountain Summer Celebration, Harvest Festival with its spectacular Great Pumpkin LumiNights, and Smoky Mountain Christmas with five million holiday lights ” transform the park into a year-round cultural destination.",
-    editorialSummary: "Dolly Parton's 160-acre Smoky Mountain theme park ” a world-class fusion of Appalachian heritage, master craftsmanship, thrilling rides, and live music in the foothills of the Great Smokies.",
+    description: "Rising from the foothills of the Great Smoky Mountains in Pigeon Forge, Dollywood is far more than Tennessee's most-visited ticketed attraction " it is a cultural institution that preserves and celebrates the Appalachian mountain heritage of its namesake, Dolly Parton, while delivering world-class thrill rides, live entertainment, and festival programming that consistently earns it recognition among the top theme parks in America. Spread across 160 acres of forested hillside, the park's architecture reflects the rustic beauty of an Appalachian mountain village, with log structures, working blacksmith shops, glass-blowing studios, and craftspeople demonstrating traditions that stretch back to the earliest settlers of these mountains. The Craftsman's Valley area alone features over a dozen master artisans practicing skills " candle dipping, leather working, wagon making " that would otherwise exist only in museum exhibits. But Dollywood's heart beats loudest in its music: the park's stages host over 40 live shows daily during peak season, from bluegrass and gospel to country and rock, in venues ranging from intimate chapel settings to the 4,000-seat Celebrity Theater. The ride collection balances family-friendly attractions with genuine adrenaline machines " Wild Eagle, the nation's first wing coaster, sends riders soaring above the treetops with an unobstructed view of the Smoky Mountain foothills, while Lightning Rod, the world's first launched wooden roller coaster, rockets from zero to 73 mph in the time it takes to draw a breath. The adjacent Dollywood's Splash Country water park and the DreamMore Resort extend the experience beyond the gates. Seasonal festivals " Festival of Nations in spring, Smoky Mountain Summer Celebration, Harvest Festival with its spectacular Great Pumpkin LumiNights, and Smoky Mountain Christmas with five million holiday lights " transform the park into a year-round cultural destination.",
+    editorialSummary: "Dolly Parton's 160-acre Smoky Mountain theme park " a world-class fusion of Appalachian heritage, master craftsmanship, thrilling rides, and live music in the foothills of the Great Smokies.",
     address: "2700 Dollywood Parks Blvd",
     city: "Pigeon Forge",
     state: "TN",
@@ -1450,7 +1450,7 @@ export const tennesseeLocations = [
     seasons: ["spring", "summer", "fall", "winter"],
     tags: ["Dolly Parton", "theme park", "Smoky Mountains", "Appalachian heritage", "roller coasters", "live music", "festivals", "Pigeon Forge"],
     difficulty: "easy",
-    regulations: "Ticket required. Season passes available. No outside food. Ride height requirements apply. Water park separate admission. Seasonal operating schedule ” check calendar.",
+    regulations: "Ticket required. Season passes available. No outside food. Ride height requirements apply. Water park separate admission. Seasonal operating schedule " check calendar.",
     website: "https://www.dollywood.com",
     phone: "(800) 365-5996",
     bookingUrl: "https://www.dollywood.com/tickets",
@@ -1470,7 +1470,7 @@ export const tennesseeLocations = [
       acreage: 160,
       knownFor: "Wild Eagle wing coaster, Lightning Rod launched wooden coaster, Appalachian master craftsmen, 40+ daily live shows, Smoky Mountain Christmas (5 million lights), Dolly Parton's cultural legacy",
       foraging: {
-        permitted: "Not permitted ” private theme park",
+        permitted: "Not permitted " private theme park",
         nearbyForaging: "The Great Smoky Mountains National Park (10 minutes) is one of the premier foraging regions in the eastern US: ramps, sochan, blackberries, fall nuts, and exceptional mushroom hunting in old-growth forests."
       }
     },
@@ -1479,7 +1479,7 @@ export const tennesseeLocations = [
     name: "Lookout Mountain",
     slug: "lookout-mountain-attractions",
     type: "scenic_attraction",
-    description: "Standing sentinel where Tennessee, Georgia, and Alabama converge, Lookout Mountain has shaped the imagination of the American South for centuries ” from the Cherokee who named it 'Chatanugi' (rock coming to a point) to the Civil War soldiers who fought the legendary 'Battle Above the Clouds' on its fog-shrouded slopes. Today, the mountain's Tennessee face is home to a constellation of natural attractions that collectively rank among the most visited in the Southeast. Rock City Gardens, perched atop the mountain's dramatic bluff line, threads visitors through a natural garden of massive sandstone formations, including the legendary Lover's Leap overlook where ” on a clear day ” seven states are visible in a single panoramic sweep that stretches from the Blue Ridge to the Cumberland Plateau. The Enchanted Trail winds through a fantasy landscape of gnome grottos and fairy tale displays nested among ancient rock formations draped in native plants, culminating at the 100-foot Lover's Leap waterfall. Rock City's garden collection includes over 400 species of native plants, many of them rare Appalachian endemics that thrive in the mountain's unique microclimate of sandstone crevices, dripping springs, and dappled shade. The Incline Railway ” billed as 'America's Most Amazing Mile' ” climbs a 72.7% grade up the mountain's face, making it one of the steepest passenger railways in the world. At the summit, Point Park (a unit of the Chickamauga and Chattanooga National Military Park) preserves the Civil War battlefield with monuments, cannons, and interpretive displays that bring the November 1863 engagement to vivid life against the backdrop of the same breathtaking valley views that soldiers from both armies gazed upon in wonder between the volleys.",
+    description: "Standing sentinel where Tennessee, Georgia, and Alabama converge, Lookout Mountain has shaped the imagination of the American South for centuries " from the Cherokee who named it 'Chatanugi' (rock coming to a point) to the Civil War soldiers who fought the legendary 'Battle Above the Clouds' on its fog-shrouded slopes. Today, the mountain's Tennessee face is home to a constellation of natural attractions that collectively rank among the most visited in the Southeast. Rock City Gardens, perched atop the mountain's dramatic bluff line, threads visitors through a natural garden of massive sandstone formations, including the legendary Lover's Leap overlook where " on a clear day " seven states are visible in a single panoramic sweep that stretches from the Blue Ridge to the Cumberland Plateau. The Enchanted Trail winds through a fantasy landscape of gnome grottos and fairy tale displays nested among ancient rock formations draped in native plants, culminating at the 100-foot Lover's Leap waterfall. Rock City's garden collection includes over 400 species of native plants, many of them rare Appalachian endemics that thrive in the mountain's unique microclimate of sandstone crevices, dripping springs, and dappled shade. The Incline Railway " billed as 'America's Most Amazing Mile' " climbs a 72.7% grade up the mountain's face, making it one of the steepest passenger railways in the world. At the summit, Point Park (a unit of the Chickamauga and Chattanooga National Military Park) preserves the Civil War battlefield with monuments, cannons, and interpretive displays that bring the November 1863 engagement to vivid life against the backdrop of the same breathtaking valley views that soldiers from both armies gazed upon in wonder between the volleys.",
     editorialSummary: "A tri-state mountain landmark featuring Rock City's seven-state views, the steepest passenger railway in America, Civil War battlefield, and over 400 native plant species.",
     address: "1400 Patten Rd",
     city: "Lookout Mountain",

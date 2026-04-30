@@ -28,7 +28,7 @@ export function SubscriptionBanner({ tier, price, features, className, compact }
         </div>
         <div className="flex-1 min-w-0">
           <p className="text-xs font-medium text-foreground" data-testid="text-tier-compact">
-            {tier} ” {price}
+            {tier} " {price}
           </p>
           <p className="text-[10px] text-muted-foreground">
             {user ? "Upgrade your plan to unlock this feature" : "Subscribe to unlock this feature"}

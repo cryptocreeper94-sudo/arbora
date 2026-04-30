@@ -46,12 +46,12 @@ export default function ArboraCrew() {
   const jobsList = jobs || [];
 
   const getCrewName = (id: number | null) => {
-    if (!id) return "”";
+    if (!id) return """;
     const m = crewList.find((c) => c.id === id);
     return m ? `${m.firstName} ${m.lastName}` : "Unknown";
   };
   const getJobTitle = (id: number | null) => {
-    if (!id) return "”";
+    if (!id) return """;
     return jobsList.find((j) => j.id === id)?.title || "Unknown";
   };
 
@@ -218,7 +218,7 @@ export default function ArboraCrew() {
                     <h3 className="text-sm font-semibold" style={{ color: "#f1f5f9" }} data-testid={`text-crew-name-${member.id}`}>
                       {member.firstName} {member.lastName}
                     </h3>
-                    <p className="text-xs mt-0.5" style={{ color: "#94a3b8" }}>{member.role ? member.role.charAt(0).toUpperCase() + member.role.slice(1).replace("-", " ") : "”"}</p>
+                    <p className="text-xs mt-0.5" style={{ color: "#94a3b8" }}>{member.role ? member.role.charAt(0).toUpperCase() + member.role.slice(1).replace("-", " ") : """}</p>
                   </div>
                   <div className="flex items-center gap-1">
                     <Badge

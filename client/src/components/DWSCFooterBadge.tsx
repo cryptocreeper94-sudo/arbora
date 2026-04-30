@@ -22,7 +22,7 @@ export function DWSCFooterBadge() {
       <span className="text-white/15">Â·</span>
       <a href="https://trustshield.tech" target="_blank" rel="noopener noreferrer" className="text-white/30 hover:text-white/50 transition-colors no-underline">TrustShield</a>
       <span className="text-white/15">Â·</span>
-      <span onClick={handleClick} className="text-white/20 cursor-default select-none hover:text-white/40 transition-colors" title="ââ€”ˆ DWSC">ââ€”ˆ</span>
+      <span onClick={handleClick} className="text-white/20 cursor-default select-none hover:text-white/40 transition-colors" title="?--? DWSC">?--?</span>
     </footer>
   );
 }

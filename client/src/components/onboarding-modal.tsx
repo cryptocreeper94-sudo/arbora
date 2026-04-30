@@ -106,7 +106,7 @@ const slides: OnboardingSlide[] = [
     title: "Price Compare",
     subtitle: "Search 90+ outdoor retailers in plain language",
     bullets: [
-      "Type what you need in everyday words ” AI figures out the rest",
+      "Type what you need in everyday words " AI figures out the rest",
       "Compare across REI, Bass Pro, Backcountry, BladeHQ, and more",
       "Tap any store to jump straight to that product on their site",
     ],
