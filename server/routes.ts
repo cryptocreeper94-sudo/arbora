@@ -588,7 +588,7 @@ export async function registerRoutes(
       if (!parsed.success) return res.status(400).json({ message: "Invalid invoice data", errors: parsed.error.flatten().fieldErrors });
       const invoice = await storage.createArboristInvoice(parsed.data);
 
-      stampToChain(req.userId!, "arborist_invoice_created", `Invoice ${invoiceNumber} — $${total.toFixed(2)}`, {
+      stampToChain(req.userId!, "arborist_invoice_created", `Invoice ${invoiceNumber} �” $${total.toFixed(2)}`, {
         invoiceId: invoice.id, invoiceNumber, total, itemCount: items.length,
       });
 
@@ -1343,7 +1343,7 @@ export async function registerRoutes(
       });
       const review = await storage.createReview(data);
 
-      stampToChain(req.userId!, "review_submitted", `Review for ${data.targetType} #${data.targetId} — ${data.rating}/5`, {
+      stampToChain(req.userId!, "review_submitted", `Review for ${data.targetType} #${data.targetId} �” ${data.rating}/5`, {
         reviewId: review.id, targetType: data.targetType, targetId: data.targetId, rating: data.rating,
       });
 
@@ -1366,12 +1366,12 @@ export async function registerRoutes(
           {
             role: "system",
             content: `You convert natural language shopping queries into concise product search terms that work well on retail websites. Return ONLY the search terms, nothing else. Keep it short (1-5 words). Examples:
-- "something to keep my coffee hot on the trail" → "insulated travel mug"
-- "best knife for cleaning fish" → "fillet knife"
-- "warm jacket for winter camping" → "insulated camping jacket"
-- "I need new boots for hiking in the rain" → "waterproof hiking boots"
-- "ammo for my AR-15" → "5.56 NATO ammo"
-- "a good tent for 4 people" → "4 person tent"
+- "something to keep my coffee hot on the trail" �’ "insulated travel mug"
+- "best knife for cleaning fish" �’ "fillet knife"
+- "warm jacket for winter camping" �’ "insulated camping jacket"
+- "I need new boots for hiking in the rain" �’ "waterproof hiking boots"
+- "ammo for my AR-15" �’ "5.56 NATO ammo"
+- "a good tent for 4 people" �’ "4 person tent"
 If the input is already a product name or clear search term, return it as-is.`
           },
           { role: "user", content: query.trim() }
@@ -1416,7 +1416,7 @@ If the input is already a product name or clear search term, return it as-is.`
       const result = JSON.parse(response.choices[0]?.message?.content || "{}");
 
       if (result.commonName && result.commonName !== "Unknown") {
-        stampToChain(req.userId!, "species_identification", `Identified: ${result.commonName} (${result.scientificName}) — ${result.confidence}% confidence`, {
+        stampToChain(req.userId!, "species_identification", `Identified: ${result.commonName} (${result.scientificName}) �” ${result.confidence}% confidence`, {
           commonName: result.commonName, scientificName: result.scientificName,
           confidence: result.confidence, category: result.category,
           conservationStatus: result.conservationStatus,
@@ -1464,7 +1464,7 @@ If the input is already a product name or clear search term, return it as-is.`
         messages: [
           {
             role: "system",
-            content: `You are an expert wildlife bioacoustics specialist who identifies animals by their sounds. A user has recorded an audio clip outdoors. The audio transcription (if available) may contain onomatopoeia, background noise descriptions, or garbled text from animal vocalizations — use it as clues.
+            content: `You are an expert wildlife bioacoustics specialist who identifies animals by their sounds. A user has recorded an audio clip outdoors. The audio transcription (if available) may contain onomatopoeia, background noise descriptions, or garbled text from animal vocalizations �” use it as clues.
 
 Analyze the transcription and recording context to determine what animal, bird, insect, frog, or other creature is most likely making the sound.
 
@@ -1483,7 +1483,7 @@ If the audio doesn't appear to contain identifiable animal sounds, set commonNam
           },
           {
             role: "user",
-            content: `I recorded this sound outdoors and want to identify the animal making it.${transcription ? `\n\nAudio transcription: "${transcription}"` : "\n\nThe audio transcription was empty or unclear — the sound may be non-vocal (e.g., insect buzzing, rustling, drumming)."}\n\nPlease identify the species based on this sound recording.`,
+            content: `I recorded this sound outdoors and want to identify the animal making it.${transcription ? `\n\nAudio transcription: "${transcription}"` : "\n\nThe audio transcription was empty or unclear �” the sound may be non-vocal (e.g., insect buzzing, rustling, drumming)."}\n\nPlease identify the species based on this sound recording.`,
           },
         ],
         response_format: { type: "json_object" },
@@ -1493,7 +1493,7 @@ If the audio doesn't appear to contain identifiable animal sounds, set commonNam
       const result = JSON.parse(analysisResponse.choices[0]?.message?.content || "{}");
 
       if (result.commonName && result.commonName !== "Unknown") {
-        stampToChain(req.userId!, "audio_species_identification", `Audio ID: ${result.commonName} (${result.scientificName}) — ${result.confidence}% confidence`, {
+        stampToChain(req.userId!, "audio_species_identification", `Audio ID: ${result.commonName} (${result.scientificName}) �” ${result.confidence}% confidence`, {
           commonName: result.commonName,
           scientificName: result.scientificName,
           confidence: result.confidence,
@@ -1616,7 +1616,7 @@ If the audio doesn't appear to contain identifiable animal sounds, set commonNam
         messages: [
           {
             role: "system",
-            content: `You are an expert outdoor recreation, forestry, and nature content writer for Verdara — a premium outdoor recreation super-app. Write SEO-optimized, educational, engaging blog content. Use a ${tone || "informative and enthusiastic"} tone. Return a JSON object with these fields: title, slug (url-friendly), excerpt (150 chars max), content (full article in markdown, 800-1500 words, with H2/H3 headings, bullet points, practical tips), category (one of: Lumberjack Sports, Wilderness Skills, Trail Guides, Gear Reviews, Conservation, Wild Edibles, Forestry, Outdoor Education, Safety, Wildlife, Fishing, Camping, Climbing, Water Sports, Winter Sports), tags (array of 5-8 relevant tags), seoTitle (60 chars max), seoDescription (155 chars max), seoKeywords (array of 8-12 SEO keywords).`,
+            content: `You are an expert outdoor recreation, forestry, and nature content writer for Verdara �” a premium outdoor recreation super-app. Write SEO-optimized, educational, engaging blog content. Use a ${tone || "informative and enthusiastic"} tone. Return a JSON object with these fields: title, slug (url-friendly), excerpt (150 chars max), content (full article in markdown, 800-1500 words, with H2/H3 headings, bullet points, practical tips), category (one of: Lumberjack Sports, Wilderness Skills, Trail Guides, Gear Reviews, Conservation, Wild Edibles, Forestry, Outdoor Education, Safety, Wildlife, Fishing, Camping, Climbing, Water Sports, Winter Sports), tags (array of 5-8 relevant tags), seoTitle (60 chars max), seoDescription (155 chars max), seoKeywords (array of 8-12 SEO keywords).`,
           },
           {
             role: "user",

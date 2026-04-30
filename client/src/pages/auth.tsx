@@ -275,7 +275,7 @@ export default function AuthPage({ onBack }: { onBack?: () => void }) {
             </h1>
             <p className="text-lg text-white/70 max-w-md leading-relaxed">
               Discover trails, identify species, plan trips,
-              and explore a trusted marketplace — all in one place.
+              and explore a trusted marketplace �” all in one place.
             </p>
           </div>
 
