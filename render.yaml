@@ -1,0 +1,41 @@
+services:
+  - type: web
+    name: verdara
+    runtime: node
+    region: ohio
+    plan: free
+    buildCommand: npm install --include=dev && npm run build
+    startCommand: npm run start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: "5000"
+      - key: APP_DOMAIN
+        value: verdara.tlid.io
+      - key: DATABASE_URL
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: STRIPE_PUBLISHABLE_KEY
+        sync: false
+      - key: STRIPE_SECRET_KEY
+        sync: false
+      - key: TRUSTHOME_API_KEY
+        sync: false
+      - key: TRUSTHOME_API_SECRET
+        sync: false
+      - key: TRUSTHOME_BASE_URL
+        value: https://trusthome.tlid.io
+      - key: TRUST_LAYER_HUB_API_KEY
+        sync: false
+      - key: TRUST_LAYER_HUB_API_SECRET
+        sync: false
+      - key: TRUST_LAYER_HUB_APP_ID
+        value: ac4f66a4-8f1d-4ff9-9019-45316afc53fc
+      - key: VERDARA_API_KEY
+        sync: false
+      - key: VERDARA_API_SECRET
+        sync: false

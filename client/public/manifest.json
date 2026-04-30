@@ -1,0 +1,46 @@
+{
+  "name": "Verdara - Outdoor Recreation",
+  "short_name": "Verdara",
+  "description": "AI-powered outdoor recreation super-app. Identify species, discover trails, plan trips, and shop a blockchain-verified marketplace.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0f1a",
+  "theme_color": "#10b981",
+  "orientation": "any",
+  "categories": ["sports", "lifestyle", "navigation"],
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Identify Species",
+      "short_name": "Identify",
+      "url": "/identify",
+      "icons": []
+    },
+    {
+      "name": "Discover Trails",
+      "short_name": "Trails",
+      "url": "/trails",
+      "icons": []
+    },
+    {
+      "name": "Marketplace",
+      "short_name": "Market",
+      "url": "/marketplace",
+      "icons": []
+    }
+  ]
+}
