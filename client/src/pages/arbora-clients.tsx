@@ -113,7 +113,8 @@ export default function ArboraClients() {
         <div className="flex-1 min-w-0 relative">
           <Search className="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2" style={{ color: "#64748b" }} />
           <Input
-            placeholder="Search clients..." value={search}
+            placeholder="Search clients..."
+            value={search}
             onChange={(e) => setSearch(e.target.value)}
             className="pl-9 border-0"
             style={{ background: "rgba(255,255,255,0.06)", color: "#e2e8f0" }}
@@ -133,11 +134,11 @@ export default function ArboraClients() {
             <div className="space-y-4 mt-2">
               <div>
                 <Label>Name *</Label>
-                <Input value={name} onChange={(e) => setName(e.target.value)} placeholder="Client name - data-testid="input-client-name" />
+                <Input value={name} onChange={(e) => setName(e.target.value)} placeholder="Client name" data-testid="input-client-name" />
               </div>
               <div>
                 <Label>Email</Label>
-                <Input value={email} onChange={(e) => setEmail(e.target.value)} placeholder="email@example.com" type="email - data-testid="input-client-email" />
+                <Input value={email} onChange={(e) => setEmail(e.target.value)} placeholder="email@example.com" type="email" data-testid="input-client-email" />
               </div>
               <div>
                 <Label>Phone</Label>
@@ -145,11 +146,11 @@ export default function ArboraClients() {
               </div>
               <div>
                 <Label>Address</Label>
-                <Input value={address} onChange={(e) => setAddress(e.target.value)} placeholder="123 Main St, City, ST - data-testid="input-client-address" />
+                <Input value={address} onChange={(e) => setAddress(e.target.value)} placeholder="123 Main St, City, ST" data-testid="input-client-address" />
               </div>
               <div>
                 <Label>Notes</Label>
-                <Textarea value={notes} onChange={(e) => setNotes(e.target.value)} placeholder="Additional notes... - data-testid="input-client-notes" />
+                <Textarea value={notes} onChange={(e) => setNotes(e.target.value)} placeholder="Additional notes..." data-testid="input-client-notes" />
               </div>
               <div className="flex items-center gap-3 pt-2">
                 <Button
@@ -163,7 +164,7 @@ export default function ArboraClients() {
                   Add Client
                 </Button>
                 <DialogClose asChild>
-                  <Button variant="outline - data-testid="button-cancel-client">Cancel</Button>
+                  <Button variant="outline" data-testid="button-cancel-client">Cancel</Button>
                 </DialogClose>
               </div>
             </div>
@@ -192,7 +193,9 @@ export default function ArboraClients() {
                     {client.name}
                   </h3>
                   <Button
-                    size="icon" variant="ghost" onClick={() => deleteClient.mutate(client.id)}
+                    size="icon"
+                    variant="ghost"
+                    onClick={() => deleteClient.mutate(client.id)}
                     disabled={deleteClient.isPending}
                     data-testid={`button-delete-client-${client.id}`}
                   >
@@ -221,7 +224,7 @@ export default function ArboraClients() {
                   {client.notes && (
                     <div className="flex items-center gap-2">
                       <StickyNote className="w-3.5 h-3.5 flex-shrink-0" />
-                      <span className="truncate - data-testid={`text-client-notes-${client.id}`}>{client.notes}</span>
+                      <span className="truncate" data-testid={`text-client-notes-${client.id}`}>{client.notes}</span>
                     </div>
                   )}
                 </div>

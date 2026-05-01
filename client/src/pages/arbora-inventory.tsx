@@ -136,10 +136,10 @@ export default function ArboraInventory() {
                 <Plus className="w-4 h-4" /> Add Item
               </Button>
             </DialogTrigger>
-            <DialogContent className="max-h-[85vh] overflow-y-auto - data-testid="dialog-add-inventory">
+            <DialogContent className="max-h-[85vh] overflow-y-auto" data-testid="dialog-add-inventory">
               <DialogHeader><DialogTitle>Add Inventory Item</DialogTitle></DialogHeader>
               <div className="space-y-4 mt-2">
-                <div><Label>Name *</Label><Input value={name} onChange={(e) => setName(e.target.value)} placeholder="Item name - data-testid="input-inv-name" /></div>
+                <div><Label>Name *</Label><Input value={name} onChange={(e) => setName(e.target.value)} placeholder="Item name" data-testid="input-inv-name" /></div>
                 <div>
                   <Label>Category</Label>
                   <Select value={category} onValueChange={setCategory}>
@@ -151,17 +151,17 @@ export default function ArboraInventory() {
                 </div>
                 <div><Label>SKU</Label><Input value={sku} onChange={(e) => setSku(e.target.value)} placeholder="SKU-001" data-testid="input-inv-sku" /></div>
                 <div><Label>Current Quantity</Label><Input type="number" value={currentQuantity} onChange={(e) => setCurrentQuantity(e.target.value)} placeholder="0" data-testid="input-inv-quantity" /></div>
-                <div><Label>Unit</Label><Input value={unit} onChange={(e) => setUnit(e.target.value)} placeholder="each - data-testid="input-inv-unit" /></div>
+                <div><Label>Unit</Label><Input value={unit} onChange={(e) => setUnit(e.target.value)} placeholder="each" data-testid="input-inv-unit" /></div>
                 <div><Label>Reorder Point</Label><Input type="number" value={reorderPoint} onChange={(e) => setReorderPoint(e.target.value)} placeholder="5" data-testid="input-inv-reorder" /></div>
                 <div><Label>Cost Per Unit ($)</Label><Input type="number" step="0.01" value={costPerUnit} onChange={(e) => setCostPerUnit(e.target.value)} placeholder="0.00" data-testid="input-inv-cost" /></div>
-                <div><Label>Supplier</Label><Input value={supplier} onChange={(e) => setSupplier(e.target.value)} placeholder="Supplier name - data-testid="input-inv-supplier" /></div>
-                <div><Label>Notes</Label><Textarea value={notes} onChange={(e) => setNotes(e.target.value)} placeholder="Notes... - data-testid="input-inv-notes" /></div>
+                <div><Label>Supplier</Label><Input value={supplier} onChange={(e) => setSupplier(e.target.value)} placeholder="Supplier name" data-testid="input-inv-supplier" /></div>
+                <div><Label>Notes</Label><Textarea value={notes} onChange={(e) => setNotes(e.target.value)} placeholder="Notes..." data-testid="input-inv-notes" /></div>
                 <div className="flex items-center gap-3 pt-2">
                   <Button style={{ background: "#c2703e", color: "#fff" }} className="gap-1.5" onClick={handleSubmit} disabled={createItem.isPending || !name.trim()} data-testid="button-submit-inventory">
                     {createItem.isPending ? <Loader2 className="w-4 h-4 animate-spin" /> : <Plus className="w-4 h-4" />}
                     Add Item
                   </Button>
-                  <DialogClose asChild><Button variant="outline - data-testid="button-cancel-inventory">Cancel</Button></DialogClose>
+                  <DialogClose asChild><Button variant="outline" data-testid="button-cancel-inventory">Cancel</Button></DialogClose>
                 </div>
               </div>
             </DialogContent>
@@ -185,7 +185,7 @@ export default function ArboraInventory() {
 
       <Tabs value={filter} onValueChange={setFilter} className="mb-6">
         <TabsList style={{ background: "rgba(255,255,255,0.06)" }} className="flex-wrap">
-          <TabsTrigger value="all - data-testid="filter-all">All ({list.length})</TabsTrigger>
+          <TabsTrigger value="all" data-testid="filter-all">All ({list.length})</TabsTrigger>
           {categories.map((cat) => (
             <TabsTrigger key={cat} value={cat} data-testid={`filter-${cat}`}>
               {cat.charAt(0).toUpperCase() + cat.slice(1).replace("-", " ")}

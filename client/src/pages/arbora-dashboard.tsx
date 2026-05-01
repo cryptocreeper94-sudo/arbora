@@ -63,7 +63,9 @@ export default function ArboraDashboard() {
 
       {!user && (
         <SubscriptionBanner
-          tier="Arborist Starter - price="$49/mo - features={[
+          tier="Arborist Starter"
+          price="$49/mo"
+          features={[
             "Manage up to 25 clients",
             "Job scheduling and tracking",
             "Estimates and invoicing",

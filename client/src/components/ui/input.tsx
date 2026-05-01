@@ -1,4 +1,8 @@
-import * as React from "react - import { cn } from "@/lib/utils - const Input = React.forwardRef<HTMLInputElement, React.ComponentProps<"input">>(
+import * as React from "react"
+
+import { cn } from "@/lib/utils"
+
+const Input = React.forwardRef<HTMLInputElement, React.ComponentProps<"input">>(
   ({ className, type, ...props }, ref) => {
     // h-9 to match icon buttons and default buttons.
     return (
@@ -14,4 +18,6 @@ import * as React from "react - import { cn } from "@/lib/utils - const Input = 
     )
   }
 )
-Input.displayName = "Input - export { Input }
+Input.displayName = "Input"
+
+export { Input }

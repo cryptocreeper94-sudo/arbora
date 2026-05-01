@@ -172,12 +172,12 @@ export default function ArboraCrew() {
                 <Plus className="w-4 h-4" /> Add Member
               </Button>
             </DialogTrigger>
-            <DialogContent className="max-h-[85vh] overflow-y-auto - data-testid="dialog-add-crew">
+            <DialogContent className="max-h-[85vh] overflow-y-auto" data-testid="dialog-add-crew">
               <DialogHeader><DialogTitle>Add Crew Member</DialogTitle></DialogHeader>
               <div className="space-y-4 mt-2">
-                <div><Label>First Name *</Label><Input value={firstName} onChange={(e) => setFirstName(e.target.value)} placeholder="First name - data-testid="input-crew-first-name" /></div>
-                <div><Label>Last Name *</Label><Input value={lastName} onChange={(e) => setLastName(e.target.value)} placeholder="Last name - data-testid="input-crew-last-name" /></div>
-                <div><Label>Email</Label><Input value={email} onChange={(e) => setEmail(e.target.value)} placeholder="email@example.com" type="email - data-testid="input-crew-email" /></div>
+                <div><Label>First Name *</Label><Input value={firstName} onChange={(e) => setFirstName(e.target.value)} placeholder="First name" data-testid="input-crew-first-name" /></div>
+                <div><Label>Last Name *</Label><Input value={lastName} onChange={(e) => setLastName(e.target.value)} placeholder="Last name" data-testid="input-crew-last-name" /></div>
+                <div><Label>Email</Label><Input value={email} onChange={(e) => setEmail(e.target.value)} placeholder="email@example.com" type="email" data-testid="input-crew-email" /></div>
                 <div><Label>Phone</Label><Input value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="(555) 123-4567" data-testid="input-crew-phone" /></div>
                 <div>
                   <Label>Role</Label>
@@ -194,7 +194,7 @@ export default function ArboraCrew() {
                     {createCrew.isPending ? <Loader2 className="w-4 h-4 animate-spin" /> : <Plus className="w-4 h-4" />}
                     Add Member
                   </Button>
-                  <DialogClose asChild><Button variant="outline - data-testid="button-cancel-crew">Cancel</Button></DialogClose>
+                  <DialogClose asChild><Button variant="outline" data-testid="button-cancel-crew">Cancel</Button></DialogClose>
                 </div>
               </div>
             </DialogContent>
@@ -222,7 +222,8 @@ export default function ArboraCrew() {
                   </div>
                   <div className="flex items-center gap-1">
                     <Badge
-                      className="text-[10px] cursor-pointer" style={{
+                      className="text-[10px] cursor-pointer"
+                      style={{
                         background: member.isActive ? "rgba(16,185,129,0.15)" : "rgba(148,163,184,0.15)",
                         color: member.isActive ? "#10b981" : "#94a3b8",
                         border: "none",
@@ -262,7 +263,7 @@ export default function ArboraCrew() {
                 <Plus className="w-4 h-4" /> Log Time
               </Button>
             </DialogTrigger>
-            <DialogContent className="max-h-[85vh] overflow-y-auto - data-testid="dialog-add-time-entry">
+            <DialogContent className="max-h-[85vh] overflow-y-auto" data-testid="dialog-add-time-entry">
               <DialogHeader><DialogTitle>Log Time Entry</DialogTitle></DialogHeader>
               <div className="space-y-4 mt-2">
                 <div>
@@ -282,13 +283,13 @@ export default function ArboraCrew() {
                 <div><Label>Date *</Label><Input type="date" value={teDate} onChange={(e) => setTeDate(e.target.value)} data-testid="input-te-date" /></div>
                 <div><Label>Hours Worked *</Label><Input type="number" step="0.25" value={teHours} onChange={(e) => setTeHours(e.target.value)} placeholder="8" data-testid="input-te-hours" /></div>
                 <div><Label>Overtime Hours</Label><Input type="number" step="0.25" value={teOvertime} onChange={(e) => setTeOvertime(e.target.value)} placeholder="0" data-testid="input-te-overtime" /></div>
-                <div><Label>Notes</Label><Textarea value={teNotes} onChange={(e) => setTeNotes(e.target.value)} placeholder="Notes... - data-testid="input-te-notes" /></div>
+                <div><Label>Notes</Label><Textarea value={teNotes} onChange={(e) => setTeNotes(e.target.value)} placeholder="Notes..." data-testid="input-te-notes" /></div>
                 <div className="flex items-center gap-3 pt-2">
                   <Button style={{ background: "#c2703e", color: "#fff" }} className="gap-1.5" onClick={handleTeSubmit} disabled={createTimeEntry.isPending || !teCrew || !teDate || !teHours} data-testid="button-submit-time-entry">
                     {createTimeEntry.isPending ? <Loader2 className="w-4 h-4 animate-spin" /> : <Plus className="w-4 h-4" />}
                     Log Time
                   </Button>
-                  <DialogClose asChild><Button variant="outline - data-testid="button-cancel-time-entry">Cancel</Button></DialogClose>
+                  <DialogClose asChild><Button variant="outline" data-testid="button-cancel-time-entry">Cancel</Button></DialogClose>
                 </div>
               </div>
             </DialogContent>

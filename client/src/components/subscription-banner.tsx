@@ -27,14 +27,14 @@ export function SubscriptionBanner({ tier, price, features, className, compact }
           <Crown className="w-4 h-4 text-amber-400" />
         </div>
         <div className="flex-1 min-w-0">
-          <p className="text-xs font-medium text-foreground - data-testid="text-tier-compact">
+          <p className="text-xs font-medium text-foreground" data-testid="text-tier-compact">
             {tier} " {price}
           </p>
           <p className="text-[10px] text-muted-foreground">
             {user ? "Upgrade your plan to unlock this feature" : "Subscribe to unlock this feature"}
           </p>
         </div>
-        <Link href="/pricing - data-testid="link-upgrade-compact">
+        <Link href="/pricing" data-testid="link-upgrade-compact">
           <Button size="sm" variant="default" className="text-xs gap-1 flex-shrink-0" data-testid="button-upgrade-compact">
             View Plans <ArrowRight className="w-3 h-3" />
           </Button>
@@ -55,7 +55,7 @@ export function SubscriptionBanner({ tier, price, features, className, compact }
         </div>
         <div className="flex-1 min-w-0">
           <div className="flex items-center gap-2 flex-wrap mb-1">
-            <h3 className="text-sm font-semibold text-foreground - data-testid="text-tier-name">{tier}</h3>
+            <h3 className="text-sm font-semibold text-foreground" data-testid="text-tier-name">{tier}</h3>
             <Badge className="bg-amber-500/15 text-amber-400 text-[10px]" data-testid="badge-tier-price">{price}</Badge>
           </div>
           <p className="text-xs text-muted-foreground mb-3">
@@ -66,14 +66,14 @@ export function SubscriptionBanner({ tier, price, features, className, compact }
           {features && features.length > 0 && (
             <ul className="space-y-1.5 mb-4">
               {features.map((f, i) => (
-                <li key={i} className="flex items-center gap-2 text-xs text-muted-foreground - data-testid={`text-feature-${i}`}>
+                <li key={i} className="flex items-center gap-2 text-xs text-muted-foreground" data-testid={`text-feature-${i}`}>
                   <div className="w-1.5 h-1.5 rounded-full bg-emerald-500 flex-shrink-0" />
                   {f}
                 </li>
               ))}
             </ul>
           )}
-          <Link href="/pricing - data-testid="link-view-plans">
+          <Link href="/pricing" data-testid="link-view-plans">
             <Button variant="default" className="text-xs gap-2" data-testid="button-view-plans">
               <Crown className="w-3.5 h-3.5" /> View Plans & Pricing
             </Button>
@@ -103,12 +103,12 @@ export function FeatureInfoBubble({ title, description, tier, className }: Featu
       </div>
       <div className="flex-1 min-w-0">
         <div className="flex items-center gap-2 flex-wrap">
-          <p className="text-xs font-medium text-foreground - data-testid="text-info-title">{title}</p>
+          <p className="text-xs font-medium text-foreground" data-testid="text-info-title">{title}</p>
           {tier && (
             <Badge className="bg-amber-500/10 text-amber-400 text-[9px] px-1.5 py-0" data-testid="badge-info-tier">{tier}</Badge>
           )}
         </div>
-        <p className="text-[11px] text-muted-foreground mt-0.5 leading-relaxed - data-testid="text-info-description">{description}</p>
+        <p className="text-[11px] text-muted-foreground mt-0.5 leading-relaxed" data-testid="text-info-description">{description}</p>
       </div>
     </div>
   );

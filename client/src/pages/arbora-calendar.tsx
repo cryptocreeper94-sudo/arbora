@@ -106,7 +106,7 @@ export default function ArboraCalendar() {
               </Button>
               <h2 className="text-lg font-semibold" style={{ color: "#f1f5f9" }} data-testid="text-current-month">{monthName}</h2>
               <div className="flex items-center gap-2">
-                <Button variant="outline" size="sm" onClick={goToday} className="text-xs - data-testid="button-today">Today</Button>
+                <Button variant="outline" size="sm" onClick={goToday} className="text-xs" data-testid="button-today">Today</Button>
                 <Button size="icon" variant="ghost" onClick={nextMonth} data-testid="button-next-month">
                   <ChevronRight className="w-5 h-5" style={{ color: "#94a3b8" }} />
                 </Button>
@@ -133,7 +133,8 @@ export default function ArboraCalendar() {
                   <button
                     key={day}
                     onClick={() => setSelectedDay(dateStr)}
-                    className="h-12 rounded-lg flex flex-col items-center justify-center relative transition-colors" style={{
+                    className="h-12 rounded-lg flex flex-col items-center justify-center relative transition-colors"
+                    style={{
                       background: isSelected ? "rgba(194,112,62,0.2)" : isToday ? "rgba(255,255,255,0.06)" : "transparent",
                       color: isSelected ? "#c2703e" : isToday ? "#f1f5f9" : "#e2e8f0",
                       border: isSelected ? "1px solid rgba(194,112,62,0.4)" : "1px solid transparent",
@@ -158,7 +159,7 @@ export default function ArboraCalendar() {
                 {selectedDay ? new Date(selectedDay + "T12:00:00").toLocaleDateString("en-US", { weekday: "long", month: "short", day: "numeric" }) : "Select a day"}
               </h3>
               <Link href="/arbora/jobs">
-                <Button variant="outline" size="sm" className="gap-1 text-xs - data-testid="button-add-job-from-calendar">
+                <Button variant="outline" size="sm" className="gap-1 text-xs" data-testid="button-add-job-from-calendar">
                   <Plus className="w-3 h-3" /> New Job
                 </Button>
               </Link>

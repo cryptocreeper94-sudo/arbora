@@ -129,7 +129,7 @@ export function ArboraLayout({ children }: { children: React.ReactNode }) {
             const isActive = location === item.path || (item.path !== "/arbora" && location.startsWith(item.path));
             return (
               <Link key={item.path} href={item.path}>
-                <div className="flex flex-col items-center gap-1 px-3 py-1 cursor-pointer - data-testid={`arbora-mobile-nav-${item.label.toLowerCase()}`}>
+                <div className="flex flex-col items-center gap-1 px-3 py-1 cursor-pointer" data-testid={`arbora-mobile-nav-${item.label.toLowerCase()}`}>
                   <item.icon className="w-5 h-5" style={{ color: isActive ? "#c2703e" : "#64748b" }} />
                   <span className="text-[10px] font-medium" style={{ color: isActive ? "#c2703e" : "#64748b" }}>{item.label}</span>
                 </div>

@@ -176,12 +176,12 @@ export const userProfile = {
 };
 
 export const userActivities = [
-  { id: 1, type: "identification - as const, title: "Identified Eastern White Pine", date: "2 hours ago", image: "/images/species-pine.jpg" },
-  { id: 2, type: "trail - as const, title: "Completed Appalachian Trail - McAfee Knob", date: "Yesterday", image: "/images/trail_1.jpg" },
-  { id: 3, type: "marketplace - as const, title: "Purchased Black Walnut - 20 board feet", date: "3 days ago", image: "/images/wood_1.jpg" },
-  { id: 4, type: "conservation - as const, title: "Donated $25 to RMEF", date: "1 week ago", image: "/images/activity-conservation.jpg" },
-  { id: 5, type: "trail - as const, title: "Completed Emerald Lake Trail", date: "2 weeks ago", image: "/images/trail_4.jpg" },
-  { id: 6, type: "identification - as const, title: "Identified Sugar Maple", date: "2 weeks ago", image: "/images/species-maple.jpg" },
+  { id: 1, type: "identification" as const, title: "Identified Eastern White Pine", date: "2 hours ago", image: "/images/species-pine.jpg" },
+  { id: 2, type: "trail" as const, title: "Completed Appalachian Trail - McAfee Knob", date: "Yesterday", image: "/images/trail_1.jpg" },
+  { id: 3, type: "marketplace" as const, title: "Purchased Black Walnut - 20 board feet", date: "3 days ago", image: "/images/wood_1.jpg" },
+  { id: 4, type: "conservation" as const, title: "Donated $25 to RMEF", date: "1 week ago", image: "/images/activity-conservation.jpg" },
+  { id: 5, type: "trail" as const, title: "Completed Emerald Lake Trail", date: "2 weeks ago", image: "/images/trail_4.jpg" },
+  { id: 6, type: "identification" as const, title: "Identified Sugar Maple", date: "2 weeks ago", image: "/images/species-maple.jpg" },
 ];
 
 export const tripWaypoints = [

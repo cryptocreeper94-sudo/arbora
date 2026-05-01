@@ -135,18 +135,18 @@ export default function ArboraEquipment() {
                   </Select>
                 </div>
               </div>
-              <div><Label>Make *</Label><Input value={newMake} onChange={(e) => setNewMake(e.target.value)} placeholder="Stihl, Honda... - data-testid="input-equipment-make" /></div>
-              <div><Label>Model *</Label><Input value={newModel} onChange={(e) => setNewModel(e.target.value)} placeholder="MS 500i, CRF450R... - data-testid="input-equipment-model" /></div>
+              <div><Label>Make *</Label><Input value={newMake} onChange={(e) => setNewMake(e.target.value)} placeholder="Stihl, Honda..." data-testid="input-equipment-make" /></div>
+              <div><Label>Model *</Label><Input value={newModel} onChange={(e) => setNewModel(e.target.value)} placeholder="MS 500i, CRF450R..." data-testid="input-equipment-model" /></div>
               <div className="grid grid-cols-2 gap-3">
-                <div><Label>Engine Type</Label><Input value={newEngine} onChange={(e) => setNewEngine(e.target.value)} placeholder="2-stroke, v8... - data-testid="input-equipment-engine" /></div>
-                <div><Label>Engine Size</Label><Input value={newEngineSize} onChange={(e) => setNewEngineSize(e.target.value)} placeholder="79.2cc, 5.0L... - data-testid="input-equipment-engine-size" /></div>
+                <div><Label>Engine Type</Label><Input value={newEngine} onChange={(e) => setNewEngine(e.target.value)} placeholder="2-stroke, v8..." data-testid="input-equipment-engine" /></div>
+                <div><Label>Engine Size</Label><Input value={newEngineSize} onChange={(e) => setNewEngineSize(e.target.value)} placeholder="79.2cc, 5.0L..." data-testid="input-equipment-engine-size" /></div>
               </div>
-              <div><Label>Notes</Label><Textarea value={newNotes} onChange={(e) => setNewNotes(e.target.value)} placeholder="Usage notes... - data-testid="input-equipment-notes" /></div>
+              <div><Label>Notes</Label><Textarea value={newNotes} onChange={(e) => setNewNotes(e.target.value)} placeholder="Usage notes..." data-testid="input-equipment-notes" /></div>
               <div className="flex items-center gap-3 pt-2">
                 <Button style={{ background: "#c2703e", color: "#fff" }} onClick={handleSubmit} disabled={createEquipment.isPending || !newYear || !newMake.trim() || !newModel.trim()} data-testid="button-submit-equipment">
                   {createEquipment.isPending ? <Loader2 className="w-4 h-4 animate-spin" /> : <Plus className="w-4 h-4" />} Register
                 </Button>
-                <DialogClose asChild><Button variant="outline - data-testid="button-cancel-equipment">Cancel</Button></DialogClose>
+                <DialogClose asChild><Button variant="outline" data-testid="button-cancel-equipment">Cancel</Button></DialogClose>
               </div>
             </div>
           </DialogContent>
@@ -211,7 +211,8 @@ export default function ArboraEquipment() {
           {equipment.map((item, i) => (
             <motion.div key={item.id} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.05 }}>
               <Card
-                className="p-4 cursor-pointer border-0 transition-colors" style={{ background: "rgba(255,255,255,0.04)" }}
+                className="p-4 cursor-pointer border-0 transition-colors"
+                style={{ background: "rgba(255,255,255,0.04)" }}
                 onClick={() => setSelectedEquipment(selectedEquipment === item.id ? null : item.id)}
                 data-testid={`card-equipment-${item.id}`}
               >

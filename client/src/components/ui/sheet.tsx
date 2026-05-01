@@ -1,4 +1,13 @@
-"use client - import * as React from "react - import * as SheetPrimitive from "@radix-ui/react-dialog - import { cva, type VariantProps } from "class-variance-authority - import { X } from "lucide-react - import { cn } from "@/lib/utils - const Sheet = SheetPrimitive.Root
+"use client"
+
+import * as React from "react"
+import * as SheetPrimitive from "@radix-ui/react-dialog"
+import { cva, type VariantProps } from "class-variance-authority"
+import { X } from "lucide-react"
+
+import { cn } from "@/lib/utils"
+
+const Sheet = SheetPrimitive.Root
 
 const SheetTrigger = SheetPrimitive.Trigger
 
@@ -77,7 +86,9 @@ const SheetHeader = ({
     {...props}
   />
 )
-SheetHeader.displayName = "SheetHeader - const SheetFooter = ({
+SheetHeader.displayName = "SheetHeader"
+
+const SheetFooter = ({
   className,
   ...props
 }: React.HTMLAttributes<HTMLDivElement>) => (
@@ -89,7 +100,9 @@ SheetHeader.displayName = "SheetHeader - const SheetFooter = ({
     {...props}
   />
 )
-SheetFooter.displayName = "SheetFooter - const SheetTitle = React.forwardRef<
+SheetFooter.displayName = "SheetFooter"
+
+const SheetTitle = React.forwardRef<
   React.ElementRef<typeof SheetPrimitive.Title>,
   React.ComponentPropsWithoutRef<typeof SheetPrimitive.Title>
 >(({ className, ...props }, ref) => (

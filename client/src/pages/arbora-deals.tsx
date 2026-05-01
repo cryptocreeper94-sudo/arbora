@@ -136,14 +136,14 @@ export default function ArboraDeals() {
                 <Plus className="w-4 h-4" /> Add Deal
               </Button>
             </DialogTrigger>
-            <DialogContent className="max-h-[85vh] overflow-y-auto - data-testid="dialog-add-deal">
+            <DialogContent className="max-h-[85vh] overflow-y-auto" data-testid="dialog-add-deal">
               <DialogHeader>
                 <DialogTitle>Add New Deal</DialogTitle>
               </DialogHeader>
               <div className="space-y-4 mt-2">
                 <div>
                   <Label>Title *</Label>
-                  <Input value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Deal title - data-testid="input-deal-title" />
+                  <Input value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Deal title" data-testid="input-deal-title" />
                 </div>
                 <div>
                   <Label>Client</Label>
@@ -173,7 +173,7 @@ export default function ArboraDeals() {
                 </div>
                 <div>
                   <Label>Description</Label>
-                  <Textarea value={description} onChange={(e) => setDescription(e.target.value)} placeholder="Deal description... - data-testid="input-deal-description" />
+                  <Textarea value={description} onChange={(e) => setDescription(e.target.value)} placeholder="Deal description..." data-testid="input-deal-description" />
                 </div>
                 <div>
                   <Label>Expected Close Date</Label>
@@ -185,7 +185,7 @@ export default function ArboraDeals() {
                     Add Deal
                   </Button>
                   <DialogClose asChild>
-                    <Button variant="outline - data-testid="button-cancel-deal">Cancel</Button>
+                    <Button variant="outline" data-testid="button-cancel-deal">Cancel</Button>
                   </DialogClose>
                 </div>
               </div>

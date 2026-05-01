@@ -144,7 +144,7 @@ export default function ArboraEstimates() {
                 <Plus className="w-4 h-4" /> New Estimate
               </Button>
             </DialogTrigger>
-            <DialogContent className="max-h-[85vh] overflow-y-auto max-w-lg - data-testid="dialog-add-estimate">
+            <DialogContent className="max-h-[85vh] overflow-y-auto max-w-lg" data-testid="dialog-add-estimate">
               <DialogHeader><DialogTitle>Create Estimate</DialogTitle></DialogHeader>
               <div className="space-y-4 mt-2">
                 <div>
@@ -163,12 +163,12 @@ export default function ArboraEstimates() {
                     </SelectContent>
                   </Select>
                 </div>
-                <div><Label>Tree Species</Label><Input value={treeSpecies} onChange={(e) => setTreeSpecies(e.target.value)} placeholder="e.g., Red Oak, Sugar Maple - data-testid="input-estimate-species" /></div>
-                <div><Label>Site Address</Label><Input value={siteAddress} onChange={(e) => setSiteAddress(e.target.value)} placeholder="Job site address - data-testid="input-estimate-site" /></div>
+                <div><Label>Tree Species</Label><Input value={treeSpecies} onChange={(e) => setTreeSpecies(e.target.value)} placeholder="e.g., Red Oak, Sugar Maple" data-testid="input-estimate-species" /></div>
+                <div><Label>Site Address</Label><Input value={siteAddress} onChange={(e) => setSiteAddress(e.target.value)} placeholder="Job site address" data-testid="input-estimate-site" /></div>
                 <div>
                   <div className="flex items-center justify-between mb-2">
                     <Label>Line Items</Label>
-                    <Button variant="outline" size="sm" onClick={addItem} className="gap-1 text-xs - data-testid="button-add-estimate-item"><Plus className="w-3 h-3" /> Add Row</Button>
+                    <Button variant="outline" size="sm" onClick={addItem} className="gap-1 text-xs" data-testid="button-add-estimate-item"><Plus className="w-3 h-3" /> Add Row</Button>
                   </div>
                   {items.map((item, idx) => (
                     <div key={idx} className="flex items-center gap-2 mb-2">
@@ -188,13 +188,13 @@ export default function ArboraEstimates() {
                   <div className="flex justify-between text-sm font-semibold" style={{ color: "#f1f5f9" }}><span>Total</span><span data-testid="text-estimate-total">${total.toFixed(2)}</span></div>
                 </div>
                 <div><Label>Valid Until</Label><Input type="date" value={validUntil} onChange={(e) => setValidUntil(e.target.value)} data-testid="input-estimate-valid" /></div>
-                <div><Label>Notes</Label><Textarea value={notes} onChange={(e) => setNotes(e.target.value)} placeholder="Notes... - data-testid="input-estimate-notes" /></div>
+                <div><Label>Notes</Label><Textarea value={notes} onChange={(e) => setNotes(e.target.value)} placeholder="Notes..." data-testid="input-estimate-notes" /></div>
                 <div className="flex items-center gap-3 pt-2">
                   <Button style={{ background: "#c2703e", color: "#fff" }} className="gap-1.5" onClick={handleSubmit} disabled={createEstimate.isPending} data-testid="button-submit-estimate">
                     {createEstimate.isPending ? <Loader2 className="w-4 h-4 animate-spin" /> : <Plus className="w-4 h-4" />}
                     Create Estimate
                   </Button>
-                  <DialogClose asChild><Button variant="outline - data-testid="button-cancel-estimate">Cancel</Button></DialogClose>
+                  <DialogClose asChild><Button variant="outline" data-testid="button-cancel-estimate">Cancel</Button></DialogClose>
                 </div>
               </div>
             </DialogContent>

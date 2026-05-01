@@ -1,4 +1,10 @@
-import * as React from "react - import * as AlertDialogPrimitive from "@radix-ui/react-alert-dialog - import { cn } from "@/lib/utils - import { buttonVariants } from "@/components/ui/button - const AlertDialog = AlertDialogPrimitive.Root
+import * as React from "react"
+import * as AlertDialogPrimitive from "@radix-ui/react-alert-dialog"
+
+import { cn } from "@/lib/utils"
+import { buttonVariants } from "@/components/ui/button"
+
+const AlertDialog = AlertDialogPrimitive.Root
 
 const AlertDialogTrigger = AlertDialogPrimitive.Trigger
 
@@ -49,7 +55,9 @@ const AlertDialogHeader = ({
     {...props}
   />
 )
-AlertDialogHeader.displayName = "AlertDialogHeader - const AlertDialogFooter = ({
+AlertDialogHeader.displayName = "AlertDialogHeader"
+
+const AlertDialogFooter = ({
   className,
   ...props
 }: React.HTMLAttributes<HTMLDivElement>) => (
@@ -61,7 +69,9 @@ AlertDialogHeader.displayName = "AlertDialogHeader - const AlertDialogFooter = (
     {...props}
   />
 )
-AlertDialogFooter.displayName = "AlertDialogFooter - const AlertDialogTitle = React.forwardRef<
+AlertDialogFooter.displayName = "AlertDialogFooter"
+
+const AlertDialogTitle = React.forwardRef<
   React.ElementRef<typeof AlertDialogPrimitive.Title>,
   React.ComponentPropsWithoutRef<typeof AlertDialogPrimitive.Title>
 >(({ className, ...props }, ref) => (

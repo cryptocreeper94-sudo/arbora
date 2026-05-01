@@ -138,7 +138,7 @@ export default function ArboraInvoices() {
                 <Plus className="w-4 h-4" /> New Invoice
               </Button>
             </DialogTrigger>
-            <DialogContent className="max-h-[85vh] overflow-y-auto max-w-lg - data-testid="dialog-add-invoice">
+            <DialogContent className="max-h-[85vh] overflow-y-auto max-w-lg" data-testid="dialog-add-invoice">
               <DialogHeader><DialogTitle>Create Invoice</DialogTitle></DialogHeader>
               <div className="space-y-4 mt-2">
                 <div>
@@ -152,7 +152,7 @@ export default function ArboraInvoices() {
                 <div>
                   <div className="flex items-center justify-between mb-2">
                     <Label>Line Items</Label>
-                    <Button variant="outline" size="sm" onClick={addItem} className="gap-1 text-xs - data-testid="button-add-line-item"><Plus className="w-3 h-3" /> Add Row</Button>
+                    <Button variant="outline" size="sm" onClick={addItem} className="gap-1 text-xs" data-testid="button-add-line-item"><Plus className="w-3 h-3" /> Add Row</Button>
                   </div>
                   {items.map((item, idx) => (
                     <div key={idx} className="flex items-center gap-2 mb-2">
@@ -171,13 +171,13 @@ export default function ArboraInvoices() {
                   <div className="flex justify-between text-xs mb-1" style={{ color: "#94a3b8" }}><span>Tax</span><span>${taxAmount.toFixed(2)}</span></div>
                   <div className="flex justify-between text-sm font-semibold" style={{ color: "#f1f5f9" }}><span>Total</span><span data-testid="text-invoice-total">${total.toFixed(2)}</span></div>
                 </div>
-                <div><Label>Notes</Label><Textarea value={notes} onChange={(e) => setNotes(e.target.value)} placeholder="Notes... - data-testid="input-invoice-notes" /></div>
+                <div><Label>Notes</Label><Textarea value={notes} onChange={(e) => setNotes(e.target.value)} placeholder="Notes..." data-testid="input-invoice-notes" /></div>
                 <div className="flex items-center gap-3 pt-2">
                   <Button style={{ background: "#c2703e", color: "#fff" }} className="gap-1.5" onClick={handleSubmit} disabled={createInvoice.isPending} data-testid="button-submit-invoice">
                     {createInvoice.isPending ? <Loader2 className="w-4 h-4 animate-spin" /> : <Plus className="w-4 h-4" />}
                     Create Invoice
                   </Button>
-                  <DialogClose asChild><Button variant="outline - data-testid="button-cancel-invoice">Cancel</Button></DialogClose>
+                  <DialogClose asChild><Button variant="outline" data-testid="button-cancel-invoice">Cancel</Button></DialogClose>
                 </div>
               </div>
             </DialogContent>
@@ -187,11 +187,11 @@ export default function ArboraInvoices() {
 
       <Tabs value={filter} onValueChange={setFilter} className="mb-6">
         <TabsList style={{ background: "rgba(255,255,255,0.06)" }}>
-          <TabsTrigger value="all - data-testid="filter-all">All ({invoicesList.length})</TabsTrigger>
-          <TabsTrigger value="draft - data-testid="filter-draft">Draft</TabsTrigger>
-          <TabsTrigger value="sent - data-testid="filter-sent">Sent</TabsTrigger>
-          <TabsTrigger value="paid - data-testid="filter-paid">Paid</TabsTrigger>
-          <TabsTrigger value="overdue - data-testid="filter-overdue">Overdue</TabsTrigger>
+          <TabsTrigger value="all" data-testid="filter-all">All ({invoicesList.length})</TabsTrigger>
+          <TabsTrigger value="draft" data-testid="filter-draft">Draft</TabsTrigger>
+          <TabsTrigger value="sent" data-testid="filter-sent">Sent</TabsTrigger>
+          <TabsTrigger value="paid" data-testid="filter-paid">Paid</TabsTrigger>
+          <TabsTrigger value="overdue" data-testid="filter-overdue">Overdue</TabsTrigger>
         </TabsList>
       </Tabs>
 

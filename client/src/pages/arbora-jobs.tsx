@@ -124,10 +124,10 @@ export default function ArboraJobs() {
                 <Plus className="w-4 h-4" /> Add Job
               </Button>
             </DialogTrigger>
-            <DialogContent className="max-h-[85vh] overflow-y-auto - data-testid="dialog-add-job">
+            <DialogContent className="max-h-[85vh] overflow-y-auto" data-testid="dialog-add-job">
               <DialogHeader><DialogTitle>Add New Job</DialogTitle></DialogHeader>
               <div className="space-y-4 mt-2">
-                <div><Label>Title *</Label><Input value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Job title - data-testid="input-job-title" /></div>
+                <div><Label>Title *</Label><Input value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Job title" data-testid="input-job-title" /></div>
                 <div>
                   <Label>Client</Label>
                   <Select value={clientId} onValueChange={setClientId}>
@@ -135,11 +135,11 @@ export default function ArboraJobs() {
                     <SelectContent>{clientsList.map((c) => <SelectItem key={c.id} value={String(c.id)}>{c.name}</SelectItem>)}</SelectContent>
                   </Select>
                 </div>
-                <div><Label>Description</Label><Textarea value={description} onChange={(e) => setDescription(e.target.value)} placeholder="Job description... - data-testid="input-job-description" /></div>
+                <div><Label>Description</Label><Textarea value={description} onChange={(e) => setDescription(e.target.value)} placeholder="Job description..." data-testid="input-job-description" /></div>
                 <div><Label>Scheduled Date</Label><Input type="date" value={scheduledDate} onChange={(e) => setScheduledDate(e.target.value)} data-testid="input-job-date" /></div>
                 <div><Label>Estimated Cost ($)</Label><Input type="number" step="0.01" value={estimatedCost} onChange={(e) => setEstimatedCost(e.target.value)} placeholder="0.00" data-testid="input-job-cost" /></div>
-                <div><Label>Crew (comma-separated)</Label><Input value={crew} onChange={(e) => setCrew(e.target.value)} placeholder="John, Jane - data-testid="input-job-crew" /></div>
-                <div><Label>Notes</Label><Textarea value={notes} onChange={(e) => setNotes(e.target.value)} placeholder="Notes... - data-testid="input-job-notes" /></div>
+                <div><Label>Crew (comma-separated)</Label><Input value={crew} onChange={(e) => setCrew(e.target.value)} placeholder="John, Jane" data-testid="input-job-crew" /></div>
+                <div><Label>Notes</Label><Textarea value={notes} onChange={(e) => setNotes(e.target.value)} placeholder="Notes..." data-testid="input-job-notes" /></div>
                 <div>
                   <Label>Status</Label>
                   <Select value={status} onValueChange={setStatus}>
@@ -156,7 +156,7 @@ export default function ArboraJobs() {
                     {createJob.isPending ? <Loader2 className="w-4 h-4 animate-spin" /> : <Plus className="w-4 h-4" />}
                     Add Job
                   </Button>
-                  <DialogClose asChild><Button variant="outline - data-testid="button-cancel-job">Cancel</Button></DialogClose>
+                  <DialogClose asChild><Button variant="outline" data-testid="button-cancel-job">Cancel</Button></DialogClose>
                 </div>
               </div>
             </DialogContent>
@@ -166,10 +166,10 @@ export default function ArboraJobs() {
 
       <Tabs value={filter} onValueChange={setFilter} className="mb-6">
         <TabsList style={{ background: "rgba(255,255,255,0.06)" }}>
-          <TabsTrigger value="all - data-testid="filter-all">All ({jobsList.length})</TabsTrigger>
-          <TabsTrigger value="scheduled - data-testid="filter-scheduled">Scheduled</TabsTrigger>
-          <TabsTrigger value="in-progress - data-testid="filter-in-progress">In Progress</TabsTrigger>
-          <TabsTrigger value="completed - data-testid="filter-completed">Completed</TabsTrigger>
+          <TabsTrigger value="all" data-testid="filter-all">All ({jobsList.length})</TabsTrigger>
+          <TabsTrigger value="scheduled" data-testid="filter-scheduled">Scheduled</TabsTrigger>
+          <TabsTrigger value="in-progress" data-testid="filter-in-progress">In Progress</TabsTrigger>
+          <TabsTrigger value="completed" data-testid="filter-completed">Completed</TabsTrigger>
         </TabsList>
       </Tabs>
 

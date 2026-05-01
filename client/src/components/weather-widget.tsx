@@ -170,9 +170,11 @@ export function WeatherWidget() {
         <div className="flex items-center gap-2 bg-white/5 border border-white/10 rounded-lg px-3 py-1.5">
           <Search className="w-3.5 h-3.5 text-muted-foreground flex-shrink-0" />
           <input
-            type="text" value={searchInput}
+            type="text"
+            value={searchInput}
             onChange={(e) => setSearchInput(e.target.value)}
-            placeholder="Search city..." className="flex-1 bg-transparent text-sm text-foreground placeholder:text-muted-foreground outline-none min-w-0"
+            placeholder="Search city..."
+            className="flex-1 bg-transparent text-sm text-foreground placeholder:text-muted-foreground outline-none min-w-0"
             data-testid="input-weather-city"
           />
         </div>
@@ -214,7 +216,7 @@ export function WeatherWidget() {
             <div className="flex items-center gap-5">
               <WeatherIcon code={data.weather.current.weather_code} />
               <div>
-                <div className="text-3xl font-bold text-foreground - data-testid="text-weather-temp">
+                <div className="text-3xl font-bold text-foreground" data-testid="text-weather-temp">
                   {Math.round(data.weather.current.temperature_2m)}&deg;F
                 </div>
                 <div className="text-sm text-muted-foreground mt-0.5" data-testid="text-weather-condition">
@@ -225,13 +227,13 @@ export function WeatherWidget() {
             <div className="grid grid-cols-2 gap-4 mt-5 pt-4 border-t border-white/10">
               <div className="flex items-center gap-2">
                 <Wind className="w-4 h-4 text-muted-foreground" />
-                <span className="text-xs text-muted-foreground - data-testid="text-weather-wind">
+                <span className="text-xs text-muted-foreground" data-testid="text-weather-wind">
                   {Math.round(data.weather.current.wind_speed_10)} mph
                 </span>
               </div>
               <div className="flex items-center gap-2">
                 <Droplets className="w-4 h-4 text-muted-foreground" />
-                <span className="text-xs text-muted-foreground - data-testid="text-weather-humidity">
+                <span className="text-xs text-muted-foreground" data-testid="text-weather-humidity">
                   {data.weather.current.relative_humidity_2m}%
                 </span>
               </div>
