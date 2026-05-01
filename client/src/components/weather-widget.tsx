@@ -170,9 +170,9 @@ export function WeatherWidget() {
         <div className="flex items-center gap-2 bg-white/5 border border-white/10 rounded-lg px-3 py-1.5">
           <Search className="w-3.5 h-3.5 text-muted-foreground flex-shrink-0" />
           <input
-            type="text - value={searchInput}
+            type="text" value={searchInput}
             onChange={(e) => setSearchInput(e.target.value)}
-            placeholder="Search city... - className="flex-1 bg-transparent text-sm text-foreground placeholder:text-muted-foreground outline-none min-w-0"
+            placeholder="Search city..." className="flex-1 bg-transparent text-sm text-foreground placeholder:text-muted-foreground outline-none min-w-0"
             data-testid="input-weather-city"
           />
         </div>

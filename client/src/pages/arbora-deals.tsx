@@ -115,7 +115,7 @@ export default function ArboraDeals() {
   if (isLoading) {
     return (
       <div className="flex items-center justify-center py-20">
-        <Loader2 className="w-8 h-8 animate-spin - style={{ color: "#c2703e" }} />
+        <Loader2 className="w-8 h-8 animate-spin" style={{ color: "#c2703e" }} />
       </div>
     );
   }
@@ -126,7 +126,7 @@ export default function ArboraDeals() {
         <div className="flex flex-wrap items-center justify-between gap-3 mb-2">
           <div className="flex items-center gap-3">
             <Briefcase className="w-7 h-7" style={{ color: "#c2703e" }} />
-            <h1 className="text-2xl md:text-3xl font-bold - style={{ color: "#f1f5f9" }} data-testid="text-deals-title">
+            <h1 className="text-2xl md:text-3xl font-bold" style={{ color: "#f1f5f9" }} data-testid="text-deals-title">
               Deal Pipeline
             </h1>
           </div>
@@ -158,7 +158,7 @@ export default function ArboraDeals() {
                 </div>
                 <div>
                   <Label>Value ($)</Label>
-                  <Input type="number - step="0.01" value={value} onChange={(e) => setValue(e.target.value)} placeholder="0.00" data-testid="input-deal-value" />
+                  <Input type="number" step="0.01" value={value} onChange={(e) => setValue(e.target.value)} placeholder="0.00" data-testid="input-deal-value" />
                 </div>
                 <div>
                   <Label>Stage</Label>
@@ -177,7 +177,7 @@ export default function ArboraDeals() {
                 </div>
                 <div>
                   <Label>Expected Close Date</Label>
-                  <Input type="date - value={expectedCloseDate} onChange={(e) => setExpectedCloseDate(e.target.value)} data-testid="input-deal-close-date" />
+                  <Input type="date" value={expectedCloseDate} onChange={(e) => setExpectedCloseDate(e.target.value)} data-testid="input-deal-close-date" />
                 </div>
                 <div className="flex items-center gap-3 pt-2">
                   <Button style={{ background: "#c2703e", color: "#fff" }} className="gap-1.5" onClick={handleSubmit} disabled={createDeal.isPending || !title.trim()} data-testid="button-submit-deal">
@@ -195,11 +195,11 @@ export default function ArboraDeals() {
         <div className="flex flex-wrap items-center gap-4 mt-3">
           <div className="flex items-center gap-2">
             <TrendingUp className="w-4 h-4" style={{ color: "#c2703e" }} />
-            <span className="text-sm font-medium - style={{ color: "#e2e8f0" }} data-testid="text-total-deals">{dealsList.length} deals</span>
+            <span className="text-sm font-medium" style={{ color: "#e2e8f0" }} data-testid="text-total-deals">{dealsList.length} deals</span>
           </div>
           <div className="flex items-center gap-2">
             <DollarSign className="w-4 h-4" style={{ color: "#10b981" }} />
-            <span className="text-sm font-medium - style={{ color: "#e2e8f0" }} data-testid="text-total-value">${totalValue.toLocaleString()}</span>
+            <span className="text-sm font-medium" style={{ color: "#e2e8f0" }} data-testid="text-total-value">${totalValue.toLocaleString()}</span>
           </div>
         </div>
       </motion.div>
@@ -211,17 +211,17 @@ export default function ArboraDeals() {
           return (
             <div key={stg} className="flex-shrink-0" style={{ width: 280 }}>
               <div className="flex items-center gap-2 mb-3 px-1">
-                <div className="w-2.5 h-2.5 rounded-full - style={{ background: color }} />
-                <span className="text-xs font-semibold uppercase tracking-wider - style={{ color }}>{stageLabels[stg]}</span>
-                <Badge className="text-[10px] ml-auto - style={{ background: `${color}20`, color, border: "none" }}>{stageDeals.length}</Badge>
+                <div className="w-2.5 h-2.5 rounded-full" style={{ background: color }} />
+                <span className="text-xs font-semibold uppercase tracking-wider" style={{ color }}>{stageLabels[stg]}</span>
+                <Badge className="text-[10px] ml-auto" style={{ background: `${color}20`, color, border: "none" }}>{stageDeals.length}</Badge>
               </div>
               <div className="space-y-3">
                 {stageDeals.map((deal) => (
                   <motion.div key={deal.id} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}>
                     <Card className="p-4 border-0" style={{ background: "rgba(255,255,255,0.04)" }} data-testid={`card-deal-${deal.id}`}>
                       <div className="flex items-start justify-between gap-2 mb-2">
-                        <h4 className="text-sm font-semibold truncate - style={{ color: "#f1f5f9" }} data-testid={`text-deal-title-${deal.id}`}>{deal.title}</h4>
-                        <Button size="icon - variant="ghost - onClick={() => deleteDeal.mutate(deal.id)} disabled={deleteDeal.isPending} data-testid={`button-delete-deal-${deal.id}`}>
+                        <h4 className="text-sm font-semibold truncate" style={{ color: "#f1f5f9" }} data-testid={`text-deal-title-${deal.id}`}>{deal.title}</h4>
+                        <Button size="icon" variant="ghost" onClick={() => deleteDeal.mutate(deal.id)} disabled={deleteDeal.isPending} data-testid={`button-delete-deal-${deal.id}`}>
                           <Trash2 className="w-3.5 h-3.5" style={{ color: "#64748b" }} />
                         </Button>
                       </div>
@@ -233,7 +233,7 @@ export default function ArboraDeals() {
                         </div>
                       )}
                       {deal.expectedCloseDate && (
-                        <div className="flex items-center gap-1 text-xs - style={{ color: "#64748b" }}>
+                        <div className="flex items-center gap-1 text-xs" style={{ color: "#64748b" }}>
                           <Calendar className="w-3 h-3" />
                           <span data-testid={`text-deal-date-${deal.id}`}>{deal.expectedCloseDate}</span>
                         </div>
@@ -255,7 +255,7 @@ export default function ArboraDeals() {
                 ))}
                 {stageDeals.length === 0 && (
                   <div className="text-center py-8">
-                    <p className="text-xs - style={{ color: "#64748b" }}>No deals</p>
+                    <p className="text-xs" style={{ color: "#64748b" }}>No deals</p>
                   </div>
                 )}
               </div>

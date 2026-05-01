@@ -35,7 +35,7 @@ export function SubscriptionBanner({ tier, price, features, className, compact }
           </p>
         </div>
         <Link href="/pricing - data-testid="link-upgrade-compact">
-          <Button size="sm - variant="default - className="text-xs gap-1 flex-shrink-0" data-testid="button-upgrade-compact">
+          <Button size="sm" variant="default" className="text-xs gap-1 flex-shrink-0" data-testid="button-upgrade-compact">
             View Plans <ArrowRight className="w-3 h-3" />
           </Button>
         </Link>
@@ -74,7 +74,7 @@ export function SubscriptionBanner({ tier, price, features, className, compact }
             </ul>
           )}
           <Link href="/pricing - data-testid="link-view-plans">
-            <Button variant="default - className="text-xs gap-2" data-testid="button-view-plans">
+            <Button variant="default" className="text-xs gap-2" data-testid="button-view-plans">
               <Crown className="w-3.5 h-3.5" /> View Plans & Pricing
             </Button>
           </Link>

@@ -103,7 +103,7 @@ export default function ArboraEquipment() {
     <div className="max-w-7xl mx-auto px-5 md:px-8 py-6 md:py-10">
       <div className="flex items-center justify-between mb-6">
         <div>
-          <h1 className="text-xl md:text-2xl font-bold - style={{ color: "#f1f5f9" }} data-testid="text-equipment-title">Equipment</h1>
+          <h1 className="text-xl md:text-2xl font-bold" style={{ color: "#f1f5f9" }} data-testid="text-equipment-title">Equipment</h1>
           <p className="text-sm mt-1" style={{ color: "#64748b" }}>
             {equipment.length} piece{equipment.length !== 1 ? "s" : ""} tracked via GarageBot
           </p>
@@ -120,7 +120,7 @@ export default function ArboraEquipment() {
             </DialogHeader>
             <div className="space-y-4 mt-2">
               <div className="grid grid-cols-2 gap-3">
-                <div><Label>Year *</Label><Input type="number - value={newYear} onChange={(e) => setNewYear(e.target.value)} placeholder="2024" data-testid="input-equipment-year" /></div>
+                <div><Label>Year *</Label><Input type="number" value={newYear} onChange={(e) => setNewYear(e.target.value)} placeholder="2024" data-testid="input-equipment-year" /></div>
                 <div>
                   <Label>Type</Label>
                   <Select value={newType} onValueChange={setNewType}>
@@ -158,12 +158,12 @@ export default function ArboraEquipment() {
           {alerts.overdueCount > 0 && (
             <Card className="p-4 border-0" style={{ background: "rgba(239,68,68,0.08)" }}>
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-xl flex items-center justify-center - style={{ background: "rgba(239,68,68,0.15)" }}>
+                <div className="w-10 h-10 rounded-xl flex items-center justify-center" style={{ background: "rgba(239,68,68,0.15)" }}>
                   <AlertTriangle className="w-5 h-5" style={{ color: "#ef4444" }} />
                 </div>
                 <div>
-                  <p className="text-sm font-semibold - style={{ color: "#ef4444" }} data-testid="text-overdue-count">{alerts.overdueCount} Overdue</p>
-                  <p className="text-xs - style={{ color: "#64748b" }}>Maintenance items past due</p>
+                  <p className="text-sm font-semibold" style={{ color: "#ef4444" }} data-testid="text-overdue-count">{alerts.overdueCount} Overdue</p>
+                  <p className="text-xs" style={{ color: "#64748b" }}>Maintenance items past due</p>
                 </div>
               </div>
               {alerts.overdue.slice(0, 3).map((a) => (
@@ -177,12 +177,12 @@ export default function ArboraEquipment() {
           {alerts.upcomingCount > 0 && (
             <Card className="p-4 border-0" style={{ background: "rgba(245,158,11,0.08)" }}>
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-xl flex items-center justify-center - style={{ background: "rgba(245,158,11,0.15)" }}>
+                <div className="w-10 h-10 rounded-xl flex items-center justify-center" style={{ background: "rgba(245,158,11,0.15)" }}>
                   <Clock className="w-5 h-5" style={{ color: "#f59e0b" }} />
                 </div>
                 <div>
-                  <p className="text-sm font-semibold - style={{ color: "#f59e0b" }} data-testid="text-upcoming-count">{alerts.upcomingCount} Upcoming</p>
-                  <p className="text-xs - style={{ color: "#64748b" }}>Due within 30 days</p>
+                  <p className="text-sm font-semibold" style={{ color: "#f59e0b" }} data-testid="text-upcoming-count">{alerts.upcomingCount} Upcoming</p>
+                  <p className="text-xs" style={{ color: "#64748b" }}>Due within 30 days</p>
                 </div>
               </div>
               {alerts.upcoming.slice(0, 3).map((a) => (
@@ -198,33 +198,33 @@ export default function ArboraEquipment() {
 
       {isLoading ? (
         <div className="flex items-center justify-center py-20">
-          <Loader2 className="w-8 h-8 animate-spin - style={{ color: "#c2703e" }} />
+          <Loader2 className="w-8 h-8 animate-spin" style={{ color: "#c2703e" }} />
         </div>
       ) : equipment.length === 0 ? (
         <div className="text-center py-20">
           <Wrench className="w-12 h-12 mx-auto mb-4" style={{ color: "#334155" }} />
           <h3 className="text-lg font-semibold mb-2" style={{ color: "#f1f5f9" }}>No equipment tracked</h3>
-          <p className="text-sm - style={{ color: "#64748b" }}>Register your chainsaws, vehicles, and power equipment</p>
+          <p className="text-sm" style={{ color: "#64748b" }}>Register your chainsaws, vehicles, and power equipment</p>
         </div>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {equipment.map((item, i) => (
             <motion.div key={item.id} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.05 }}>
               <Card
-                className="p-4 cursor-pointer border-0 transition-colors - style={{ background: "rgba(255,255,255,0.04)" }}
+                className="p-4 cursor-pointer border-0 transition-colors" style={{ background: "rgba(255,255,255,0.04)" }}
                 onClick={() => setSelectedEquipment(selectedEquipment === item.id ? null : item.id)}
                 data-testid={`card-equipment-${item.id}`}
               >
                 <div className="flex items-center justify-between mb-3">
                   <div className="flex items-center gap-2">
-                    <div className="w-8 h-8 rounded-lg flex items-center justify-center - style={{ background: "rgba(194,112,62,0.12)" }}>
+                    <div className="w-8 h-8 rounded-lg flex items-center justify-center" style={{ background: "rgba(194,112,62,0.12)" }}>
                       <Wrench className="w-4 h-4" style={{ color: "#c2703e" }} />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-sm - style={{ color: "#f1f5f9" }} data-testid={`text-equipment-name-${item.id}`}>
+                      <h4 className="font-semibold text-sm" style={{ color: "#f1f5f9" }} data-testid={`text-equipment-name-${item.id}`}>
                         {item.year} {item.make} {item.model}
                       </h4>
-                      <p className="text-xs capitalize - style={{ color: "#64748b" }}>{item.vehicleType}</p>
+                      <p className="text-xs capitalize" style={{ color: "#64748b" }}>{item.vehicleType}</p>
                     </div>
                   </div>
                   <ChevronRight className={`w-4 h-4 transition-transform ${selectedEquipment === item.id ? "rotate-90" : ""}`} style={{ color: "#64748b" }} />
@@ -251,7 +251,7 @@ export default function ArboraEquipment() {
                       <div className="mt-3 pt-3 space-y-3" style={{ borderTop: "1px solid rgba(255,255,255,0.06)" }}>
                         {(!detailData || detailData.equipment?.id !== item.id) ? (
                           <div className="flex items-center justify-center py-4">
-                            <Loader2 className="w-5 h-5 animate-spin - style={{ color: "#c2703e" }} />
+                            <Loader2 className="w-5 h-5 animate-spin" style={{ color: "#c2703e" }} />
                           </div>
                         ) : (
                           <div className="space-y-3">

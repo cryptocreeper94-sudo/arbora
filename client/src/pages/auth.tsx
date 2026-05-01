@@ -302,7 +302,7 @@ export default function AuthPage({ onBack }: { onBack?: () => void }) {
               </div>
               {onBack && (
                 <Button
-                  variant="ghost - className="text-muted-foreground gap-2 text-sm - onClick={onBack}
+                  variant="ghost" className="text-muted-foreground gap-2 text-sm" onClick={onBack}
                   data-testid="button-back-to-landing"
                 >
                   <ArrowLeft className="w-4 h-4" /> Back
@@ -328,7 +328,7 @@ export default function AuthPage({ onBack }: { onBack?: () => void }) {
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-foreground - htmlFor="login-email-input">Email</label>
                     <input
-                      id="login-email-input - name="email - type="text - autoComplete="email - placeholder="you@example.com - className="flex h-9 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 md:text-sm - defaultValue={loginForm.getValues("email")}
+                      id="login-email-input" name="email" type="text" autoComplete="email" placeholder="you@example.com" className="flex h-9 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 md:text-sm" defaultValue={loginForm.getValues("email")}
                       onChange={(e) => loginForm.setValue("email", e.target.value, { shouldValidate: true })}
                       data-testid="input-login-email"
                     />
@@ -338,7 +338,7 @@ export default function AuthPage({ onBack }: { onBack?: () => void }) {
                   </div>
                   <FormField
                     control={loginForm.control}
-                    name="password - render={({ field }) => (
+                    name="password" render={({ field }) => (
                       <FormItem>
                         <FormLabel>Password</FormLabel>
                         <div className="relative">
@@ -347,12 +347,12 @@ export default function AuthPage({ onBack }: { onBack?: () => void }) {
                               {...field}
                               {...inputTrackingProps("login-password", field.onBlur)}
                               type={showPassword ? "text" : "password"}
-                              placeholder="Enter your password - className="pr-10"
+                              placeholder="Enter your password" className="pr-10"
                               data-testid="input-login-password"
                             />
                           </FormControl>
                           <button
-                            type="button - onClick={() => setShowPassword(!showPassword)}
+                            type="button" onClick={() => setShowPassword(!showPassword)}
                             className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground - data-testid="button-toggle-password"
                           >
                             {showPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
@@ -364,7 +364,7 @@ export default function AuthPage({ onBack }: { onBack?: () => void }) {
                   />
                   <label className="flex items-center gap-2 cursor-pointer select-none - data-testid="label-remember-me">
                     <input
-                      type="checkbox - checked={rememberMe}
+                      type="checkbox" checked={rememberMe}
                       onChange={(e) => setRememberMe(e.target.checked)}
                       className="w-4 h-4 rounded border-input accent-emerald-500"
                       data-testid="checkbox-remember-me"
@@ -372,7 +372,7 @@ export default function AuthPage({ onBack }: { onBack?: () => void }) {
                     <span className="text-sm text-muted-foreground">Keep me signed in for 30 days</span>
                   </label>
                   <Button
-                    type="submit - className="w-full bg-emerald-600 text-white - disabled={login.isPending}
+                    type="submit" className="w-full bg-emerald-600 text-white" disabled={login.isPending}
                     data-testid="button-login-submit"
                   >
                     {login.isPending ? (
@@ -390,7 +390,7 @@ export default function AuthPage({ onBack }: { onBack?: () => void }) {
                   <div className="grid grid-cols-2 gap-3">
                     <FormField
                       control={registerForm.control}
-                      name="firstName - render={({ field }) => (
+                      name="firstName" render={({ field }) => (
                         <FormItem>
                           <FormLabel>First Name</FormLabel>
                           <FormControl>
@@ -406,7 +406,7 @@ export default function AuthPage({ onBack }: { onBack?: () => void }) {
                     />
                     <FormField
                       control={registerForm.control}
-                      name="lastName - render={({ field }) => (
+                      name="lastName" render={({ field }) => (
                         <FormItem>
                           <FormLabel>Last Name</FormLabel>
                           <FormControl>
@@ -424,7 +424,7 @@ export default function AuthPage({ onBack }: { onBack?: () => void }) {
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-foreground - htmlFor="register-email-input">Email</label>
                     <input
-                      id="register-email-input - name="email - type="text - autoComplete="email - placeholder="you@example.com - className="flex h-9 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 md:text-sm - defaultValue={registerForm.getValues("email")}
+                      id="register-email-input" name="email" type="text" autoComplete="email" placeholder="you@example.com" className="flex h-9 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 md:text-sm" defaultValue={registerForm.getValues("email")}
                       onChange={(e) => registerForm.setValue("email", e.target.value, { shouldValidate: true })}
                       data-testid="input-register-email"
                     />
@@ -434,7 +434,7 @@ export default function AuthPage({ onBack }: { onBack?: () => void }) {
                   </div>
                   <FormField
                     control={registerForm.control}
-                    name="password - render={({ field }) => (
+                    name="password" render={({ field }) => (
                       <FormItem>
                         <FormLabel>Password</FormLabel>
                         <div className="relative">
@@ -443,12 +443,12 @@ export default function AuthPage({ onBack }: { onBack?: () => void }) {
                               {...field}
                               {...inputTrackingProps("register-password", field.onBlur)}
                               type={showPassword ? "text" : "password"}
-                              placeholder="8+ chars, 1 capital, 1 special - className="pr-10"
+                              placeholder="8+ chars, 1 capital, 1 special" className="pr-10"
                               data-testid="input-register-password"
                             />
                           </FormControl>
                           <button
-                            type="button - onClick={() => setShowPassword(!showPassword)}
+                            type="button" onClick={() => setShowPassword(!showPassword)}
                             className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground"
                           >
                             {showPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
@@ -460,7 +460,7 @@ export default function AuthPage({ onBack }: { onBack?: () => void }) {
                   />
                   <FormField
                     control={registerForm.control}
-                    name="confirmPassword - render={({ field }) => (
+                    name="confirmPassword" render={({ field }) => (
                       <FormItem>
                         <FormLabel>Confirm Password</FormLabel>
                         <div className="relative">
@@ -469,12 +469,12 @@ export default function AuthPage({ onBack }: { onBack?: () => void }) {
                               {...field}
                               {...inputTrackingProps("register-confirm", field.onBlur)}
                               type={showConfirmPassword ? "text" : "password"}
-                              placeholder="Confirm your password - className="pr-10"
+                              placeholder="Confirm your password" className="pr-10"
                               data-testid="input-register-confirm-password"
                             />
                           </FormControl>
                           <button
-                            type="button - onClick={() => setShowConfirmPassword(!showConfirmPassword)}
+                            type="button" onClick={() => setShowConfirmPassword(!showConfirmPassword)}
                             className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground"
                           >
                             {showConfirmPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
@@ -489,7 +489,7 @@ export default function AuthPage({ onBack }: { onBack?: () => void }) {
                     This standard applies across the entire Trust Layer ecosystem.
                   </div>
                   <Button
-                    type="submit - className="w-full bg-emerald-600 text-white - disabled={registerUser.isPending}
+                    type="submit" className="w-full bg-emerald-600 text-white" disabled={registerUser.isPending}
                     data-testid="button-register-submit"
                   >
                     {registerUser.isPending ? (
@@ -513,7 +513,7 @@ export default function AuthPage({ onBack }: { onBack?: () => void }) {
                     Trust Layer ID or Email
                   </label>
                   <Input
-                    id="eco-identifier - name="identifier - type="text - autoComplete="username - autoCapitalize="off - autoCorrect="off - placeholder="tl-xxxx-xxxx or you@example.com - required
+                    id="eco-identifier" name="identifier" type="text" autoComplete="username - autoCapitalize="off - autoCorrect="off" placeholder="tl-xxxx-xxxx or you@example.com - required
                     data-testid="input-ecosystem-identifier"
                   />
                 </div>
@@ -523,13 +523,13 @@ export default function AuthPage({ onBack }: { onBack?: () => void }) {
                   </label>
                   <div className="relative">
                     <Input
-                      id="eco-credential - name="credential - type={showPassword ? "text" : "password"}
-                      autoComplete="current-password - placeholder="Password or PIN - className="pr-10"
+                      id="eco-credential" name="credential" type={showPassword ? "text" : "password"}
+                      autoComplete="current-password" placeholder="Password or PIN" className="pr-10"
                       required
                       data-testid="input-ecosystem-credential"
                     />
                     <button
-                      type="button - onClick={() => setShowPassword(!showPassword)}
+                      type="button" onClick={() => setShowPassword(!showPassword)}
                       className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground - data-testid="button-toggle-ecosystem-password"
                     >
                       {showPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
@@ -540,7 +540,7 @@ export default function AuthPage({ onBack }: { onBack?: () => void }) {
                   </p>
                 </div>
                 <Button
-                  type="submit - className="w-full bg-emerald-600 text-white - disabled={ecosystemLoading}
+                  type="submit" className="w-full bg-emerald-600 text-white" disabled={ecosystemLoading}
                   data-testid="button-ecosystem-submit"
                 >
                   {ecosystemLoading ? (
@@ -558,7 +558,7 @@ export default function AuthPage({ onBack }: { onBack?: () => void }) {
                 <p className="text-sm text-muted-foreground">
                   {mode === "login" ? "Don't have an account?" : "Already have an account?"}{" "}
                   <button
-                    type="button - onClick={() => {
+                    type="button" onClick={() => {
                       setMode(mode === "login" ? "register" : "login");
                       setShowPassword(false);
                       setShowConfirmPassword(false);
@@ -582,7 +582,7 @@ export default function AuthPage({ onBack }: { onBack?: () => void }) {
 
             {mode !== "ecosystem" ? (
               <Button
-                type="button - variant="outline - className="w-full mt-4 border-emerald-500/30 hover:bg-emerald-500/10 hover:border-emerald-500/50 transition-all - onClick={() => {
+                type="button" variant="outline" className="w-full mt-4 border-emerald-500/30 hover:bg-emerald-500/10 hover:border-emerald-500/50 transition-all" onClick={() => {
                   setMode("ecosystem");
                   setShowPassword(false);
                 }}
@@ -593,7 +593,7 @@ export default function AuthPage({ onBack }: { onBack?: () => void }) {
               </Button>
             ) : (
               <Button
-                type="button - variant="outline - className="w-full mt-4"
+                type="button" variant="outline" className="w-full mt-4"
                 onClick={() => {
                   setMode("login");
                   setShowPassword(false);
@@ -620,7 +620,7 @@ export default function AuthPage({ onBack }: { onBack?: () => void }) {
             DarkWave Studios - Verdara Outdoor Recreation Platform
           </p>
           <a
-            href="/admin - className="text-xs text-amber-500/70 hover:text-amber-400 transition-colors - data-testid="link-dev-dashboard"
+            href="/admin" className="text-xs text-amber-500/70 hover:text-amber-400 transition-colors - data-testid="link-dev-dashboard"
           >
             Developer Dashboard
           </a>

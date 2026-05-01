@@ -92,7 +92,7 @@ export default function ArboraClients() {
   if (isLoading) {
     return (
       <div className="flex items-center justify-center py-20">
-        <Loader2 className="w-8 h-8 animate-spin - style={{ color: "#c2703e" }} />
+        <Loader2 className="w-8 h-8 animate-spin" style={{ color: "#c2703e" }} />
       </div>
     );
   }
@@ -102,18 +102,18 @@ export default function ArboraClients() {
       <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="mb-8">
         <div className="flex flex-wrap items-center gap-3 mb-2">
           <Users className="w-7 h-7" style={{ color: "#c2703e" }} />
-          <h1 className="text-2xl md:text-3xl font-bold - style={{ color: "#f1f5f9" }} data-testid="text-clients-title">
+          <h1 className="text-2xl md:text-3xl font-bold" style={{ color: "#f1f5f9" }} data-testid="text-clients-title">
             Clients
           </h1>
         </div>
-        <p className="text-sm - style={{ color: "#94a3b8" }}>Manage your client directory</p>
+        <p className="text-sm" style={{ color: "#94a3b8" }}>Manage your client directory</p>
       </motion.div>
 
       <div className="flex flex-wrap items-center gap-3 mb-6">
         <div className="flex-1 min-w-0 relative">
           <Search className="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2" style={{ color: "#64748b" }} />
           <Input
-            placeholder="Search clients... - value={search}
+            placeholder="Search clients..." value={search}
             onChange={(e) => setSearch(e.target.value)}
             className="pl-9 border-0"
             style={{ background: "rgba(255,255,255,0.06)", color: "#e2e8f0" }}
@@ -137,7 +137,7 @@ export default function ArboraClients() {
               </div>
               <div>
                 <Label>Email</Label>
-                <Input value={email} onChange={(e) => setEmail(e.target.value)} placeholder="email@example.com - type="email - data-testid="input-client-email" />
+                <Input value={email} onChange={(e) => setEmail(e.target.value)} placeholder="email@example.com" type="email - data-testid="input-client-email" />
               </div>
               <div>
                 <Label>Phone</Label>
@@ -175,7 +175,7 @@ export default function ArboraClients() {
         <div className="text-center py-20">
           <Users className="w-12 h-12 mx-auto mb-4" style={{ color: "#64748b", opacity: 0.3 }} />
           <h3 className="text-lg font-semibold mb-2" style={{ color: "#f1f5f9" }}>No clients found</h3>
-          <p className="text-sm - style={{ color: "#94a3b8" }}>Add your first client to get started</p>
+          <p className="text-sm" style={{ color: "#94a3b8" }}>Add your first client to get started</p>
         </div>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -188,18 +188,18 @@ export default function ArboraClients() {
             >
               <Card className="p-5 border-0" style={{ background: "rgba(255,255,255,0.04)" }} data-testid={`card-client-${client.id}`}>
                 <div className="flex items-start justify-between gap-3 mb-3">
-                  <h3 className="text-sm font-semibold - style={{ color: "#f1f5f9" }} data-testid={`text-client-name-${client.id}`}>
+                  <h3 className="text-sm font-semibold" style={{ color: "#f1f5f9" }} data-testid={`text-client-name-${client.id}`}>
                     {client.name}
                   </h3>
                   <Button
-                    size="icon - variant="ghost - onClick={() => deleteClient.mutate(client.id)}
+                    size="icon" variant="ghost" onClick={() => deleteClient.mutate(client.id)}
                     disabled={deleteClient.isPending}
                     data-testid={`button-delete-client-${client.id}`}
                   >
                     <Trash2 className="w-4 h-4" style={{ color: "#64748b" }} />
                   </Button>
                 </div>
-                <div className="space-y-2 text-xs - style={{ color: "#94a3b8" }}>
+                <div className="space-y-2 text-xs" style={{ color: "#94a3b8" }}>
                   {client.email && (
                     <div className="flex items-center gap-2">
                       <Mail className="w-3.5 h-3.5 flex-shrink-0" />

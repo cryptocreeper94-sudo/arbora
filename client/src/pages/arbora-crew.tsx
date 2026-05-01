@@ -153,7 +153,7 @@ export default function ArboraCrew() {
   if (isLoading) {
     return (
       <div className="flex items-center justify-center py-20">
-        <Loader2 className="w-8 h-8 animate-spin - style={{ color: "#c2703e" }} />
+        <Loader2 className="w-8 h-8 animate-spin" style={{ color: "#c2703e" }} />
       </div>
     );
   }
@@ -164,7 +164,7 @@ export default function ArboraCrew() {
         <div className="flex flex-wrap items-center justify-between gap-3 mb-2">
           <div className="flex items-center gap-3">
             <HardHat className="w-7 h-7" style={{ color: "#c2703e" }} />
-            <h1 className="text-2xl md:text-3xl font-bold - style={{ color: "#f1f5f9" }} data-testid="text-crew-title">Crew</h1>
+            <h1 className="text-2xl md:text-3xl font-bold" style={{ color: "#f1f5f9" }} data-testid="text-crew-title">Crew</h1>
           </div>
           <Dialog open={crewDialogOpen} onOpenChange={setCrewDialogOpen}>
             <DialogTrigger asChild>
@@ -177,7 +177,7 @@ export default function ArboraCrew() {
               <div className="space-y-4 mt-2">
                 <div><Label>First Name *</Label><Input value={firstName} onChange={(e) => setFirstName(e.target.value)} placeholder="First name - data-testid="input-crew-first-name" /></div>
                 <div><Label>Last Name *</Label><Input value={lastName} onChange={(e) => setLastName(e.target.value)} placeholder="Last name - data-testid="input-crew-last-name" /></div>
-                <div><Label>Email</Label><Input value={email} onChange={(e) => setEmail(e.target.value)} placeholder="email@example.com - type="email - data-testid="input-crew-email" /></div>
+                <div><Label>Email</Label><Input value={email} onChange={(e) => setEmail(e.target.value)} placeholder="email@example.com" type="email - data-testid="input-crew-email" /></div>
                 <div><Label>Phone</Label><Input value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="(555) 123-4567" data-testid="input-crew-phone" /></div>
                 <div>
                   <Label>Role</Label>
@@ -188,7 +188,7 @@ export default function ArboraCrew() {
                     </SelectContent>
                   </Select>
                 </div>
-                <div><Label>Hourly Rate ($)</Label><Input type="number - step="0.01" value={hourlyRate} onChange={(e) => setHourlyRate(e.target.value)} placeholder="0.00" data-testid="input-crew-rate" /></div>
+                <div><Label>Hourly Rate ($)</Label><Input type="number" step="0.01" value={hourlyRate} onChange={(e) => setHourlyRate(e.target.value)} placeholder="0.00" data-testid="input-crew-rate" /></div>
                 <div className="flex items-center gap-3 pt-2">
                   <Button style={{ background: "#c2703e", color: "#fff" }} className="gap-1.5" onClick={handleCrewSubmit} disabled={createCrew.isPending || !firstName.trim() || !lastName.trim()} data-testid="button-submit-crew">
                     {createCrew.isPending ? <Loader2 className="w-4 h-4 animate-spin" /> : <Plus className="w-4 h-4" />}
@@ -206,7 +206,7 @@ export default function ArboraCrew() {
         <div className="text-center py-16">
           <HardHat className="w-12 h-12 mx-auto mb-4" style={{ color: "#64748b", opacity: 0.3 }} />
           <h3 className="text-lg font-semibold mb-2" style={{ color: "#f1f5f9" }}>No crew members yet</h3>
-          <p className="text-sm - style={{ color: "#94a3b8" }}>Add your first crew member</p>
+          <p className="text-sm" style={{ color: "#94a3b8" }}>Add your first crew member</p>
         </div>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
@@ -215,14 +215,14 @@ export default function ArboraCrew() {
               <Card className="p-5 border-0" style={{ background: "rgba(255,255,255,0.04)" }} data-testid={`card-crew-${member.id}`}>
                 <div className="flex items-start justify-between gap-3 mb-3">
                   <div>
-                    <h3 className="text-sm font-semibold - style={{ color: "#f1f5f9" }} data-testid={`text-crew-name-${member.id}`}>
+                    <h3 className="text-sm font-semibold" style={{ color: "#f1f5f9" }} data-testid={`text-crew-name-${member.id}`}>
                       {member.firstName} {member.lastName}
                     </h3>
                     <p className="text-xs mt-0.5" style={{ color: "#94a3b8" }}>{member.role ? member.role.charAt(0).toUpperCase() + member.role.slice(1).replace("-", " ") : """}</p>
                   </div>
                   <div className="flex items-center gap-1">
                     <Badge
-                      className="text-[10px] cursor-pointer - style={{
+                      className="text-[10px] cursor-pointer" style={{
                         background: member.isActive ? "rgba(16,185,129,0.15)" : "rgba(148,163,184,0.15)",
                         color: member.isActive ? "#10b981" : "#94a3b8",
                         border: "none",
@@ -232,12 +232,12 @@ export default function ArboraCrew() {
                     >
                       {member.isActive ? "Active" : "Inactive"}
                     </Badge>
-                    <Button size="icon - variant="ghost - onClick={() => deleteCrew.mutate(member.id)} disabled={deleteCrew.isPending} data-testid={`button-delete-crew-${member.id}`}>
+                    <Button size="icon" variant="ghost" onClick={() => deleteCrew.mutate(member.id)} disabled={deleteCrew.isPending} data-testid={`button-delete-crew-${member.id}`}>
                       <Trash2 className="w-4 h-4" style={{ color: "#64748b" }} />
                     </Button>
                   </div>
                 </div>
-                <div className="space-y-1.5 text-xs - style={{ color: "#94a3b8" }}>
+                <div className="space-y-1.5 text-xs" style={{ color: "#94a3b8" }}>
                   {member.email && <div className="flex items-center gap-2"><Mail className="w-3.5 h-3.5 flex-shrink-0" /><span>{member.email}</span></div>}
                   {member.phone && <div className="flex items-center gap-2"><Phone className="w-3.5 h-3.5 flex-shrink-0" /><span>{member.phone}</span></div>}
                   {member.hourlyRate != null && (
@@ -254,7 +254,7 @@ export default function ArboraCrew() {
         <div className="flex flex-wrap items-center justify-between gap-3 mb-6">
           <div className="flex items-center gap-3">
             <Clock className="w-6 h-6" style={{ color: "#c2703e" }} />
-            <h2 className="text-xl font-bold - style={{ color: "#f1f5f9" }} data-testid="text-time-entries-title">Time Entries</h2>
+            <h2 className="text-xl font-bold" style={{ color: "#f1f5f9" }} data-testid="text-time-entries-title">Time Entries</h2>
           </div>
           <Dialog open={timeDialogOpen} onOpenChange={setTimeDialogOpen}>
             <DialogTrigger asChild>
@@ -279,9 +279,9 @@ export default function ArboraCrew() {
                     <SelectContent>{jobsList.map((j) => <SelectItem key={j.id} value={String(j.id)}>{j.title}</SelectItem>)}</SelectContent>
                   </Select>
                 </div>
-                <div><Label>Date *</Label><Input type="date - value={teDate} onChange={(e) => setTeDate(e.target.value)} data-testid="input-te-date" /></div>
-                <div><Label>Hours Worked *</Label><Input type="number - step="0.25" value={teHours} onChange={(e) => setTeHours(e.target.value)} placeholder="8" data-testid="input-te-hours" /></div>
-                <div><Label>Overtime Hours</Label><Input type="number - step="0.25" value={teOvertime} onChange={(e) => setTeOvertime(e.target.value)} placeholder="0" data-testid="input-te-overtime" /></div>
+                <div><Label>Date *</Label><Input type="date" value={teDate} onChange={(e) => setTeDate(e.target.value)} data-testid="input-te-date" /></div>
+                <div><Label>Hours Worked *</Label><Input type="number" step="0.25" value={teHours} onChange={(e) => setTeHours(e.target.value)} placeholder="8" data-testid="input-te-hours" /></div>
+                <div><Label>Overtime Hours</Label><Input type="number" step="0.25" value={teOvertime} onChange={(e) => setTeOvertime(e.target.value)} placeholder="0" data-testid="input-te-overtime" /></div>
                 <div><Label>Notes</Label><Textarea value={teNotes} onChange={(e) => setTeNotes(e.target.value)} placeholder="Notes... - data-testid="input-te-notes" /></div>
                 <div className="flex items-center gap-3 pt-2">
                   <Button style={{ background: "#c2703e", color: "#fff" }} className="gap-1.5" onClick={handleTeSubmit} disabled={createTimeEntry.isPending || !teCrew || !teDate || !teHours} data-testid="button-submit-time-entry">
@@ -297,7 +297,7 @@ export default function ArboraCrew() {
 
         {teList.length === 0 ? (
           <div className="text-center py-10">
-            <p className="text-sm - style={{ color: "#64748b" }}>No time entries yet</p>
+            <p className="text-sm" style={{ color: "#64748b" }}>No time entries yet</p>
           </div>
         ) : (
           <div className="space-y-2">
@@ -307,20 +307,20 @@ export default function ArboraCrew() {
                 <Card key={te.id} className="p-4 border-0 flex flex-wrap items-center justify-between gap-3" style={{ background: "rgba(255,255,255,0.04)" }} data-testid={`card-te-${te.id}`}>
                   <div className="flex items-center gap-4">
                     <div>
-                      <p className="text-sm font-medium - style={{ color: "#e2e8f0" }}>{getCrewName(te.crewMemberId)}</p>
-                      <p className="text-xs - style={{ color: "#64748b" }}>{getJobTitle(te.jobId)}</p>
+                      <p className="text-sm font-medium" style={{ color: "#e2e8f0" }}>{getCrewName(te.crewMemberId)}</p>
+                      <p className="text-xs" style={{ color: "#64748b" }}>{getJobTitle(te.jobId)}</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-4">
-                    <span className="text-xs - style={{ color: "#94a3b8" }}>{te.date}</span>
-                    <span className="text-xs font-medium - style={{ color: "#e2e8f0" }}>{te.hoursWorked}h{te.overtimeHours ? ` +${te.overtimeHours}ot` : ""}</span>
+                    <span className="text-xs" style={{ color: "#94a3b8" }}>{te.date}</span>
+                    <span className="text-xs font-medium" style={{ color: "#e2e8f0" }}>{te.hoursWorked}h{te.overtimeHours ? ` +${te.overtimeHours}ot` : ""}</span>
                     <Badge className="text-[10px]" style={{
                       background: isPending ? "rgba(245,158,11,0.15)" : "rgba(16,185,129,0.15)",
                       color: isPending ? "#f59e0b" : "#10b981",
                       border: "none",
                     }} data-testid={`badge-te-status-${te.id}`}>{te.status}</Badge>
                     {isPending && (
-                      <Button variant="outline - size="sm - className="gap-1 text-xs - onClick={() => approveTimeEntry.mutate(te.id)} disabled={approveTimeEntry.isPending} data-testid={`button-approve-te-${te.id}`}>
+                      <Button variant="outline" size="sm" className="gap-1 text-xs" onClick={() => approveTimeEntry.mutate(te.id)} disabled={approveTimeEntry.isPending} data-testid={`button-approve-te-${te.id}`}>
                         <CheckCircle className="w-3 h-3" /> Approve
                       </Button>
                     )}

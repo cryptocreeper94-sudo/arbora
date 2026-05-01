@@ -223,7 +223,7 @@ export function OnboardingModal({ onDismiss }: OnboardingModalProps) {
     >
       <div className="relative w-full h-full max-w-lg mx-auto flex flex-col overflow-hidden md:max-h-[90vh] md:rounded-2xl md:border md:border-white/10">
         <Button
-          variant="ghost - size="icon - onClick={dismiss}
+          variant="ghost" size="icon" onClick={dismiss}
           className="absolute top-4 right-4 z-20 w-8 h-8 rounded-full bg-black/50 backdrop-blur-sm border border-white/10 text-white/70"
           data-testid="button-skip-onboarding - aria-label="Skip"
         >
@@ -242,7 +242,7 @@ export function OnboardingModal({ onDismiss }: OnboardingModalProps) {
               key={currentSlide}
               custom={direction}
               variants={slideVariants}
-              initial="enter - animate="center - exit="exit - className="absolute inset-0 flex flex-col"
+              initial="enter - animate="center - exit="exit" className="absolute inset-0 flex flex-col"
             >
               <div className="relative h-[45%] min-h-[220px] overflow-hidden flex-shrink-0">
                 <img
@@ -280,7 +280,7 @@ export function OnboardingModal({ onDismiss }: OnboardingModalProps) {
                 </ul>
 
                 <Button
-                  variant="outline - onClick={handleLink}
+                  variant="outline" onClick={handleLink}
                   className={`w-full gap-2 rounded-xl mb-4 ${
                     slide.accentColor === "emerald"
                       ? "border-emerald-500/20 text-emerald-400"
@@ -293,7 +293,7 @@ export function OnboardingModal({ onDismiss }: OnboardingModalProps) {
 
                 <div className="flex items-center justify-between">
                   <Button
-                    variant="ghost - size="sm - onClick={goPrev}
+                    variant="ghost" size="sm" onClick={goPrev}
                     disabled={currentSlide === 0}
                     className="gap-1 text-muted-foreground - data-testid="button-onboarding-prev"
                   >
@@ -317,7 +317,7 @@ export function OnboardingModal({ onDismiss }: OnboardingModalProps) {
                   </div>
 
                   <Button
-                    variant="ghost - size="sm - onClick={goNext}
+                    variant="ghost" size="sm" onClick={goNext}
                     className={`gap-1 ${isLast ? "text-emerald-400 font-semibold" : "text-muted-foreground"}`}
                     data-testid="button-onboarding-next"
                   >

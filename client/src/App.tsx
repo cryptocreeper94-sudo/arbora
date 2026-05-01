@@ -48,15 +48,15 @@ function AppContent() {
     <ArboraLayout>
       <Switch>
         <Route path="/" component={ArboraDashboard} />
-        <Route path="/clients - component={ArboraClients} />
-        <Route path="/deals - component={ArboraDeals} />
-        <Route path="/jobs - component={ArboraJobs} />
-        <Route path="/estimates - component={ArboraEstimates} />
-        <Route path="/invoices - component={ArboraInvoices} />
-        <Route path="/calendar - component={ArboraCalendar} />
-        <Route path="/crew - component={ArboraCrew} />
-        <Route path="/inventory - component={ArboraInventory} />
-        <Route path="/equipment - component={ArboraEquipment} />
+        <Route path="/clients" component={ArboraClients} />
+        <Route path="/deals" component={ArboraDeals} />
+        <Route path="/jobs" component={ArboraJobs} />
+        <Route path="/estimates" component={ArboraEstimates} />
+        <Route path="/invoices" component={ArboraInvoices} />
+        <Route path="/calendar" component={ArboraCalendar} />
+        <Route path="/crew" component={ArboraCrew} />
+        <Route path="/inventory" component={ArboraInventory} />
+        <Route path="/equipment" component={ArboraEquipment} />
         <Route component={NotFound} />
       </Switch>
     </ArboraLayout>

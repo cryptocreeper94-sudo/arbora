@@ -117,7 +117,7 @@ export default function ArboraInventory() {
   if (isLoading) {
     return (
       <div className="flex items-center justify-center py-20">
-        <Loader2 className="w-8 h-8 animate-spin - style={{ color: "#c2703e" }} />
+        <Loader2 className="w-8 h-8 animate-spin" style={{ color: "#c2703e" }} />
       </div>
     );
   }
@@ -128,7 +128,7 @@ export default function ArboraInventory() {
         <div className="flex flex-wrap items-center justify-between gap-3 mb-2">
           <div className="flex items-center gap-3">
             <Package className="w-7 h-7" style={{ color: "#c2703e" }} />
-            <h1 className="text-2xl md:text-3xl font-bold - style={{ color: "#f1f5f9" }} data-testid="text-inventory-title">Inventory</h1>
+            <h1 className="text-2xl md:text-3xl font-bold" style={{ color: "#f1f5f9" }} data-testid="text-inventory-title">Inventory</h1>
           </div>
           <Dialog open={dialogOpen} onOpenChange={setDialogOpen}>
             <DialogTrigger asChild>
@@ -150,10 +150,10 @@ export default function ArboraInventory() {
                   </Select>
                 </div>
                 <div><Label>SKU</Label><Input value={sku} onChange={(e) => setSku(e.target.value)} placeholder="SKU-001" data-testid="input-inv-sku" /></div>
-                <div><Label>Current Quantity</Label><Input type="number - value={currentQuantity} onChange={(e) => setCurrentQuantity(e.target.value)} placeholder="0" data-testid="input-inv-quantity" /></div>
+                <div><Label>Current Quantity</Label><Input type="number" value={currentQuantity} onChange={(e) => setCurrentQuantity(e.target.value)} placeholder="0" data-testid="input-inv-quantity" /></div>
                 <div><Label>Unit</Label><Input value={unit} onChange={(e) => setUnit(e.target.value)} placeholder="each - data-testid="input-inv-unit" /></div>
-                <div><Label>Reorder Point</Label><Input type="number - value={reorderPoint} onChange={(e) => setReorderPoint(e.target.value)} placeholder="5" data-testid="input-inv-reorder" /></div>
-                <div><Label>Cost Per Unit ($)</Label><Input type="number - step="0.01" value={costPerUnit} onChange={(e) => setCostPerUnit(e.target.value)} placeholder="0.00" data-testid="input-inv-cost" /></div>
+                <div><Label>Reorder Point</Label><Input type="number" value={reorderPoint} onChange={(e) => setReorderPoint(e.target.value)} placeholder="5" data-testid="input-inv-reorder" /></div>
+                <div><Label>Cost Per Unit ($)</Label><Input type="number" step="0.01" value={costPerUnit} onChange={(e) => setCostPerUnit(e.target.value)} placeholder="0.00" data-testid="input-inv-cost" /></div>
                 <div><Label>Supplier</Label><Input value={supplier} onChange={(e) => setSupplier(e.target.value)} placeholder="Supplier name - data-testid="input-inv-supplier" /></div>
                 <div><Label>Notes</Label><Textarea value={notes} onChange={(e) => setNotes(e.target.value)} placeholder="Notes... - data-testid="input-inv-notes" /></div>
                 <div className="flex items-center gap-3 pt-2">
@@ -173,10 +173,10 @@ export default function ArboraInventory() {
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="mb-6">
           <Card className="p-4 border-0 flex flex-wrap items-center gap-3" style={{ background: "rgba(239,68,68,0.08)" }} data-testid="alert-low-stock">
             <AlertTriangle className="w-5 h-5" style={{ color: "#ef4444" }} />
-            <span className="text-sm font-medium - style={{ color: "#ef4444" }}>
+            <span className="text-sm font-medium" style={{ color: "#ef4444" }}>
               {lowStockList.length} item{lowStockList.length > 1 ? "s" : ""} below reorder point:
             </span>
-            <span className="text-sm - style={{ color: "#e2e8f0" }}>
+            <span className="text-sm" style={{ color: "#e2e8f0" }}>
               {lowStockList.map((it) => it.name).join(", ")}
             </span>
           </Card>
@@ -198,8 +198,8 @@ export default function ArboraInventory() {
         <DialogContent data-testid="dialog-edit-quantity">
           <DialogHeader><DialogTitle>Update Quantity</DialogTitle></DialogHeader>
           <div className="space-y-4 mt-2">
-            <p className="text-sm - style={{ color: "#e2e8f0" }}>{editItem?.name}</p>
-            <div><Label>New Quantity</Label><Input type="number - value={editQty} onChange={(e) => setEditQty(e.target.value)} data-testid="input-edit-qty" /></div>
+            <p className="text-sm" style={{ color: "#e2e8f0" }}>{editItem?.name}</p>
+            <div><Label>New Quantity</Label><Input type="number" value={editQty} onChange={(e) => setEditQty(e.target.value)} data-testid="input-edit-qty" /></div>
             <div className="flex items-center gap-3">
               <Button style={{ background: "#c2703e", color: "#fff" }} onClick={() => editItem && updateQuantity.mutate({ id: editItem.id, currentQuantity: parseInt(editQty) || 0 })} disabled={updateQuantity.isPending} data-testid="button-save-qty">
                 {updateQuantity.isPending ? <Loader2 className="w-4 h-4 animate-spin" /> : "Save"}
@@ -214,7 +214,7 @@ export default function ArboraInventory() {
         <div className="text-center py-20">
           <Package className="w-12 h-12 mx-auto mb-4" style={{ color: "#64748b", opacity: 0.3 }} />
           <h3 className="text-lg font-semibold mb-2" style={{ color: "#f1f5f9" }}>No inventory items</h3>
-          <p className="text-sm - style={{ color: "#94a3b8" }}>Add your first inventory item</p>
+          <p className="text-sm" style={{ color: "#94a3b8" }}>Add your first inventory item</p>
         </div>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -225,14 +225,14 @@ export default function ArboraInventory() {
                 <Card className="p-5 border-0" style={{ background: "rgba(255,255,255,0.04)" }} data-testid={`card-inventory-${item.id}`}>
                   <div className="flex items-start justify-between gap-3 mb-3">
                     <div className="flex-1 min-w-0">
-                      <h3 className="text-sm font-semibold - style={{ color: "#f1f5f9" }} data-testid={`text-inv-name-${item.id}`}>{item.name}</h3>
+                      <h3 className="text-sm font-semibold" style={{ color: "#f1f5f9" }} data-testid={`text-inv-name-${item.id}`}>{item.name}</h3>
                       <p className="text-xs mt-0.5" style={{ color: "#94a3b8" }}>{item.category ? item.category.charAt(0).toUpperCase() + item.category.slice(1).replace("-", " ") : """}</p>
                     </div>
                     <div className="flex items-center gap-1">
-                      <Button size="icon - variant="ghost - onClick={() => openEditQty(item)} data-testid={`button-edit-qty-${item.id}`}>
+                      <Button size="icon" variant="ghost" onClick={() => openEditQty(item)} data-testid={`button-edit-qty-${item.id}`}>
                         <Edit2 className="w-3.5 h-3.5" style={{ color: "#94a3b8" }} />
                       </Button>
-                      <Button size="icon - variant="ghost - onClick={() => deleteItem.mutate(item.id)} disabled={deleteItem.isPending} data-testid={`button-delete-inv-${item.id}`}>
+                      <Button size="icon" variant="ghost" onClick={() => deleteItem.mutate(item.id)} disabled={deleteItem.isPending} data-testid={`button-delete-inv-${item.id}`}>
                         <Trash2 className="w-4 h-4" style={{ color: "#64748b" }} />
                       </Button>
                     </div>
@@ -247,7 +247,7 @@ export default function ArboraInventory() {
                       {item.currentQuantity} {item.unit}
                     </Badge>
                   </div>
-                  <div className="space-y-1.5 text-xs - style={{ color: "#94a3b8" }}>
+                  <div className="space-y-1.5 text-xs" style={{ color: "#94a3b8" }}>
                     <div className="flex justify-between">
                       <span>Reorder at</span>
                       <span style={{ color: "#e2e8f0" }}>{item.reorderPoint} {item.unit}</span>

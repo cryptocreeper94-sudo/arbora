@@ -37,9 +37,9 @@ export function ArboraLayout({ children }: { children: React.ReactNode }) {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <div className="flex h-screen w-full overflow-hidden - style={{ background: "#0a0f1a" }}>
+    <div className="flex h-screen w-full overflow-hidden" style={{ background: "#0a0f1a" }}>
       {mobileOpen && (
-        <div className="fixed inset-0 z-40 bg-black/60 lg:hidden - onClick={() => setMobileOpen(false)} />
+        <div className="fixed inset-0 z-40 bg-black/60 lg:hidden" onClick={() => setMobileOpen(false)} />
       )}
       <aside
         className={cn(
@@ -52,23 +52,23 @@ export function ArboraLayout({ children }: { children: React.ReactNode }) {
         <div className={cn("flex items-center gap-3 p-4 border-b", !collapsed && "justify-between")} style={{ borderColor: "rgba(194,112,62,0.2)" }}>
           <Link href="/arbora">
             <div className="flex items-center gap-3 cursor-pointer">
-              <img src={arboraIcon} alt="Arbora - className="w-8 h-8 rounded-lg flex-shrink-0" />
+              <img src={arboraIcon} alt="Arbora" className="w-8 h-8 rounded-lg flex-shrink-0" />
               {!collapsed && (
-                <span className="text-lg font-bold tracking-tight - style={{ color: "#c2703e" }}>Arbora</span>
+                <span className="text-lg font-bold tracking-tight" style={{ color: "#c2703e" }}>Arbora</span>
               )}
             </div>
           </Link>
           {!collapsed && (
-            <Button size="icon - variant="ghost - className="hidden lg:flex w-7 h-7" onClick={() => setCollapsed(true)} style={{ color: "#94a3b8" }}>
+            <Button size="icon" variant="ghost" className="hidden lg:flex w-7 h-7" onClick={() => setCollapsed(true)} style={{ color: "#94a3b8" }}>
               <ChevronLeft className="w-4 h-4" />
             </Button>
           )}
           {collapsed && (
-            <Button size="icon - variant="ghost - className="hidden lg:flex w-7 h-7 mx-auto mt-1" onClick={() => setCollapsed(false)} style={{ color: "#94a3b8" }}>
+            <Button size="icon" variant="ghost" className="hidden lg:flex w-7 h-7 mx-auto mt-1" onClick={() => setCollapsed(false)} style={{ color: "#94a3b8" }}>
               <ChevronRight className="w-4 h-4" />
             </Button>
           )}
-          <Button size="icon - variant="ghost - className="lg:hidden w-7 h-7" onClick={() => setMobileOpen(false)} style={{ color: "#94a3b8" }}>
+          <Button size="icon" variant="ghost" className="lg:hidden w-7 h-7" onClick={() => setMobileOpen(false)} style={{ color: "#94a3b8" }}>
             <X className="w-4 h-4" />
           </Button>
         </div>
@@ -99,7 +99,7 @@ export function ArboraLayout({ children }: { children: React.ReactNode }) {
           })}
         </nav>
 
-        <div className="p-3 border-t - style={{ borderColor: "rgba(194,112,62,0.2)" }}>
+        <div className="p-3 border-t" style={{ borderColor: "rgba(194,112,62,0.2)" }}>
           <Link href="/">
             <div
               className={cn("flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium cursor-pointer hover:bg-white/5", !collapsed ? "" : "justify-center px-2")}
@@ -114,24 +114,24 @@ export function ArboraLayout({ children }: { children: React.ReactNode }) {
       </aside>
 
       <main className="flex-1 flex flex-col min-w-0 overflow-hidden">
-        <header className="flex items-center gap-3 px-4 py-3 border-b lg:hidden - style={{ background: "#0f172a", borderColor: "rgba(194,112,62,0.2)" }}>
-          <Button size="icon - variant="ghost - onClick={() => setMobileOpen(true)} data-testid="arbora-mobile-menu">
+        <header className="flex items-center gap-3 px-4 py-3 border-b lg:hidden" style={{ background: "#0f172a", borderColor: "rgba(194,112,62,0.2)" }}>
+          <Button size="icon" variant="ghost" onClick={() => setMobileOpen(true)} data-testid="arbora-mobile-menu">
             <Menu className="w-5 h-5" style={{ color: "#94a3b8" }} />
           </Button>
-          <img src={arboraIcon} alt="Arbora - className="w-7 h-7 rounded-lg" />
-          <span className="text-base font-bold - style={{ color: "#c2703e" }}>Arbora</span>
+          <img src={arboraIcon} alt="Arbora" className="w-7 h-7 rounded-lg" />
+          <span className="text-base font-bold" style={{ color: "#c2703e" }}>Arbora</span>
         </header>
-        <div className="flex-1 overflow-y-auto - style={{ background: "#0a0f1a" }}>
+        <div className="flex-1 overflow-y-auto" style={{ background: "#0a0f1a" }}>
           {children}
         </div>
-        <nav className="flex items-center justify-around border-t py-2 safe-area-bottom lg:hidden - style={{ background: "#0f172a", borderColor: "rgba(194,112,62,0.2)" }}>
+        <nav className="flex items-center justify-around border-t py-2 safe-area-bottom lg:hidden" style={{ background: "#0f172a", borderColor: "rgba(194,112,62,0.2)" }}>
           {mobileArboraNav.map((item) => {
             const isActive = location === item.path || (item.path !== "/arbora" && location.startsWith(item.path));
             return (
               <Link key={item.path} href={item.path}>
                 <div className="flex flex-col items-center gap-1 px-3 py-1 cursor-pointer - data-testid={`arbora-mobile-nav-${item.label.toLowerCase()}`}>
                   <item.icon className="w-5 h-5" style={{ color: isActive ? "#c2703e" : "#64748b" }} />
-                  <span className="text-[10px] font-medium - style={{ color: isActive ? "#c2703e" : "#64748b" }}>{item.label}</span>
+                  <span className="text-[10px] font-medium" style={{ color: isActive ? "#c2703e" : "#64748b" }}>{item.label}</span>
                 </div>
               </Link>
             );
