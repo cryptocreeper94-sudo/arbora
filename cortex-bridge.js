@@ -1,7 +1,7 @@
 ???/**
  * Cortex Bridge " Arbora
- * Trust Layer Ecosystem · Lume-OS Connectivity Module
- * Generated: 2026-04-30 · DarkWave Studios LLC
+ * Trust Layer Ecosystem - Lume-OS Connectivity Module
+ * Generated: 2026-04-30 - DarkWave Studios LLC
  *
  * This module registers the application with Lume Cortex,
  * the deterministic meta-operating system. It declares the

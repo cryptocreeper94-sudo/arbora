@@ -1134,7 +1134,7 @@ export const tennesseeLocations = [
     seasons: ["spring", "summer", "fall", "winter"],
     tags: ["underground waterfall", "Lookout Mountain", "cave", "Chattanooga", "geological wonder", "family friendly", "landmark"],
     difficulty: "easy",
-    regulations: "Ticket required. Guided tours only " no unaccompanied cave access. Cave temperature is constant 60°F " bring a light jacket. No flash photography. ADA accessible to waterfall via elevator.",
+    regulations: "Ticket required. Guided tours only " no unaccompanied cave access. Cave temperature is constant 60 F " bring a light jacket. No flash photography. ADA accessible to waterfall via elevator.",
     website: "https://www.rubyfalls.com",
     phone: "(423) 821-2544",
     bookingUrl: "https://www.rubyfalls.com/tickets",
