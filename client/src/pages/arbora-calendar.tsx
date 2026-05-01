@@ -82,7 +82,7 @@ export default function ArboraCalendar() {
   if (isLoading) {
     return (
       <div className="flex items-center justify-center py-20">
-        <Loader2 className="w-8 h-8 animate-spin" style={{ color: "#c2703e" }} />
+        <Loader2 className="w-8 h-8 animate-spin - style={{ color: "#c2703e" }} />
       </div>
     );
   }
@@ -92,22 +92,22 @@ export default function ArboraCalendar() {
       <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="mb-8">
         <div className="flex items-center gap-3 mb-2">
           <CalendarDays className="w-7 h-7" style={{ color: "#c2703e" }} />
-          <h1 className="text-2xl md:text-3xl font-bold" style={{ color: "#f1f5f9" }} data-testid="text-calendar-title">Calendar</h1>
+          <h1 className="text-2xl md:text-3xl font-bold - style={{ color: "#f1f5f9" }} data-testid="text-calendar-title">Calendar</h1>
         </div>
-        <p className="text-sm" style={{ color: "#94a3b8" }}>View scheduled jobs by date</p>
+        <p className="text-sm - style={{ color: "#94a3b8" }}>View scheduled jobs by date</p>
       </motion.div>
 
       <div className="flex flex-col lg:flex-row gap-6">
         <div className="flex-1">
           <Card className="p-5 border-0" style={{ background: "rgba(255,255,255,0.04)" }}>
             <div className="flex items-center justify-between mb-4">
-              <Button size="icon" variant="ghost" onClick={prevMonth} data-testid="button-prev-month">
+              <Button size="icon - variant="ghost - onClick={prevMonth} data-testid="button-prev-month">
                 <ChevronLeft className="w-5 h-5" style={{ color: "#94a3b8" }} />
               </Button>
-              <h2 className="text-lg font-semibold" style={{ color: "#f1f5f9" }} data-testid="text-current-month">{monthName}</h2>
+              <h2 className="text-lg font-semibold - style={{ color: "#f1f5f9" }} data-testid="text-current-month">{monthName}</h2>
               <div className="flex items-center gap-2">
-                <Button variant="outline" size="sm" onClick={goToday} className="text-xs" data-testid="button-today">Today</Button>
-                <Button size="icon" variant="ghost" onClick={nextMonth} data-testid="button-next-month">
+                <Button variant="outline - size="sm - onClick={goToday} className="text-xs - data-testid="button-today">Today</Button>
+                <Button size="icon - variant="ghost - onClick={nextMonth} data-testid="button-next-month">
                   <ChevronRight className="w-5 h-5" style={{ color: "#94a3b8" }} />
                 </Button>
               </div>
@@ -133,8 +133,7 @@ export default function ArboraCalendar() {
                   <button
                     key={day}
                     onClick={() => setSelectedDay(dateStr)}
-                    className="h-12 rounded-lg flex flex-col items-center justify-center relative transition-colors"
-                    style={{
+                    className="h-12 rounded-lg flex flex-col items-center justify-center relative transition-colors - style={{
                       background: isSelected ? "rgba(194,112,62,0.2)" : isToday ? "rgba(255,255,255,0.06)" : "transparent",
                       color: isSelected ? "#c2703e" : isToday ? "#f1f5f9" : "#e2e8f0",
                       border: isSelected ? "1px solid rgba(194,112,62,0.4)" : "1px solid transparent",
@@ -155,19 +154,19 @@ export default function ArboraCalendar() {
         <div className="lg:w-80">
           <Card className="p-5 border-0" style={{ background: "rgba(255,255,255,0.04)" }}>
             <div className="flex items-center justify-between mb-4">
-              <h3 className="text-sm font-semibold" style={{ color: "#f1f5f9" }}>
+              <h3 className="text-sm font-semibold - style={{ color: "#f1f5f9" }}>
                 {selectedDay ? new Date(selectedDay + "T12:00:00").toLocaleDateString("en-US", { weekday: "long", month: "short", day: "numeric" }) : "Select a day"}
               </h3>
               <Link href="/arbora/jobs">
-                <Button variant="outline" size="sm" className="gap-1 text-xs" data-testid="button-add-job-from-calendar">
+                <Button variant="outline - size="sm - className="gap-1 text-xs - data-testid="button-add-job-from-calendar">
                   <Plus className="w-3 h-3" /> New Job
                 </Button>
               </Link>
             </div>
             {!selectedDay ? (
-              <p className="text-xs py-6 text-center" style={{ color: "#64748b" }}>Click a day to see scheduled jobs</p>
+              <p className="text-xs py-6 text-center - style={{ color: "#64748b" }}>Click a day to see scheduled jobs</p>
             ) : selectedJobs.length === 0 ? (
-              <p className="text-xs py-6 text-center" style={{ color: "#64748b" }}>No jobs scheduled for this day</p>
+              <p className="text-xs py-6 text-center - style={{ color: "#64748b" }}>No jobs scheduled for this day</p>
             ) : (
               <div className="space-y-3">
                 {selectedJobs.map((job) => {
@@ -175,11 +174,11 @@ export default function ArboraCalendar() {
                   return (
                     <div key={job.id} className="rounded-lg p-3" style={{ background: "rgba(255,255,255,0.04)" }} data-testid={`calendar-job-${job.id}`}>
                       <div className="flex items-start justify-between gap-2 mb-1">
-                        <h4 className="text-sm font-medium" style={{ color: "#e2e8f0" }}>{job.title}</h4>
+                        <h4 className="text-sm font-medium - style={{ color: "#e2e8f0" }}>{job.title}</h4>
                         <Badge className="text-[10px]" style={{ background: sc.bg, color: sc.text, border: "none" }} data-testid={`badge-calendar-job-status-${job.id}`}>{job.status}</Badge>
                       </div>
                       {getClientName(job.clientId) && (
-                        <p className="text-xs" style={{ color: "#94a3b8" }}>{getClientName(job.clientId)}</p>
+                        <p className="text-xs - style={{ color: "#94a3b8" }}>{getClientName(job.clientId)}</p>
                       )}
                       {job.estimatedCost != null && (
                         <p className="text-xs mt-1" style={{ color: "#64748b" }}>${Number(job.estimatedCost).toFixed(2)}</p>

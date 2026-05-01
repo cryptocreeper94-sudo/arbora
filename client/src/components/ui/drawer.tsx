@@ -1,11 +1,4 @@
-"use client"
-
-import * as React from "react"
-import { Drawer as DrawerPrimitive } from "vaul"
-
-import { cn } from "@/lib/utils"
-
-const Drawer = ({
+"use client - import * as React from "react - import { Drawer as DrawerPrimitive } from "vaul - import { cn } from "@/lib/utils - const Drawer = ({
   shouldScaleBackground = true,
   ...props
 }: React.ComponentProps<typeof DrawerPrimitive.Root>) => (
@@ -14,9 +7,7 @@ const Drawer = ({
     {...props}
   />
 )
-Drawer.displayName = "Drawer"
-
-const DrawerTrigger = DrawerPrimitive.Trigger
+Drawer.displayName = "Drawer - const DrawerTrigger = DrawerPrimitive.Trigger
 
 const DrawerPortal = DrawerPrimitive.Portal
 
@@ -53,9 +44,7 @@ const DrawerContent = React.forwardRef<
     </DrawerPrimitive.Content>
   </DrawerPortal>
 ))
-DrawerContent.displayName = "DrawerContent"
-
-const DrawerHeader = ({
+DrawerContent.displayName = "DrawerContent - const DrawerHeader = ({
   className,
   ...props
 }: React.HTMLAttributes<HTMLDivElement>) => (
@@ -64,9 +53,7 @@ const DrawerHeader = ({
     {...props}
   />
 )
-DrawerHeader.displayName = "DrawerHeader"
-
-const DrawerFooter = ({
+DrawerHeader.displayName = "DrawerHeader - const DrawerFooter = ({
   className,
   ...props
 }: React.HTMLAttributes<HTMLDivElement>) => (
@@ -75,9 +62,7 @@ const DrawerFooter = ({
     {...props}
   />
 )
-DrawerFooter.displayName = "DrawerFooter"
-
-const DrawerTitle = React.forwardRef<
+DrawerFooter.displayName = "DrawerFooter - const DrawerTitle = React.forwardRef<
   React.ElementRef<typeof DrawerPrimitive.Title>,
   React.ComponentPropsWithoutRef<typeof DrawerPrimitive.Title>
 >(({ className, ...props }, ref) => (

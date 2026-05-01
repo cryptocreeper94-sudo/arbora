@@ -1,9 +1,4 @@
-"use client"
-
-import * as React from "react"
-import * as RechartsPrimitive from "recharts"
-
-import { cn } from "@/lib/utils"
+"use client - import * as React from "react - import * as RechartsPrimitive from "recharts - import { cn } from "@/lib/utils"
 
 // Format: { THEME_NAME: CSS_SELECTOR }
 const THEMES = { light: "", dark: ".dark" } as const
@@ -65,9 +60,7 @@ const ChartContainer = React.forwardRef<
     </ChartContext.Provider>
   )
 })
-ChartContainer.displayName = "Chart"
-
-const ChartStyle = ({ id, config }: { id: string; config: ChartConfig }) => {
+ChartContainer.displayName = "Chart - const ChartStyle = ({ id, config }: { id: string; config: ChartConfig }) => {
   const colorConfig = Object.entries(config).filter(
     ([, config]) => config.theme || config.color
   )
@@ -108,8 +101,7 @@ const ChartTooltipContent = React.forwardRef<
     React.ComponentProps<"div"> & {
       hideLabel?: boolean
       hideIndicator?: boolean
-      indicator?: "line" | "dot" | "dashed"
-      nameKey?: string
+      indicator?: "line" | "dot" | "dashed - nameKey?: string
       labelKey?: string
     }
 >(
@@ -173,9 +165,7 @@ const ChartTooltipContent = React.forwardRef<
       return null
     }
 
-    const nestLabel = payload.length === 1 && indicator !== "dot"
-
-    return (
+    const nestLabel = payload.length === 1 && indicator !== "dot - return (
       <div
         ref={ref}
         className={cn(
@@ -254,9 +244,7 @@ const ChartTooltipContent = React.forwardRef<
     )
   }
 )
-ChartTooltipContent.displayName = "ChartTooltip"
-
-const ChartLegend = RechartsPrimitive.Legend
+ChartTooltipContent.displayName = "ChartTooltip - const ChartLegend = RechartsPrimitive.Legend
 
 const ChartLegendContent = React.forwardRef<
   HTMLDivElement,
@@ -327,7 +315,7 @@ function getPayloadConfigFromPayload(
   }
 
   const payloadPayload =
-    "payload" in payload &&
+    "payload - in payload &&
     typeof payload.payload === "object" &&
     payload.payload !== null
       ? payload.payload

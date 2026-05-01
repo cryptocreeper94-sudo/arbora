@@ -125,7 +125,7 @@ export default function ArboraEstimates() {
   if (isLoading) {
     return (
       <div className="flex items-center justify-center py-20">
-        <Loader2 className="w-8 h-8 animate-spin" style={{ color: "#c2703e" }} />
+        <Loader2 className="w-8 h-8 animate-spin - style={{ color: "#c2703e" }} />
       </div>
     );
   }
@@ -136,7 +136,7 @@ export default function ArboraEstimates() {
         <div className="flex flex-wrap items-center justify-between gap-3 mb-2">
           <div className="flex items-center gap-3">
             <Calculator className="w-7 h-7" style={{ color: "#c2703e" }} />
-            <h1 className="text-2xl md:text-3xl font-bold" style={{ color: "#f1f5f9" }} data-testid="text-estimates-title">Estimates</h1>
+            <h1 className="text-2xl md:text-3xl font-bold - style={{ color: "#f1f5f9" }} data-testid="text-estimates-title">Estimates</h1>
           </div>
           <Dialog open={dialogOpen} onOpenChange={setDialogOpen}>
             <DialogTrigger asChild>
@@ -144,7 +144,7 @@ export default function ArboraEstimates() {
                 <Plus className="w-4 h-4" /> New Estimate
               </Button>
             </DialogTrigger>
-            <DialogContent className="max-h-[85vh] overflow-y-auto max-w-lg" data-testid="dialog-add-estimate">
+            <DialogContent className="max-h-[85vh] overflow-y-auto max-w-lg - data-testid="dialog-add-estimate">
               <DialogHeader><DialogTitle>Create Estimate</DialogTitle></DialogHeader>
               <div className="space-y-4 mt-2">
                 <div>
@@ -163,38 +163,38 @@ export default function ArboraEstimates() {
                     </SelectContent>
                   </Select>
                 </div>
-                <div><Label>Tree Species</Label><Input value={treeSpecies} onChange={(e) => setTreeSpecies(e.target.value)} placeholder="e.g., Red Oak, Sugar Maple" data-testid="input-estimate-species" /></div>
-                <div><Label>Site Address</Label><Input value={siteAddress} onChange={(e) => setSiteAddress(e.target.value)} placeholder="Job site address" data-testid="input-estimate-site" /></div>
+                <div><Label>Tree Species</Label><Input value={treeSpecies} onChange={(e) => setTreeSpecies(e.target.value)} placeholder="e.g., Red Oak, Sugar Maple - data-testid="input-estimate-species" /></div>
+                <div><Label>Site Address</Label><Input value={siteAddress} onChange={(e) => setSiteAddress(e.target.value)} placeholder="Job site address - data-testid="input-estimate-site" /></div>
                 <div>
                   <div className="flex items-center justify-between mb-2">
                     <Label>Line Items</Label>
-                    <Button variant="outline" size="sm" onClick={addItem} className="gap-1 text-xs" data-testid="button-add-estimate-item"><Plus className="w-3 h-3" /> Add Row</Button>
+                    <Button variant="outline - size="sm - onClick={addItem} className="gap-1 text-xs - data-testid="button-add-estimate-item"><Plus className="w-3 h-3" /> Add Row</Button>
                   </div>
                   {items.map((item, idx) => (
                     <div key={idx} className="flex items-center gap-2 mb-2">
-                      <Input className="flex-1" placeholder="Description" value={item.description} onChange={(e) => updateItem(idx, "description", e.target.value)} data-testid={`input-est-item-desc-${idx}`} />
-                      <Input className="w-16" placeholder="Qty" type="number" value={item.quantity} onChange={(e) => updateItem(idx, "quantity", e.target.value)} data-testid={`input-est-item-qty-${idx}`} />
-                      <Input className="w-24" placeholder="Price" type="number" step="0.01" value={item.unitPrice} onChange={(e) => updateItem(idx, "unitPrice", e.target.value)} data-testid={`input-est-item-price-${idx}`} />
+                      <Input className="flex-1" placeholder="Description - value={item.description} onChange={(e) => updateItem(idx, "description", e.target.value)} data-testid={`input-est-item-desc-${idx}`} />
+                      <Input className="w-16" placeholder="Qty - type="number - value={item.quantity} onChange={(e) => updateItem(idx, "quantity", e.target.value)} data-testid={`input-est-item-qty-${idx}`} />
+                      <Input className="w-24" placeholder="Price - type="number - step="0.01" value={item.unitPrice} onChange={(e) => updateItem(idx, "unitPrice", e.target.value)} data-testid={`input-est-item-price-${idx}`} />
                       {items.length > 1 && (
-                        <Button size="icon" variant="ghost" onClick={() => removeItem(idx)} data-testid={`button-remove-est-item-${idx}`}><X className="w-3.5 h-3.5" style={{ color: "#64748b" }} /></Button>
+                        <Button size="icon - variant="ghost - onClick={() => removeItem(idx)} data-testid={`button-remove-est-item-${idx}`}><X className="w-3.5 h-3.5" style={{ color: "#64748b" }} /></Button>
                       )}
                     </div>
                   ))}
                 </div>
-                <div><Label>Tax Rate (%)</Label><Input type="number" step="0.01" value={taxRate} onChange={(e) => setTaxRate(e.target.value)} data-testid="input-estimate-tax" /></div>
+                <div><Label>Tax Rate (%)</Label><Input type="number - step="0.01" value={taxRate} onChange={(e) => setTaxRate(e.target.value)} data-testid="input-estimate-tax" /></div>
                 <div className="rounded-lg p-3" style={{ background: "rgba(255,255,255,0.04)" }}>
                   <div className="flex justify-between text-xs mb-1" style={{ color: "#94a3b8" }}><span>Subtotal</span><span>${subtotal.toFixed(2)}</span></div>
                   <div className="flex justify-between text-xs mb-1" style={{ color: "#94a3b8" }}><span>Tax</span><span>${taxAmount.toFixed(2)}</span></div>
-                  <div className="flex justify-between text-sm font-semibold" style={{ color: "#f1f5f9" }}><span>Total</span><span data-testid="text-estimate-total">${total.toFixed(2)}</span></div>
+                  <div className="flex justify-between text-sm font-semibold - style={{ color: "#f1f5f9" }}><span>Total</span><span data-testid="text-estimate-total">${total.toFixed(2)}</span></div>
                 </div>
-                <div><Label>Valid Until</Label><Input type="date" value={validUntil} onChange={(e) => setValidUntil(e.target.value)} data-testid="input-estimate-valid" /></div>
-                <div><Label>Notes</Label><Textarea value={notes} onChange={(e) => setNotes(e.target.value)} placeholder="Notes..." data-testid="input-estimate-notes" /></div>
+                <div><Label>Valid Until</Label><Input type="date - value={validUntil} onChange={(e) => setValidUntil(e.target.value)} data-testid="input-estimate-valid" /></div>
+                <div><Label>Notes</Label><Textarea value={notes} onChange={(e) => setNotes(e.target.value)} placeholder="Notes... - data-testid="input-estimate-notes" /></div>
                 <div className="flex items-center gap-3 pt-2">
                   <Button style={{ background: "#c2703e", color: "#fff" }} className="gap-1.5" onClick={handleSubmit} disabled={createEstimate.isPending} data-testid="button-submit-estimate">
                     {createEstimate.isPending ? <Loader2 className="w-4 h-4 animate-spin" /> : <Plus className="w-4 h-4" />}
                     Create Estimate
                   </Button>
-                  <DialogClose asChild><Button variant="outline" data-testid="button-cancel-estimate">Cancel</Button></DialogClose>
+                  <DialogClose asChild><Button variant="outline - data-testid="button-cancel-estimate">Cancel</Button></DialogClose>
                 </div>
               </div>
             </DialogContent>
@@ -206,7 +206,7 @@ export default function ArboraEstimates() {
         <div className="text-center py-20">
           <Calculator className="w-12 h-12 mx-auto mb-4" style={{ color: "#64748b", opacity: 0.3 }} />
           <h3 className="text-lg font-semibold mb-2" style={{ color: "#f1f5f9" }}>No estimates yet</h3>
-          <p className="text-sm" style={{ color: "#94a3b8" }}>Create your first estimate</p>
+          <p className="text-sm - style={{ color: "#94a3b8" }}>Create your first estimate</p>
         </div>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -217,16 +217,16 @@ export default function ArboraEstimates() {
                 <Card className="p-5 border-0" style={{ background: "rgba(255,255,255,0.04)" }} data-testid={`card-estimate-${est.id}`}>
                   <div className="flex items-start justify-between gap-3 mb-3">
                     <div className="flex-1 min-w-0">
-                      <h3 className="text-sm font-semibold" style={{ color: "#f1f5f9" }} data-testid={`text-estimate-number-${est.id}`}>{est.estimateNumber}</h3>
+                      <h3 className="text-sm font-semibold - style={{ color: "#f1f5f9" }} data-testid={`text-estimate-number-${est.id}`}>{est.estimateNumber}</h3>
                       <p className="text-xs mt-0.5" style={{ color: "#94a3b8" }}>{getClientName(est.clientId)}</p>
                     </div>
-                    <Button size="icon" variant="ghost" onClick={() => deleteEstimate.mutate(est.id)} disabled={deleteEstimate.isPending} data-testid={`button-delete-estimate-${est.id}`}>
+                    <Button size="icon - variant="ghost - onClick={() => deleteEstimate.mutate(est.id)} disabled={deleteEstimate.isPending} data-testid={`button-delete-estimate-${est.id}`}>
                       <Trash2 className="w-4 h-4" style={{ color: "#64748b" }} />
                     </Button>
                   </div>
                   <div className="flex flex-wrap items-center gap-2 mb-3">
                     <Select value={est.status || "draft"} onValueChange={(newStatus) => updateEstimate.mutate({ id: est.id, status: newStatus })}>
-                      <SelectTrigger className="h-7 w-auto gap-1 border-0 text-xs" style={{ background: ss.bg, color: ss.text }} data-testid={`select-estimate-status-${est.id}`}>
+                      <SelectTrigger className="h-7 w-auto gap-1 border-0 text-xs - style={{ background: ss.bg, color: ss.text }} data-testid={`select-estimate-status-${est.id}`}>
                         <SelectValue />
                       </SelectTrigger>
                       <SelectContent>
@@ -237,10 +237,10 @@ export default function ArboraEstimates() {
                       </SelectContent>
                     </Select>
                   </div>
-                  <div className="space-y-1.5 text-xs" style={{ color: "#94a3b8" }}>
+                  <div className="space-y-1.5 text-xs - style={{ color: "#94a3b8" }}>
                     <div className="flex items-center gap-2">
                       <DollarSign className="w-3.5 h-3.5 flex-shrink-0" />
-                      <span className="font-semibold" style={{ color: "#f1f5f9" }} data-testid={`text-estimate-total-${est.id}`}>${Number(est.total || 0).toFixed(2)}</span>
+                      <span className="font-semibold - style={{ color: "#f1f5f9" }} data-testid={`text-estimate-total-${est.id}`}>${Number(est.total || 0).toFixed(2)}</span>
                     </div>
                     {est.serviceType && (
                       <div className="flex items-center gap-2">

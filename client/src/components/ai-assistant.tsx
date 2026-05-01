@@ -69,9 +69,7 @@ export function AiAssistant() {
             exit={{ scale: 0, opacity: 0 }}
             transition={{ type: "spring", stiffness: 260, damping: 20 }}
             onClick={() => setIsOpen(true)}
-            className="fixed right-4 bottom-20 lg:bottom-6 z-[60] w-16 h-16 rounded-full flex items-center justify-center cursor-pointer group"
-            data-testid="button-open-assistant"
-            style={{ background: "transparent" }}
+            className="fixed right-4 bottom-20 lg:bottom-6 z-[60] w-16 h-16 rounded-full flex items-center justify-center cursor-pointer group - data-testid="button-open-assistant - style={{ background: "transparent" }}
           >
             <motion.div
               animate={{ y: [0, -4, 0] }}
@@ -79,9 +77,7 @@ export function AiAssistant() {
               className="relative"
             >
               <img
-                src="/images/verdara-assistant.png"
-                alt="Evergreen Assistant"
-                className="w-16 h-16 object-contain drop-shadow-[0_4px_12px_rgba(16,185,129,0.4)]"
+                src="/images/verdara-assistant.png - alt="Evergreen Assistant - className="w-16 h-16 object-contain drop-shadow-[0_4px_12px_rgba(16,185,129,0.4)]"
               />
               <div className="absolute -top-1 -right-1 w-4 h-4 bg-emerald-500 rounded-full border-2 border-background animate-pulse" />
             </motion.div>
@@ -96,8 +92,7 @@ export function AiAssistant() {
             animate={{ x: 0, opacity: 1 }}
             exit={{ x: 400, opacity: 0 }}
             transition={{ type: "spring", stiffness: 300, damping: 30 }}
-            className="fixed right-0 top-0 bottom-0 w-full sm:w-[380px] z-[70] flex flex-col bg-background/95 backdrop-blur-2xl border-l border-white/10 shadow-2xl"
-            data-testid="panel-assistant"
+            className="fixed right-0 top-0 bottom-0 w-full sm:w-[380px] z-[70] flex flex-col bg-background/95 backdrop-blur-2xl border-l border-white/10 shadow-2xl - data-testid="panel-assistant"
           >
             <div className="flex items-center gap-3 px-4 py-3 border-b border-white/10">
               <motion.div
@@ -105,9 +100,7 @@ export function AiAssistant() {
                 transition={{ repeat: Infinity, duration: 2.5, ease: "easeInOut" }}
               >
                 <img
-                  src="/images/verdara-assistant.png"
-                  alt="Evergreen"
-                  className="w-10 h-10 object-contain"
+                  src="/images/verdara-assistant.png - alt="Evergreen - className="w-10 h-10 object-contain"
                 />
               </motion.div>
               <div className="flex-1 min-w-0">
@@ -115,11 +108,8 @@ export function AiAssistant() {
                 <p className="text-[11px] text-emerald-400">Outdoor Adventure Guide</p>
               </div>
               <Button
-                size="icon"
-                variant="ghost"
-                onClick={() => setIsOpen(false)}
-                className="text-muted-foreground"
-                data-testid="button-close-assistant"
+                size="icon - variant="ghost - onClick={() => setIsOpen(false)}
+                className="text-muted-foreground - data-testid="button-close-assistant"
               >
                 <X className="w-4 h-4" />
               </Button>
@@ -136,8 +126,7 @@ export function AiAssistant() {
                 >
                   {msg.role === "assistant" && (
                     <img
-                      src="/images/verdara-assistant.png"
-                      alt=""
+                      src="/images/verdara-assistant.png - alt=""
                       className="w-7 h-7 object-contain mr-2 mt-1 flex-shrink-0"
                     />
                   )}
@@ -160,8 +149,7 @@ export function AiAssistant() {
                   className="flex justify-start"
                 >
                   <img
-                    src="/images/verdara-assistant.png"
-                    alt=""
+                    src="/images/verdara-assistant.png - alt=""
                     className="w-7 h-7 object-contain mr-2 mt-1 flex-shrink-0"
                   />
                   <div className="bg-white/5 border border-white/10 rounded-2xl rounded-bl-md px-4 py-3">
@@ -180,19 +168,15 @@ export function AiAssistant() {
               <div className="flex items-center gap-2 bg-white/5 border border-white/10 rounded-xl px-3 py-2">
                 <input
                   ref={inputRef}
-                  type="text"
-                  value={input}
+                  type="text - value={input}
                   onChange={e => setInput(e.target.value)}
                   onKeyDown={handleKeyDown}
-                  placeholder="Ask Evergreen anything..."
-                  className="flex-1 bg-transparent outline-none text-sm text-foreground placeholder:text-muted-foreground min-w-0"
+                  placeholder="Ask Evergreen anything... - className="flex-1 bg-transparent outline-none text-sm text-foreground placeholder:text-muted-foreground min-w-0"
                   disabled={isLoading}
                   data-testid="input-assistant-message"
                 />
                 <Button
-                  size="icon"
-                  variant="ghost"
-                  onClick={sendMessage}
+                  size="icon - variant="ghost - onClick={sendMessage}
                   disabled={!input.trim() || isLoading}
                   className="text-emerald-400 hover:text-emerald-300 flex-shrink-0"
                   data-testid="button-send-message"
@@ -212,8 +196,7 @@ export function AiAssistant() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-black/30 z-[65] lg:hidden"
-            onClick={() => setIsOpen(false)}
+            className="fixed inset-0 bg-black/30 z-[65] lg:hidden - onClick={() => setIsOpen(false)}
           />
         )}
       </AnimatePresence>

@@ -1,13 +1,6 @@
-import * as React from "react"
-import useEmblaCarousel, {
+import * as React from "react - import useEmblaCarousel, {
   type UseEmblaCarouselType,
-} from "embla-carousel-react"
-import { ArrowLeft, ArrowRight } from "lucide-react"
-
-import { cn } from "@/lib/utils"
-import { Button } from "@/components/ui/button"
-
-type CarouselApi = UseEmblaCarouselType[1]
+} from "embla-carousel-react - import { ArrowLeft, ArrowRight } from "lucide-react - import { cn } from "@/lib/utils - import { Button } from "@/components/ui/button - type CarouselApi = UseEmblaCarouselType[1]
 type UseCarouselParameters = Parameters<typeof useEmblaCarousel>
 type CarouselOptions = UseCarouselParameters[0]
 type CarouselPlugin = UseCarouselParameters[1]
@@ -15,8 +8,7 @@ type CarouselPlugin = UseCarouselParameters[1]
 type CarouselProps = {
   opts?: CarouselOptions
   plugins?: CarouselPlugin
-  orientation?: "horizontal" | "vertical"
-  setApi?: (api: CarouselApi) => void
+  orientation?: "horizontal" | "vertical - setApi?: (api: CarouselApi) => void
 }
 
 type CarouselContextProps = {
@@ -136,8 +128,7 @@ const Carousel = React.forwardRef<
           ref={ref}
           onKeyDownCapture={handleKeyDown}
           className={cn("relative", className)}
-          role="region"
-          aria-roledescription="carousel"
+          role="region - aria-roledescription="carousel"
           {...props}
         >
           {children}
@@ -146,9 +137,7 @@ const Carousel = React.forwardRef<
     )
   }
 )
-Carousel.displayName = "Carousel"
-
-const CarouselContent = React.forwardRef<
+Carousel.displayName = "Carousel - const CarouselContent = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
 >(({ className, ...props }, ref) => {
@@ -168,9 +157,7 @@ const CarouselContent = React.forwardRef<
     </div>
   )
 })
-CarouselContent.displayName = "CarouselContent"
-
-const CarouselItem = React.forwardRef<
+CarouselContent.displayName = "CarouselContent - const CarouselItem = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
 >(({ className, ...props }, ref) => {
@@ -179,9 +166,7 @@ const CarouselItem = React.forwardRef<
   return (
     <div
       ref={ref}
-      role="group"
-      aria-roledescription="slide"
-      className={cn(
+      role="group - aria-roledescription="slide - className={cn(
         "min-w-0 shrink-0 grow-0 basis-full",
         orientation === "horizontal" ? "pl-4" : "pt-4",
         className
@@ -190,9 +175,7 @@ const CarouselItem = React.forwardRef<
     />
   )
 })
-CarouselItem.displayName = "CarouselItem"
-
-const CarouselPrevious = React.forwardRef<
+CarouselItem.displayName = "CarouselItem - const CarouselPrevious = React.forwardRef<
   HTMLButtonElement,
   React.ComponentProps<typeof Button>
 >(({ className, variant = "outline", size = "icon", ...props }, ref) => {
@@ -219,9 +202,7 @@ const CarouselPrevious = React.forwardRef<
     </Button>
   )
 })
-CarouselPrevious.displayName = "CarouselPrevious"
-
-const CarouselNext = React.forwardRef<
+CarouselPrevious.displayName = "CarouselPrevious - const CarouselNext = React.forwardRef<
   HTMLButtonElement,
   React.ComponentProps<typeof Button>
 >(({ className, variant = "outline", size = "icon", ...props }, ref) => {
@@ -248,9 +229,7 @@ const CarouselNext = React.forwardRef<
     </Button>
   )
 })
-CarouselNext.displayName = "CarouselNext"
-
-export {
+CarouselNext.displayName = "CarouselNext - export {
   type CarouselApi,
   Carousel,
   CarouselContent,

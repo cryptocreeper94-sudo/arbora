@@ -1,9 +1,4 @@
-import * as React from "react"
-import { cva, type VariantProps } from "class-variance-authority"
-
-import { cn } from "@/lib/utils"
-
-const alertVariants = cva(
+import * as React from "react - import { cva, type VariantProps } from "class-variance-authority - import { cn } from "@/lib/utils - const alertVariants = cva(
   "relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-foreground",
   {
     variants: {
@@ -25,14 +20,11 @@ const Alert = React.forwardRef<
 >(({ className, variant, ...props }, ref) => (
   <div
     ref={ref}
-    role="alert"
-    className={cn(alertVariants({ variant }), className)}
+    role="alert - className={cn(alertVariants({ variant }), className)}
     {...props}
   />
 ))
-Alert.displayName = "Alert"
-
-const AlertTitle = React.forwardRef<
+Alert.displayName = "Alert - const AlertTitle = React.forwardRef<
   HTMLParagraphElement,
   React.HTMLAttributes<HTMLHeadingElement>
 >(({ className, ...props }, ref) => (
@@ -42,9 +34,7 @@ const AlertTitle = React.forwardRef<
     {...props}
   />
 ))
-AlertTitle.displayName = "AlertTitle"
-
-const AlertDescription = React.forwardRef<
+AlertTitle.displayName = "AlertTitle - const AlertDescription = React.forwardRef<
   HTMLParagraphElement,
   React.HTMLAttributes<HTMLParagraphElement>
 >(({ className, ...props }, ref) => (
@@ -54,6 +44,4 @@ const AlertDescription = React.forwardRef<
     {...props}
   />
 ))
-AlertDescription.displayName = "AlertDescription"
-
-export { Alert, AlertTitle, AlertDescription }
+AlertDescription.displayName = "AlertDescription - export { Alert, AlertTitle, AlertDescription }

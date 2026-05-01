@@ -1,12 +1,4 @@
-"use client"
-
-import * as React from "react"
-import * as MenubarPrimitive from "@radix-ui/react-menubar"
-import { Check, ChevronRight, Circle } from "lucide-react"
-
-import { cn } from "@/lib/utils"
-
-function MenubarMenu({
+"use client - import * as React from "react - import * as MenubarPrimitive from "@radix-ui/react-menubar - import { Check, ChevronRight, Circle } from "lucide-react - import { cn } from "@/lib/utils - function MenubarMenu({
   ...props
 }: React.ComponentProps<typeof MenubarPrimitive.Menu>) {
   return <MenubarPrimitive.Menu {...props} />
@@ -234,9 +226,7 @@ const MenubarShortcut = ({
     />
   )
 }
-MenubarShortcut.displayname = "MenubarShortcut"
-
-export {
+MenubarShortcut.displayname = "MenubarShortcut - export {
   Menubar,
   MenubarMenu,
   MenubarTrigger,

@@ -1,8 +1,4 @@
-import * as React from "react"
-
-import { cn } from "@/lib/utils"
-
-const Card = React.forwardRef<
+import * as React from "react - import { cn } from "@/lib/utils - const Card = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
 >(({ className, ...props }, ref) => (
@@ -15,9 +11,7 @@ const Card = React.forwardRef<
     {...props}
   />
 ));
-Card.displayName = "Card"
-
-const CardHeader = React.forwardRef<
+Card.displayName = "Card - const CardHeader = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
 >(({ className, ...props }, ref) => (
@@ -27,9 +21,7 @@ const CardHeader = React.forwardRef<
     {...props}
   />
 ));
-CardHeader.displayName = "CardHeader"
-
-const CardTitle = React.forwardRef<
+CardHeader.displayName = "CardHeader - const CardTitle = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
 >(({ className, ...props }, ref) => (
@@ -42,9 +34,7 @@ const CardTitle = React.forwardRef<
     {...props}
   />
 ))
-CardTitle.displayName = "CardTitle"
-
-const CardDescription = React.forwardRef<
+CardTitle.displayName = "CardTitle - const CardDescription = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
 >(({ className, ...props }, ref) => (
@@ -54,17 +44,13 @@ const CardDescription = React.forwardRef<
     {...props}
   />
 ));
-CardDescription.displayName = "CardDescription"
-
-const CardContent = React.forwardRef<
+CardDescription.displayName = "CardDescription - const CardContent = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
 >(({ className, ...props }, ref) => (
   <div ref={ref} className={cn("p-6 pt-0", className)} {...props} />
 ))
-CardContent.displayName = "CardContent"
-
-const CardFooter = React.forwardRef<
+CardContent.displayName = "CardContent - const CardFooter = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
 >(({ className, ...props }, ref) => (
@@ -74,8 +60,7 @@ const CardFooter = React.forwardRef<
     {...props}
   />
 ))
-CardFooter.displayName = "CardFooter"
-export {
+CardFooter.displayName = "CardFooter - export {
   Card,
   CardHeader,
   CardFooter,

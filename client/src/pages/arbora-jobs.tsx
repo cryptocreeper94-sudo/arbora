@@ -105,7 +105,7 @@ export default function ArboraJobs() {
   if (isLoading) {
     return (
       <div className="flex items-center justify-center py-20">
-        <Loader2 className="w-8 h-8 animate-spin" style={{ color: "#c2703e" }} />
+        <Loader2 className="w-8 h-8 animate-spin - style={{ color: "#c2703e" }} />
       </div>
     );
   }
@@ -116,7 +116,7 @@ export default function ArboraJobs() {
         <div className="flex flex-wrap items-center justify-between gap-3 mb-2">
           <div className="flex items-center gap-3">
             <TreePine className="w-7 h-7" style={{ color: "#c2703e" }} />
-            <h1 className="text-2xl md:text-3xl font-bold" style={{ color: "#f1f5f9" }} data-testid="text-jobs-title">Jobs</h1>
+            <h1 className="text-2xl md:text-3xl font-bold - style={{ color: "#f1f5f9" }} data-testid="text-jobs-title">Jobs</h1>
           </div>
           <Dialog open={dialogOpen} onOpenChange={setDialogOpen}>
             <DialogTrigger asChild>
@@ -124,10 +124,10 @@ export default function ArboraJobs() {
                 <Plus className="w-4 h-4" /> Add Job
               </Button>
             </DialogTrigger>
-            <DialogContent className="max-h-[85vh] overflow-y-auto" data-testid="dialog-add-job">
+            <DialogContent className="max-h-[85vh] overflow-y-auto - data-testid="dialog-add-job">
               <DialogHeader><DialogTitle>Add New Job</DialogTitle></DialogHeader>
               <div className="space-y-4 mt-2">
-                <div><Label>Title *</Label><Input value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Job title" data-testid="input-job-title" /></div>
+                <div><Label>Title *</Label><Input value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Job title - data-testid="input-job-title" /></div>
                 <div>
                   <Label>Client</Label>
                   <Select value={clientId} onValueChange={setClientId}>
@@ -135,11 +135,11 @@ export default function ArboraJobs() {
                     <SelectContent>{clientsList.map((c) => <SelectItem key={c.id} value={String(c.id)}>{c.name}</SelectItem>)}</SelectContent>
                   </Select>
                 </div>
-                <div><Label>Description</Label><Textarea value={description} onChange={(e) => setDescription(e.target.value)} placeholder="Job description..." data-testid="input-job-description" /></div>
-                <div><Label>Scheduled Date</Label><Input type="date" value={scheduledDate} onChange={(e) => setScheduledDate(e.target.value)} data-testid="input-job-date" /></div>
-                <div><Label>Estimated Cost ($)</Label><Input type="number" step="0.01" value={estimatedCost} onChange={(e) => setEstimatedCost(e.target.value)} placeholder="0.00" data-testid="input-job-cost" /></div>
-                <div><Label>Crew (comma-separated)</Label><Input value={crew} onChange={(e) => setCrew(e.target.value)} placeholder="John, Jane" data-testid="input-job-crew" /></div>
-                <div><Label>Notes</Label><Textarea value={notes} onChange={(e) => setNotes(e.target.value)} placeholder="Notes..." data-testid="input-job-notes" /></div>
+                <div><Label>Description</Label><Textarea value={description} onChange={(e) => setDescription(e.target.value)} placeholder="Job description... - data-testid="input-job-description" /></div>
+                <div><Label>Scheduled Date</Label><Input type="date - value={scheduledDate} onChange={(e) => setScheduledDate(e.target.value)} data-testid="input-job-date" /></div>
+                <div><Label>Estimated Cost ($)</Label><Input type="number - step="0.01" value={estimatedCost} onChange={(e) => setEstimatedCost(e.target.value)} placeholder="0.00" data-testid="input-job-cost" /></div>
+                <div><Label>Crew (comma-separated)</Label><Input value={crew} onChange={(e) => setCrew(e.target.value)} placeholder="John, Jane - data-testid="input-job-crew" /></div>
+                <div><Label>Notes</Label><Textarea value={notes} onChange={(e) => setNotes(e.target.value)} placeholder="Notes... - data-testid="input-job-notes" /></div>
                 <div>
                   <Label>Status</Label>
                   <Select value={status} onValueChange={setStatus}>
@@ -156,7 +156,7 @@ export default function ArboraJobs() {
                     {createJob.isPending ? <Loader2 className="w-4 h-4 animate-spin" /> : <Plus className="w-4 h-4" />}
                     Add Job
                   </Button>
-                  <DialogClose asChild><Button variant="outline" data-testid="button-cancel-job">Cancel</Button></DialogClose>
+                  <DialogClose asChild><Button variant="outline - data-testid="button-cancel-job">Cancel</Button></DialogClose>
                 </div>
               </div>
             </DialogContent>
@@ -166,10 +166,10 @@ export default function ArboraJobs() {
 
       <Tabs value={filter} onValueChange={setFilter} className="mb-6">
         <TabsList style={{ background: "rgba(255,255,255,0.06)" }}>
-          <TabsTrigger value="all" data-testid="filter-all">All ({jobsList.length})</TabsTrigger>
-          <TabsTrigger value="scheduled" data-testid="filter-scheduled">Scheduled</TabsTrigger>
-          <TabsTrigger value="in-progress" data-testid="filter-in-progress">In Progress</TabsTrigger>
-          <TabsTrigger value="completed" data-testid="filter-completed">Completed</TabsTrigger>
+          <TabsTrigger value="all - data-testid="filter-all">All ({jobsList.length})</TabsTrigger>
+          <TabsTrigger value="scheduled - data-testid="filter-scheduled">Scheduled</TabsTrigger>
+          <TabsTrigger value="in-progress - data-testid="filter-in-progress">In Progress</TabsTrigger>
+          <TabsTrigger value="completed - data-testid="filter-completed">Completed</TabsTrigger>
         </TabsList>
       </Tabs>
 
@@ -177,7 +177,7 @@ export default function ArboraJobs() {
         <div className="text-center py-20">
           <TreePine className="w-12 h-12 mx-auto mb-4" style={{ color: "#64748b", opacity: 0.3 }} />
           <h3 className="text-lg font-semibold mb-2" style={{ color: "#f1f5f9" }}>No jobs found</h3>
-          <p className="text-sm" style={{ color: "#94a3b8" }}>Create your first job to start tracking work</p>
+          <p className="text-sm - style={{ color: "#94a3b8" }}>Create your first job to start tracking work</p>
         </div>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -188,16 +188,16 @@ export default function ArboraJobs() {
                 <Card className="p-5 border-0" style={{ background: "rgba(255,255,255,0.04)" }} data-testid={`card-job-${job.id}`}>
                   <div className="flex items-start justify-between gap-3 mb-3">
                     <div className="flex-1 min-w-0">
-                      <h3 className="text-sm font-semibold truncate" style={{ color: "#f1f5f9" }} data-testid={`text-job-title-${job.id}`}>{job.title}</h3>
+                      <h3 className="text-sm font-semibold truncate - style={{ color: "#f1f5f9" }} data-testid={`text-job-title-${job.id}`}>{job.title}</h3>
                       {getClientName(job.clientId) && <p className="text-xs mt-0.5" style={{ color: "#94a3b8" }}>{getClientName(job.clientId)}</p>}
                     </div>
-                    <Button size="icon" variant="ghost" onClick={() => deleteJob.mutate(job.id)} disabled={deleteJob.isPending} data-testid={`button-delete-job-${job.id}`}>
+                    <Button size="icon - variant="ghost - onClick={() => deleteJob.mutate(job.id)} disabled={deleteJob.isPending} data-testid={`button-delete-job-${job.id}`}>
                       <Trash2 className="w-4 h-4" style={{ color: "#64748b" }} />
                     </Button>
                   </div>
                   <div className="flex flex-wrap items-center gap-2 mb-3">
                     <Select value={job.status || "scheduled"} onValueChange={(newStatus) => updateJob.mutate({ id: job.id, status: newStatus })}>
-                      <SelectTrigger className="h-7 w-auto gap-1 border-0 text-xs" style={{ background: sc.bg, color: sc.text }} data-testid={`select-job-status-${job.id}`}>
+                      <SelectTrigger className="h-7 w-auto gap-1 border-0 text-xs - style={{ background: sc.bg, color: sc.text }} data-testid={`select-job-status-${job.id}`}>
                         <SelectValue />
                       </SelectTrigger>
                       <SelectContent>
@@ -207,7 +207,7 @@ export default function ArboraJobs() {
                       </SelectContent>
                     </Select>
                   </div>
-                  <div className="space-y-1.5 text-xs" style={{ color: "#94a3b8" }}>
+                  <div className="space-y-1.5 text-xs - style={{ color: "#94a3b8" }}>
                     {job.scheduledDate && (
                       <div className="flex items-center gap-2"><Calendar className="w-3.5 h-3.5 flex-shrink-0" /><span data-testid={`text-job-date-${job.id}`}>{job.scheduledDate}</span></div>
                     )}

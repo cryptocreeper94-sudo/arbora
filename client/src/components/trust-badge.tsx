@@ -47,16 +47,12 @@ export function TrustScore({ score, className }: TrustScoreProps) {
         <svg className="w-10 h-10 -rotate-90" viewBox="0 0 36 36">
           <path
             d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="3"
+            fill="none - stroke="currentColor - strokeWidth="3"
             className="text-muted/30"
           />
           <path
             d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="3"
+            fill="none - stroke="currentColor - strokeWidth="3"
             strokeDasharray={`${percentage}, 100`}
             className={color}
           />

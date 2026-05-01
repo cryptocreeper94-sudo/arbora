@@ -53,8 +53,7 @@ export class ErrorBoundary extends Component<Props, State> {
                 this.setState({ hasError: false, error: null });
                 window.location.reload();
               }}
-              className="gap-2 bg-emerald-600 text-white"
-              data-testid="button-error-reload"
+              className="gap-2 bg-emerald-600 text-white - data-testid="button-error-reload"
             >
               <RefreshCw className="w-4 h-4" />
               Reload App

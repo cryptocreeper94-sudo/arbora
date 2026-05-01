@@ -106,7 +106,7 @@ const slides: OnboardingSlide[] = [
     title: "Price Compare",
     subtitle: "Search 90+ outdoor retailers in plain language",
     bullets: [
-      "Type what you need in everyday words " AI figures out the rest",
+      "Type what you need in everyday words - AI figures out the rest",
       "Compare across REI, Bass Pro, Backcountry, BladeHQ, and more",
       "Tap any store to jump straight to that product on their site",
     ],
@@ -218,19 +218,14 @@ export function OnboardingModal({ onDismiss }: OnboardingModalProps) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 backdrop-blur-sm"
-      data-testid="onboarding-modal"
-      onTouchStart={handleTouchStart}
+      className="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 backdrop-blur-sm - data-testid="onboarding-modal - onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
     >
       <div className="relative w-full h-full max-w-lg mx-auto flex flex-col overflow-hidden md:max-h-[90vh] md:rounded-2xl md:border md:border-white/10">
         <Button
-          variant="ghost"
-          size="icon"
-          onClick={dismiss}
+          variant="ghost - size="icon - onClick={dismiss}
           className="absolute top-4 right-4 z-20 w-8 h-8 rounded-full bg-black/50 backdrop-blur-sm border border-white/10 text-white/70"
-          data-testid="button-skip-onboarding"
-          aria-label="Skip"
+          data-testid="button-skip-onboarding - aria-label="Skip"
         >
           <X className="w-4 h-4" />
         </Button>
@@ -242,22 +237,18 @@ export function OnboardingModal({ onDismiss }: OnboardingModalProps) {
         </div>
 
         <div className="flex-1 relative overflow-hidden">
-          <AnimatePresence mode="wait" custom={direction}>
+          <AnimatePresence mode="wait - custom={direction}>
             <motion.div
               key={currentSlide}
               custom={direction}
               variants={slideVariants}
-              initial="enter"
-              animate="center"
-              exit="exit"
-              className="absolute inset-0 flex flex-col"
+              initial="enter - animate="center - exit="exit - className="absolute inset-0 flex flex-col"
             >
               <div className="relative h-[45%] min-h-[220px] overflow-hidden flex-shrink-0">
                 <img
                   src={slide.image}
                   alt={slide.title}
-                  className="absolute inset-0 w-full h-full object-cover"
-                  loading="eager"
+                  className="absolute inset-0 w-full h-full object-cover - loading="eager"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-background" />
               </div>
@@ -270,7 +261,7 @@ export function OnboardingModal({ onDismiss }: OnboardingModalProps) {
                     <slide.icon className={`w-5 h-5 ${slide.accentColor === "emerald" ? "text-emerald-400" : "text-amber-400"}`} />
                   </div>
                   <div>
-                    <h2 className="text-xl font-bold text-foreground leading-tight" data-testid={`text-onboarding-title-${currentSlide}`}>
+                    <h2 className="text-xl font-bold text-foreground leading-tight - data-testid={`text-onboarding-title-${currentSlide}`}>
                       {slide.title}
                     </h2>
                     <p className="text-sm text-muted-foreground">{slide.subtitle}</p>
@@ -289,8 +280,7 @@ export function OnboardingModal({ onDismiss }: OnboardingModalProps) {
                 </ul>
 
                 <Button
-                  variant="outline"
-                  onClick={handleLink}
+                  variant="outline - onClick={handleLink}
                   className={`w-full gap-2 rounded-xl mb-4 ${
                     slide.accentColor === "emerald"
                       ? "border-emerald-500/20 text-emerald-400"
@@ -303,12 +293,9 @@ export function OnboardingModal({ onDismiss }: OnboardingModalProps) {
 
                 <div className="flex items-center justify-between">
                   <Button
-                    variant="ghost"
-                    size="sm"
-                    onClick={goPrev}
+                    variant="ghost - size="sm - onClick={goPrev}
                     disabled={currentSlide === 0}
-                    className="gap-1 text-muted-foreground"
-                    data-testid="button-onboarding-prev"
+                    className="gap-1 text-muted-foreground - data-testid="button-onboarding-prev"
                   >
                     <ChevronLeft className="w-4 h-4" /> Back
                   </Button>
@@ -330,9 +317,7 @@ export function OnboardingModal({ onDismiss }: OnboardingModalProps) {
                   </div>
 
                   <Button
-                    variant="ghost"
-                    size="sm"
-                    onClick={goNext}
+                    variant="ghost - size="sm - onClick={goNext}
                     className={`gap-1 ${isLast ? "text-emerald-400 font-semibold" : "text-muted-foreground"}`}
                     data-testid="button-onboarding-next"
                   >
