@@ -16,13 +16,13 @@ export function DWSCFooterBadge() {
 
   return (
     <footer className="w-full py-3 px-4 flex items-center justify-center gap-2 border-t border-white/[0.06] bg-black/30 text-[10px]">
-      <span className="text-white/30">© 2026 DarkWave Studios, LLC</span>
-      <span className="text-white/15">·</span>
+      <span className="text-white/30">(c) 2026 DarkWave Studios, LLC</span>
+      <span className="text-white/15">|</span>
       <a href="https://dwtl.io" target="_blank" rel="noopener noreferrer" className="text-white/30 hover:text-white/50 transition-colors no-underline">Trust Layer</a>
-      <span className="text-white/15">·</span>
+      <span className="text-white/15">|</span>
       <a href="https://trustshield.tech" target="_blank" rel="noopener noreferrer" className="text-white/30 hover:text-white/50 transition-colors no-underline">TrustShield</a>
-      <span className="text-white/15">·</span>
-      <span onClick={handleClick} className="text-white/20 cursor-default select-none hover:text-white/40 transition-colors" title="?--? DWSC">?--?</span>
+      <span className="text-white/15">|</span>
+      <span onClick={handleClick} className="text-white/20 cursor-default select-none hover:text-white/40 transition-colors" title="DWSC">DWSC</span>
     </footer>
   );
 }

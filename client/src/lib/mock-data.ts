@@ -72,7 +72,7 @@ export const gearCategories = [
     name: "Shelter & Sleep",
     items: [
       { id: 13, name: "Tent (3-season)", checked: true },
-      { id: 14, name: "Sleeping bag (20°F rated)", checked: true },
+      { id: 14, name: "Sleeping bag (20F rated)", checked: true },
       { id: 15, name: "Sleeping pad", checked: false },
       { id: 16, name: "Tent footprint/ground cloth", checked: true },
       { id: 17, name: "Pillow (compressible)", checked: false },
