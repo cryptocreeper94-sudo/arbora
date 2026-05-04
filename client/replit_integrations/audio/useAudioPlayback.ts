@@ -13,9 +13,9 @@ export type PlaybackState = "idle" | "playing" | "ended";
  * Buffers chunks until they can be played in correct order.
  *
  * Example: If chunks arrive as seq 2, seq 0, seq 1:
- * - seq 2 arrives ??' buffered (waiting for seq 0)
- * - seq 0 arrives ??' played immediately, then check buffer
- * - seq 1 arrives ??' played immediately (seq 0 done), seq 2 now plays
+ * - seq 2 arrives  buffered (waiting for seq 0)
+ * - seq 0 arrives  played immediately, then check buffer
+ * - seq 1 arrives  played immediately (seq 0 done), seq 2 now plays
  */
 class SequenceBuffer {
   private pending = new Map<number, string[]>();

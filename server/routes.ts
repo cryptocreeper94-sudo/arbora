@@ -1366,12 +1366,12 @@ export async function registerRoutes(
           {
             role: "system",
             content: `You convert natural language shopping queries into concise product search terms that work well on retail websites. Return ONLY the search terms, nothing else. Keep it short (1-5 words). Examples:
-- "something to keep my coffee hot on the trail" ??' "insulated travel mug"
-- "best knife for cleaning fish" ??' "fillet knife"
-- "warm jacket for winter camping" ??' "insulated camping jacket"
-- "I need new boots for hiking in the rain" ??' "waterproof hiking boots"
-- "ammo for my AR-15" ??' "5.56 NATO ammo"
-- "a good tent for 4 people" ??' "4 person tent"
+- "something to keep my coffee hot on the trail"  "insulated travel mug"
+- "best knife for cleaning fish"  "fillet knife"
+- "warm jacket for winter camping"  "insulated camping jacket"
+- "I need new boots for hiking in the rain"  "waterproof hiking boots"
+- "ammo for my AR-15"  "5.56 NATO ammo"
+- "a good tent for 4 people"  "4 person tent"
 If the input is already a product name or clear search term, return it as-is.`
           },
           { role: "user", content: query.trim() }

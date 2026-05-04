@@ -226,7 +226,7 @@ export default function ArboraInventory() {
                   <div className="flex items-start justify-between gap-3 mb-3">
                     <div className="flex-1 min-w-0">
                       <h3 className="text-sm font-semibold" style={{ color: "#f1f5f9" }} data-testid={`text-inv-name-${item.id}`}>{item.name}</h3>
-                      <p className="text-xs mt-0.5" style={{ color: "#94a3b8" }}>{item.category ? item.category.charAt(0).toUpperCase() + item.category.slice(1).replace("-", " ") : """}</p>
+                      <p className="text-xs mt-0.5" style={{ color: "#94a3b8" }}>{item.category ? item.category.charAt(0).toUpperCase() + item.category.slice(1).replace("-", " ") : ""}}</p>
                     </div>
                     <div className="flex items-center gap-1">
                       <Button size="icon" variant="ghost" onClick={() => openEditQty(item)} data-testid={`button-edit-qty-${item.id}`}>
