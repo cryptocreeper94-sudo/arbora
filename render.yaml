@@ -39,3 +39,5 @@ services:
         sync: false
       - key: VERDARA_API_SECRET
         sync: false
+      - key: FIREBASE_SERVICE_ACCOUNT
+        sync: false
