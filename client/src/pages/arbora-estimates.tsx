@@ -46,7 +46,7 @@ export default function ArboraEstimates() {
   const list = estimates || [];
   const clientsList = clients || [];
 
-  const getClientName = (cId: number | null) => cId ? clientsList.find((c) => c.id === cId)?.name || "Unknown" : """;
+  const getClientName = (cId: number | null) => cId ? clientsList.find((c) => c.id === cId)?.name || "Unknown" : "";
 
   const subtotal = items.reduce((s, it) => s + (parseFloat(it.quantity) || 0) * (parseFloat(it.unitPrice) || 0), 0);
   const taxAmount = subtotal * (parseFloat(taxRate) || 0) / 100;
