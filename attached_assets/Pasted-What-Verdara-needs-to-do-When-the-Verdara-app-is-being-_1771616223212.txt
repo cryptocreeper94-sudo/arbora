@@ -1,0 +1,163 @@
+What Verdara needs to do:
+When the Verdara app is being built, its agent just needs to generate three values — an API key, an API secret, and its deployed URL — and send them back. Once you have those, I store them as secrets here (VERDARA_API_KEY, VERDARA_API_SECRET, VERDARA_BASE_URL) and the connection goes live instantly.
+
+So there's nothing blocking TrustHome — it's all built and waiting. The ball is in Verdara's court whenever that app is ready to connect.
+
+okay give me a handoff for Verdara letting the agent know what we need to do
+
+Here's the complete handoff for the Verdara agent:
+
+Verdara <> TrustHome Ecosystem Connection Handoff
+What This Is
+Verdara is joining the DarkWave Trust Layer ecosystem. TrustHome (a real estate platform) has already built the integration on its side and is ready to connect. This document tells the Verdara agent exactly what to implement to establish the two-way API connection.
+
+Step 1: Generate API Credentials
+Verdara needs to generate an API key and secret that TrustHome will use to authenticate requests. Add this to your server startup or a one-time setup script:
+
+import * as crypto from "crypto";
+const apiKey = `verdara_live_${crypto.randomBytes(16).toString('hex')}`;
+const apiSecret = crypto.randomBytes(32).toString('hex');
+console.log("VERDARA_API_KEY:", apiKey);
+console.log("VERDARA_API_SECRET:", apiSecret);
+Store these as environment variables/secrets in Verdara:
+
+VERDARA_API_KEY — the generated key
+VERDARA_API_SECRET — the generated secret
+Send these two values plus your deployed URL back to us. We'll store them on TrustHome's side to complete the connection.
+
+Step 2: Store TrustHome's Credentials
+TrustHome will authenticate requests to Verdara using HMAC-SHA256. Store these as secrets in Verdara's environment:
+
+Secret Name	Value
+TRUSTHOME_API_KEY	(Will be provided — same as TrustHome's DARKWAVE_API_KEY)
+TRUSTHOME_API_SECRET	(Will be provided — same as TrustHome's DARKWAVE_API_SECRET)
+TRUSTHOME_BASE_URL	https://trusthome.replit.app
+Step 3: Implement HMAC-SHA256 Request Verification
+Every request from TrustHome arrives with this header format:
+
+Authorization: DW {apiKey}:{timestamp}:{signature}
+Add this middleware or helper to verify incoming ecosystem requests:
+
+import * as crypto from "crypto";
+export function verifyEcosystemRequest(authHeader: string): { valid: boolean; appName?: string } {
+  const match = authHeader.match(/^DW (.+):(\d+):([a-f0-9]+)$/);
+  if (!match) return { valid: false };
+  const [, incomingKey, timestamp, incomingSignature] = match;
+  // Reject requests older than 5 minutes
+  const age = Date.now() - parseInt(timestamp);
+  if (age > 300000) return { valid: false };
+  // Look up known ecosystem partners
+  const knownApps: Record<string, { secret: string; name: string }> = {};
+  if (process.env.TRUSTHOME_API_KEY && process.env.TRUSTHOME_API_SECRET) {
+    knownApps[process.env.TRUSTHOME_API_KEY] = {
+      secret: process.env.TRUSTHOME_API_SECRET,
+      name: "TrustHome",
+    };
+  }
+  const app = knownApps[incomingKey];
+  if (!app) return { valid: false };
+  // Verify signature
+  const expectedSignature = crypto
+    .createHmac("sha256", app.secret)
+    .update(`${timestamp}:${incomingKey}`)
+    .digest("hex");
+  if (incomingSignature !== expectedSignature) return { valid: false };
+  return { valid: true, appName: app.name };
+}
+Step 4: Implement Required API Endpoints
+TrustHome expects these endpoints on Verdara. All should verify the Authorization header using the function above:
+
+GET  /api/ecosystem/status          — Health check, returns { status: "ok", app: "Verdara" }
+POST /api/ecosystem/identify        — Tree/plant identification from image data
+POST /api/ecosystem/removal-plan    — Generate removal plan for a property address
+POST /api/ecosystem/assess          — Full property tree/plant assessment
+GET  /api/ecosystem/species/:id     — Get details for a specific species
+POST /api/ecosystem/sync-user       — SSO user sync (standard ecosystem pattern)
+Minimal /api/ecosystem/status example:
+
+app.get("/api/ecosystem/status", (req, res) => {
+  const auth = verifyEcosystemRequest(req.header("Authorization") || "");
+  // Status endpoint can also respond without auth for basic health checks
+  res.json({
+    status: "ok",
+    app: "Verdara",
+    appId: "dw_app_verdara",
+    ecosystem: "DarkWave Trust Layer",
+    version: "1.0.0",
+  });
+});
+Request body format TrustHome sends:
+
+For /api/ecosystem/identify:
+
+{ "imageData": "base64_string", "location": { "lat": 40.7, "lng": -74.0 } }
+For /api/ecosystem/removal-plan:
+
+{ "propertyAddress": "123 Main St", "treeIds": ["tree_abc", "tree_def"] }
+For /api/ecosystem/assess:
+
+{ "propertyAddress": "123 Main St", "agentId": "agent_123" }
+Step 5: Build Outgoing Client for TrustHome (Optional)
+If Verdara needs to call TrustHome's API (user lookups, property data, etc.), create a client using the same HMAC pattern:
+
+import * as crypto from "crypto";
+function getTrustHomeHeaders(): Record<string, string> {
+  const apiKey = process.env.TRUSTHOME_API_KEY || "";
+  const apiSecret = process.env.TRUSTHOME_API_SECRET || "";
+  const timestamp = Date.now().toString();
+  const signature = crypto
+    .createHmac("sha256", apiSecret)
+    .update(`${timestamp}:${apiKey}`)
+    .digest("hex");
+  return {
+    "Content-Type": "application/json",
+    "Authorization": `DW ${apiKey}:${timestamp}:${signature}`,
+    "X-App-Name": "Verdara",
+  };
+}
+export async function callTrustHome(method: string, endpoint: string, body?: any) {
+  const baseUrl = process.env.TRUSTHOME_BASE_URL || "https://trusthome.replit.app";
+  const res = await fetch(`${baseUrl}${endpoint}`, {
+    method,
+    headers: getTrustHomeHeaders(),
+    body: body ? JSON.stringify(body) : undefined,
+  });
+  return res.json();
+}
+TrustHome endpoints available to Verdara:
+
+GET  /api/ecosystem/status               — TrustHome health check
+POST /api/ecosystem/incoming             — Send events/data to TrustHome
+GET  /api/ecosystem/widget-config        — Get ecosystem widget configuration
+Step 6: Trust Layer Blockchain Integration
+Verdara should connect to the same DarkWave Trust Layer blockchain for verified records. The Trust Layer lives at https://dwsc.io.
+
+Store these secrets (shared across the ecosystem):
+
+TRUSTLAYER_API_KEY
+TRUSTLAYER_API_SECRET
+Use the same HMAC-SHA256 pattern, but the Trust Layer signature format is slightly different:
+
+function trustLayerSign(apiSecret: string, body: string, timestamp: string): string {
+  return crypto.createHmac("sha256", apiSecret)
+    .update(`${body}${timestamp}`)
+    .digest("hex");
+}
+This gives Verdara blockchain-stamped tree assessments, verified identification records, and Trust Score integration.
+
+Step 7: Add the DarkWave Shared Components
+Add this single script tag before the closing </body> tag on any server-rendered HTML pages:
+
+<script src="https://dwsc.io/api/ecosystem/shared/loader.js"
+  data-components="footer,announcement-bar,trust-badge"
+  data-theme="dark">
+</script>
+That's it — the shared ecosystem footer, announcement bar, and trust badge auto-place themselves. Use data-theme="light" if the page has a light background.
+
+Summary: What We Need Back
+Once Verdara is up and running, send back these three values:
+
+VERDARA_API_KEY — The generated API key
+VERDARA_API_SECRET — The generated API secret
+VERDARA_BASE_URL — The deployed URL (e.g., https://verdara.replit.app)
+Once we have those, we plug them in as secrets on TrustHome's side and the connection is live — both apps will be able to talk to each other through the ecosystem.

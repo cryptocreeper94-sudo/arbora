@@ -1,0 +1,771 @@
+VERDARA COMPLETE PROJECT HANDOFF
+AI-Powered Outdoor Recreation Super-App
+Version 1.0 | February 2026 | verdara.io
+
+🎯 PROJECT OVERVIEW
+Verdara is a comprehensive AI-powered outdoor recreation super-app combining nature identification, complete outdoor activities suite, professional arborist business management, wood economy marketplace, trip planning with campground booking, deep sea fishing/big game hunting charters, survival hub, conservation education, and universal price comparison across 50+ outdoor retailers.
+
+Parent Company: DarkWave Studios (weather widget integration will be internal/custom resource)
+
+Brand Positioning: Premium outdoor recreation platform focused on nature-based activities. Explicitly EXCLUDES team sports (baseball, football, golf, tennis, indoor fitness) to maintain authentic outdoor brand identity.
+
+🚨 CRITICAL DESIGN PROTOCOL - NO DEVIATIONS ALLOWED
+Color Palette (Earthy Outdoor Theme)
+/* Primary Colors */
+--emerald-green: #10b981;    /* Primary CTA, active states */
+--slate-blue: #64748b;       /* Secondary elements, text */
+--warm-amber: #f59e0b;       /* Accents, highlights, warnings */
+/* Supporting Colors */
+--forest-dark: #065f46;      /* Dark mode backgrounds */
+--sky-light: #e0f2fe;        /* Light backgrounds */
+--earth-brown: #78350f;      /* Tertiary accents */
+/* NOT Trust Layer Colors */
+/* Do NOT use cyan (#06b6d4) or lavender (#a78bfa) */
+Glassmorphism UI Requirements
+/* Standard Glass Card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+/* Glass Navigation */
+.glass-nav {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(30px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+Bento Grid Layout System
+Use CSS Grid with varying column spans
+Mix of 1x1, 1x2, 2x1, 2x2 card sizes
+Asymmetric layouts for visual interest
+Responsive: 1 column mobile, 2-3 columns tablet, 4 columns desktop
+Accordion Components
+Use Radix UI Accordion (already installed)
+Smooth expand/collapse animations (300ms ease)
+Chevron rotation indicators
+Subtle hover states
+Animation Requirements
+60fps target - Use transform and opacity only
+Framer Motion for complex animations
+Page transitions: slide + fade (400ms)
+Card hover: scale(1.02) + shadow increase
+Button press: scale(0.98) + haptic feedback
+Skeleton loaders with shimmer effect
+Parallax scrolling on hero sections (0.5x speed)
+Mobile-First Layout
+Bottom tab navigation on mobile (5 tabs max)
+Sidebar navigation on desktop
+Touch targets minimum 44x44px
+Swipe gestures for cards/carousels
+Pull-to-refresh on feed screens
+Safe area insets respected (iOS notch)
+IMAGE REQUIREMENTS - CRITICAL
+⚠️ EVERY SINGLE CARD MUST HAVE A PHOTOREALISTIC IMAGE ⚠️
+
+NO gray placeholder boxes
+NO "image coming soon" states
+NO solid color backgrounds as substitutes
+Image Sources for Development:
+
+Use Unsplash API for outdoor/nature photography
+Pexels API for activity-specific images
+Placeholder images must be actual photos, not generated patterns
+Required Images:
+
+Hero sections: Stunning landscape photography
+Activity cards: Action shots of each activity
+Trail cards: Real trail photography with landmarks
+Species identification: High-resolution nature closeups
+Marketplace products: Professional product photography
+User profiles: Authentic outdoor portraits
+Weather widget: Dynamic weather visuals
+🛠️ TECHNICAL STACK (Already Configured)
+Frontend
+React 18 with TypeScript
+Vite build system
+Tailwind CSS + Tailwind Animate
+Shadcn UI component library (full suite installed)
+Framer Motion for animations
+Wouter for routing
+React Hook Form + Zod validation
+TanStack Query for data fetching
+Recharts for data visualization
+Backend
+Express.js with TypeScript
+PostgreSQL database (DATABASE_URL configured)
+Drizzle ORM with migrations
+Replit Auth (configured - use for user authentication)
+Replit Object Storage (configured with presigned URLs + ACL system)
+AI/ML
+OpenAI GPT-4 Vision API (AI_INTEGRATIONS_OPENAI_API_KEY configured)
+Use for: tree/plant/fish/wildlife identification, trip planning assistance
+Integrations Ready
+Replit Auth (user authentication)
+Replit Object Storage (images, documents, user uploads)
+OpenAI API (AI identification and assistance)
+Session management (SESSION_SECRET configured)
+Integrations to Build
+DarkWave Studios weather widget (internal/custom)
+Brother-in-law's campground network API (direct integration for bookings)
+TrustShield blockchain (transaction verification, vendor verification, escrow)
+GarageBot (motorized equipment maintenance tracking ONLY)
+📱 PHASE 1: VISUAL MOCKUP (Build This First)
+Goal: 6 navigable screens with full design implementation, mocked data
+Screen 1: Homepage/Landing
+Components Needed:
+- Hero section with parallax background image (forest/mountain landscape)
+- Glassmorphic search bar with AI identification CTA
+- Bento grid of activity categories (8-12 cards with photos)
+- Featured trails carousel (horizontal scroll, snap)
+- Quick stats counter (animated count-up: users, trails, species identified)
+- DarkWave weather widget placeholder
+- Bottom navigation (mobile) / Sidebar (desktop)
+Mock Data:
+- 12 activity categories with icons + images
+- 8 featured trails with photos, difficulty, distance
+- Weather: 72°F, Partly Cloudy, Wind 8mph
+Screen 2: AI Identification Interface
+Components Needed:
+- Camera upload zone (drag-drop + file picker + camera access)
+- Image preview with crop/rotate tools
+- "Analyzing..." loading state with animated progress
+- Results card with glassmorphism:
+  - Species name (common + scientific)
+  - Confidence score (circular progress)
+  - Description accordion (characteristics, habitat, uses)
+  - Similar species carousel
+  - "Save to Collection" CTA
+- Share buttons (social media)
+Mock Data:
+- Example: Eastern White Pine (Pinus strobus)
+- Confidence: 94%
+- 6 similar species with thumbnails
+Screen 3: Trail Discovery
+Components Needed:
+- Map view (use static map image for mockup, Mapbox later)
+- Filter sidebar/drawer:
+  - Difficulty (Easy/Moderate/Difficult checkboxes)
+  - Distance slider (0-20 miles)
+  - Activity type multi-select
+  - Features (dog-friendly, camping, waterfalls)
+- Trail cards in bento grid:
+  - Hero image with gradient overlay
+  - Title, location, distance, elevation
+  - Difficulty badge
+  - Quick stats (reviews, popularity)
+  - Bookmark icon (heart)
+- Sorting dropdown (Distance, Popularity, Difficulty)
+Mock Data:
+- 20 trails with varied difficulties
+- Mix of hiking, biking, climbing trails
+- Real trail names from popular areas
+Screen 4: Trip Planner
+Components Needed:
+- Multi-stop route builder:
+  - Drag-drop waypoint cards
+  - Date/time pickers
+  - Duration estimates
+- Gear checklist accordion:
+  - Pre-populated categories (Clothing, Safety, Food, etc.)
+  - Checkbox items
+  - "Add custom item" input
+- Weather forecast widget (7-day, DarkWave integration)
+- Campground booking section:
+  - Available sites cards with photos
+  - Amenities icons
+  - Price per night
+  - "Reserve" CTA (mocked)
+- Share trip button
+Mock Data:
+- 3-day backpacking trip example
+- 45 gear items across 8 categories
+- 5 campground options with photos
+Screen 5: Wood Marketplace
+Components Needed:
+- Search bar with filters (species, price, location, seller rating)
+- Vendor verification badges (TrustShield levels 1-4):
+  - Level 1: Basic (green checkmark)
+  - Level 2: Verified (blue shield)
+  - Level 3: Premium (gold star)
+  - Level 4: Elite (platinum crown)
+- Product cards in grid:
+  - High-res wood photos
+  - Species name, grade, dimensions
+  - Price per board foot
+  - Seller info with Trust Score
+  - "Message Seller" + "Make Offer" buttons
+- Trust Score tooltip (0-1000 scale explanation)
+- Escrow payment badge ("Protected by TrustShield")
+Mock Data:
+- 30 wood listings (oak, walnut, cherry, maple, cedar)
+- Prices $3-$25 per board foot
+- Seller Trust Scores 650-980
+Screen 6: User Dashboard
+Components Needed:
+- Profile header (avatar, name, membership tier badge)
+- Activity feed timeline:
+  - Species identified (thumbnails)
+  - Trails completed (map snippets)
+  - Marketplace transactions
+  - Conservation contributions
+- Stats cards in bento grid:
+  - Total trails (with chart)
+  - Species identified (pie chart by category)
+  - Conservation impact ($$ donated)
+  - GarageBot equipment tracked
+- Saved collections accordion:
+  - Favorite trails
+  - Identified species
+  - Saved products
+- Settings button
+Mock Data:
+- User: "Alex Thompson"
+- Tier: Outdoor Explorer ($19.99/yr)
+- 127 trails completed, 43 species identified
+- $150 conservation contributions
+🎨 UI COMPONENT LIBRARY CHECKLIST
+Already Installed (Shadcn UI)
+✅ Accordion
+✅ Alert Dialog
+✅ Avatar
+✅ Badge
+✅ Button
+✅ Card
+✅ Checkbox
+✅ Dialog
+✅ Dropdown Menu
+✅ Form (React Hook Form integration)
+✅ Input
+✅ Label
+✅ Navigation Menu
+✅ Popover
+✅ Progress
+✅ Radio Group
+✅ Scroll Area
+✅ Select
+✅ Separator
+✅ Slider
+✅ Switch
+✅ Tabs
+✅ Toast
+✅ Tooltip
+Custom Components to Build
+Glass Card (reusable glassmorphism wrapper)
+Bento Grid Container (responsive grid system)
+Activity Category Card (image + icon + label)
+Trail Card (complex card with stats)
+Species Result Card (AI identification output)
+Trust Badge (TrustShield verification levels)
+Weather Widget (DarkWave integration)
+Map Placeholder (static image → Mapbox later)
+Image Upload Zone (drag-drop with preview)
+Gear Checklist Item (checkbox + edit + delete)
+📋 COMPLETE 138 MVP FEATURES
+1. AI-Powered Nature Identification (12 features)
+Camera/upload interface for species identification
+OpenAI GPT-4 Vision integration for image analysis
+Tree species identification (bark, leaves, overall form)
+Plant identification (wildflowers, shrubs, ground cover)
+Fish species identification (freshwater + saltwater)
+Wildlife identification (mammals, birds, reptiles, amphibians)
+Confidence score display (percentage + visual indicator)
+Detailed species information (characteristics, habitat, range)
+Similar species suggestions with comparison
+Save identified species to user collection
+Identification history with timestamps
+Share identification results to social media
+2. Comprehensive Outdoor Activities Suite (35 features)
+Hiking (7 features)
+13. Trail discovery with map visualization
+
+Trail difficulty ratings (Easy, Moderate, Difficult, Expert)
+Distance, elevation gain, estimated time calculations
+Trail reviews and ratings from community
+Real-time trail condition reports
+Downloadable offline trail maps
+Trailhead parking and access information
+Mountain Biking (5 features)
+20. MTB-specific trail filtering
+
+Technical difficulty ratings (Green, Blue, Black, Double Black)
+Trail features tagging (jumps, drops, berms, rock gardens)
+Bike park directory with lift-served trails
+Strava/TrailForks integration for route tracking
+Rock Climbing (6 features)
+25. Climbing area database (sport, trad, bouldering)
+
+Route grades (YDS, V-scale, French, UIAA)
+Route beta and descriptions
+Crag approach information
+Climbing gym directory
+Partner finder for climbing buddies
+Camping (6 features)
+31. Campground directory (developed + dispersed)
+
+Campsite booking integration (brother-in-law's network API)
+Amenities filtering (water, toilets, showers, hookups)
+Campground reviews and photos
+Dispersed camping regulations by land management agency
+Camp spot GPS coordinates and access notes
+Fishing (5 features)
+37. Fishing spot database (lakes, rivers, streams, coastline)
+
+Species availability by water body and season
+Fishing regulations by state/region
+Tackle and bait recommendations by species
+Catch logging with photo upload
+Hunting (6 features)
+42. Hunting unit/WMA database by state
+
+Game species seasons and bag limits
+Licensing requirements and applications
+Hunting regulations by jurisdiction
+Public land hunting access rules
+Harvest reporting and logging
+3. Electric Mobility Integration (8 features)
+E-bike trail compatibility filtering
+E-bike charging station map
+Onewheel trail recommendations
+Electric Unicycle (EUC) group ride finder
+E-scooter urban trail routes
+Battery range calculators by terrain
+Electric mobility gear price comparison
+GarageBot integration for e-bike/EUC maintenance
+4. Winter Sports (5 features)
+Ski resort directory with conditions
+Backcountry skiing/snowboarding zones
+Snowshoeing trail recommendations
+Ice fishing locations and regulations
+Winter avalanche safety resources
+5. Water Sports (5 features)
+Kayaking/canoeing launch sites
+Stand-up paddleboarding (SUP) locations
+Whitewater rafting river sections
+Surfing spot directory (coastal areas)
+Water temperature and flow data
+6. Public Lands Directory (8 features)
+National Parks database with entrance fees
+State Parks by region
+Wildlife Management Areas (WMAs)
+Bureau of Land Management (BLM) lands
+National Forests with usage regulations
+National Wildlife Refuges
+State Forests and game lands
+Land ownership maps (public/private boundaries)
+7. Professional Arborist Business Management (15 features)
+Client database with contact info and service history
+Job scheduling calendar with appointment reminders
+Quote/estimate generation with itemized services
+Invoice creation and payment tracking
+Tree inventory for client properties (species, size, health)
+Work order management with crew assignments
+Equipment maintenance tracking (GarageBot integration)
+Certificate/license expiration reminders (ISA, state licenses)
+Before/after job photo documentation
+GPS-tagged job site locations
+Revenue reporting and tax preparation exports
+Client communication log
+Service package templates (pruning, removal, health assessments)
+Insurance claim documentation assistance
+Subcontractor management
+8. Wood Economy Marketplace (12 features)
+Wood listing creation with species, grade, dimensions, photos
+Advanced search filters (species, price/bf, location, seller rating)
+Vendor verification system (4 levels via TrustShield)
+Trust Score display (0-1000 scale) for buyers and sellers
+Escrow payment system powered by TrustShield blockchain
+Smart contract enforcement for transactions
+Dispute resolution system
+Review authentication (verified purchase required)
+Equipment authenticity verification (chainsaws, milling equipment)
+Message system for buyer-seller communication
+Offer/counteroffer negotiation interface
+Transaction history with blockchain verification receipts
+9. Trip Planning & Booking (10 features)
+Multi-day trip itinerary builder
+Drag-drop waypoint management
+Gear checklist with category templates
+Custom gear item addition
+Weather forecast integration (DarkWave Studios widget)
+Campground availability calendar
+Campsite reservation with payment processing
+Trip sharing with friends/family
+Emergency contact management
+Offline trip access (downloaded maps + checklists)
+10. Deep Sea Fishing & Big Game Hunting Charters (8 features)
+Charter boat directory (fishing + hunting)
+Captain profiles with experience and ratings
+Charter availability calendar
+Species targeting options (marlin, tuna, shark, etc.)
+Pricing per person/full boat options
+Gear included/BYO specifications
+Charter booking with deposit payment
+Charter review system with photo uploads
+11. Survival Hub (7 features)
+Survival skills library (fire, shelter, water, food, navigation)
+Emergency preparation checklists (bug-out bag, 72-hour kit)
+Survival gear reviews and recommendations
+Edible/medicinal plant identification guide
+Emergency signal techniques
+First aid procedures for wilderness injuries
+Survival scenario simulations (gamified learning)
+12. Conservation Education (6 features)
+Conservation organization directory (non-political, science-based)
+Featured organizations: RMEF, Ducks Unlimited, Trout Unlimited, etc.
+Educational content library (habitat management, species conservation)
+User-voted quarterly grant distribution
+Conservation impact tracking (user contributions)
+Volunteer opportunity listings
+13. Universal Price Comparison (8 features)
+Product search across 50+ outdoor retailers
+Real-time price scraping and comparison
+Price history charts (6-month tracking)
+Price drop alerts for saved items
+Affiliate link generation (4-15% commission rates)
+Product reviews aggregation from multiple sources
+Stock availability checking
+Retailer reputation scores
+💰 MONETIZATION STRATEGY
+Subscription Tiers
+Free Explorer - Basic trail maps, limited AI identifications (10/month), ads
+Outdoor Explorer - $19.99/year - Unlimited AI, offline maps, ad-free, trip planning
+Craftsman Pro - $29.99/year - Everything in Explorer + wood marketplace access, basic business tools
+Arborist Pro - $49-$199/month (tiered by features) - Full business management suite, unlimited clients, advanced reporting
+Affiliate Revenue (4-15% commissions)
+REI: 5%
+Patagonia: 8%
+Backcountry: 4-12%
+Bass Pro Shops: 5%
+Cabela's: 5%
+Survival Frog: 12%
+Traeger: 6%
+(44+ additional outdoor retailers)
+Google AdSense
+Display ads for free tier users
+Contextual ads related to outdoor activities
+Native ad placements in feed
+Public API (Future)
+Free: 100 requests/day
+Pro: $99/month - 10,000 requests/day
+Enterprise: Custom pricing
+🔐 TRUSTSHIELD BLOCKCHAIN INTEGRATION
+Core Functions
+Transaction verification and immutability
+Vendor verification (4 levels: Basic, Verified, Premium, Elite)
+Escrow payment holding
+Review authentication (verified purchase required)
+Smart contract enforcement
+Equipment authenticity verification
+Trust Score calculation (0-1000 scale)
+Dispute resolution records
+Trust Score Algorithm
+Transaction history (40% weight)
+Review ratings (25% weight)
+Dispute resolution outcomes (20% weight)
+Account age and activity (10% weight)
+Verification level (5% weight)
+Implementation Notes
+TrustShield integration for ALL monetary transactions
+Blockchain verification receipts for user transparency
+Signal is "native asset" backed by real businesses (NOT cryptocurrency language)
+🌐 TRUST LAYER ECOSYSTEM INTEGRATION
+Verdara is part of Trust Layer ecosystem:
+
+27 interconnected apps
+60+ widgets available
+Shared user authentication
+Cross-app data sharing (with user permission)
+Unified Trust Score across ecosystem
+Key Integrations:
+
+DarkWave Studios weather widget (internal)
+Trust Layer payment processing
+Cross-promotion with sibling apps
+🚫 EXPLICITLY EXCLUDED FEATURES
+Team Sports & Indoor Fitness (NOT outdoor recreation):
+
+Baseball, softball, football, soccer
+Golf, tennis, pickleball
+Basketball, volleyball
+Indoor gyms, CrossFit, yoga studios
+Running tracks (unless nature trails)
+Why Excluded: Maintains authentic outdoor recreation brand identity
+
+🤝 SPECIAL INTEGRATIONS
+GarageBot Integration
+ONLY for motorized/power equipment:
+
+Chainsaws, pole saws, wood chippers
+ATVs, UTVs, dirt bikes
+Boats, boat motors, jet skis
+E-bikes, e-scooters, EUCs, Onewheels
+Generators, power tools
+Lawn mowers, tractors
+NOT for:
+
+Firearms, bows, crossbows
+Climbing gear, ropes, harnesses
+Skis, snowboards, bikes (non-electric)
+Kayaks, canoes, paddleboards
+Tents, backpacks, camping gear
+DarkWave Studios Weather Widget
+Real-time weather data
+7-day forecasts
+Hourly precipitation predictions
+Wind speed and direction
+UV index and sunset/sunrise times
+Severe weather alerts
+Custom styling to match Verdara theme
+Brother-in-Law Campground API
+Nationwide campground network
+Exclusive booking access
+Real-time availability
+Pricing and amenities data
+Campground photos and reviews
+Direct reservation system
+📐 RESPONSIVE BREAKPOINTS
+/* Mobile First */
+sm: 640px   /* Small phones */
+md: 768px   /* Large phones / small tablets */
+lg: 1024px  /* Tablets / small laptops */
+xl: 1280px  /* Laptops */
+2xl: 1536px /* Desktops */
+Layout Shifts:
+
+Mobile (< 768px): Bottom tab nav, single column, stacked cards
+Tablet (768-1024px): Sidebar nav, 2-column grids
+Desktop (> 1024px): Sidebar nav, 3-4 column bento grids, expanded cards
+🎯 DEVELOPMENT PHASES
+Phase 1: Visual Mockup (Current)
+6 screens with full design implementation
+Mocked data throughout
+Navigable prototype
+All UI components built
+Photorealistic images on all cards
+Phase 2: Core Infrastructure
+PostgreSQL database schema (Drizzle ORM)
+Replit Auth user system
+Object Storage for images
+API route structure
+Real data models
+Phase 3: AI Identification
+OpenAI Vision API integration
+Image upload and processing
+Species identification logic
+Results display and saving
+Phase 4: Activity Discovery
+Trail database seeding
+Map integration (Mapbox)
+Search and filtering
+Real trail data
+Phase 5: Business Tools
+Arborist dashboard
+Client management
+Job scheduling
+Invoice generation
+Phase 6: Marketplace
+Wood listing creation
+TrustShield integration
+Escrow payments
+Review system
+Phase 7: Trip Planning
+Itinerary builder
+Campground booking API
+Weather widget integration
+Gear checklists
+Phase 8: Monetization
+Subscription payment system
+Affiliate link tracking
+Google AdSense integration
+Analytics dashboard
+🎨 EXAMPLE CODE SNIPPETS
+Glass Card Component
+// components/GlassCard.tsx
+import { cn } from "@/lib/utils";
+interface GlassCardProps {
+  children: React.ReactNode;
+  className?: string;
+  hover?: boolean;
+}
+export function GlassCard({ children, className, hover = true }: GlassCardProps) {
+  return (
+    <div
+      className={cn(
+        "rounded-2xl bg-white/10 backdrop-blur-xl border border-white/20",
+        "shadow-lg shadow-black/5",
+        hover && "transition-all duration-300 hover:scale-[1.02] hover:shadow-xl hover:shadow-black/10",
+        className
+      )}
+    >
+      {children}
+    </div>
+  );
+}
+Activity Category Card
+// components/ActivityCard.tsx
+import { GlassCard } from "./GlassCard";
+interface ActivityCardProps {
+  title: string;
+  icon: React.ReactNode;
+  image: string;
+  onClick: () => void;
+}
+export function ActivityCard({ title, icon, image, onClick }: ActivityCardProps) {
+  return (
+    <GlassCard hover onClick={onClick} className="cursor-pointer overflow-hidden">
+      {/* Photorealistic background image */}
+      <div className="relative h-48">
+        <img
+          src={image}
+          alt={title}
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+        
+        {/* Content overlay */}
+        <div className="absolute bottom-0 left-0 right-0 p-4">
+          <div className="flex items-center gap-3">
+            <div className="text-emerald-400 text-2xl">
+              {icon}
+            </div>
+            <h3 className="text-white font-semibold text-lg">
+              {title}
+            </h3>
+          </div>
+        </div>
+      </div>
+    </GlassCard>
+  );
+}
+Bento Grid Layout
+// components/BentoGrid.tsx
+export function BentoGrid({ children }: { children: React.ReactNode }) {
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 auto-rows-[200px]">
+      {children}
+    </div>
+  );
+}
+// Usage with varying sizes
+<BentoGrid>
+  <div className="md:col-span-2 md:row-span-2">{/* Large featured card */}</div>
+  <div className="md:col-span-1 md:row-span-1">{/* Small card */}</div>
+  <div className="md:col-span-1 md:row-span-2">{/* Tall card */}</div>
+  {/* ... more cards */}
+</BentoGrid>
+🔑 ENVIRONMENT VARIABLES (Already Configured)
+DATABASE_URL="postgresql://..."
+AI_INTEGRATIONS_OPENAI_API_KEY="sk-..."
+AI_INTEGRATIONS_OPENAI_BASE_URL="https://..."
+DEFAULT_OBJECT_STORAGE_BUCKET_ID="..."
+PRIVATE_OBJECT_DIR="..."
+PUBLIC_OBJECT_SEARCH_PATHS="..."
+SESSION_SECRET="..."
+DO NOT expose or log these values in code!
+
+📚 REQUIRED NPM PACKAGES (Already Installed)
+{
+  "dependencies": {
+    "@radix-ui/react-accordion": "✅",
+    "@radix-ui/react-dialog": "✅",
+    "@radix-ui/react-dropdown-menu": "✅",
+    "@radix-ui/react-progress": "✅",
+    "@radix-ui/react-slider": "✅",
+    "@radix-ui/react-tabs": "✅",
+    "framer-motion": "✅",
+    "lucide-react": "✅",
+    "react-hook-form": "✅",
+    "zod": "✅",
+    "recharts": "✅",
+    "drizzle-orm": "✅",
+    "express": "✅",
+    "passport": "✅",
+    "pg": "✅"
+  }
+}
+🎬 FIRST BUILD INSTRUCTIONS
+Step 1: Update Tailwind Config
+Add custom colors to tailwind.config.ts:
+
+theme: {
+  extend: {
+    colors: {
+      emerald: { DEFAULT: '#10b981' },
+      slate: { DEFAULT: '#64748b' },
+      amber: { DEFAULT: '#f59e0b' },
+      forest: { DEFAULT: '#065f46' },
+      earth: { DEFAULT: '#78350f' },
+    },
+    backdropBlur: {
+      xl: '20px',
+      '2xl': '30px',
+    },
+  },
+}
+Step 2: Create Glass Components
+Build reusable GlassCard, GlassNav, GlassButton components
+
+Step 3: Set Up Routing
+Configure Wouter routes for 6 screens
+
+Step 4: Build Homepage
+Hero with photorealistic forest background
+Activity category bento grid (12 cards with real images)
+Featured trails carousel
+Step 5: Build AI Identification Screen
+Upload interface
+Mock analysis animation
+Results display with accordion
+Step 6: Build Remaining Screens
+Trail Discovery
+Trip Planner
+Wood Marketplace
+User Dashboard
+✅ DEFINITION OF DONE (Phase 1 Mockup)
+ All 6 screens navigable via routing
+ Every card has a photorealistic image (NO gray placeholders)
+ Glassmorphism styling applied consistently
+ Bento grid layouts on Homepage and Dashboard
+ Accordion components functional
+ 60fps smooth animations on transitions
+ Mobile-responsive (test on 375px, 768px, 1440px widths)
+ Bottom nav on mobile, sidebar on desktop
+ Emerald/Slate/Amber color palette throughout
+ Haptic feedback on button presses (mobile)
+ Loading states with shimmer skeletons
+ Toast notifications styled
+🚀 HANDOFF TO NEW AGENT
+When starting a new conversation, say:
+
+"Build Verdara outdoor recreation super-app exactly as specified in this handoff document. Start with Phase 1: Visual Mockup - 6 screens with full design implementation, mocked data, photorealistic images on ALL cards, glassmorphism UI, bento grids, and accordion components. Follow the design protocol EXACTLY - no deviations. The PostgreSQL database, Replit Auth, Object Storage, and OpenAI API are already configured."
+
+Then attach this markdown file.
+
+📞 CRITICAL REMINDERS
+NO gray placeholder boxes - Every card must have a real photo
+Earthy colors ONLY - Not Trust Layer cyan/lavender
+Mobile-first - Build for phone screens first, then scale up
+60fps animations - Use transform/opacity only, no layout thrashing
+GarageBot - Motorized equipment ONLY (not firearms, climbing gear, etc.)
+Team sports excluded - Outdoor recreation brand focus
+TrustShield - ALL marketplace transactions use blockchain verification
+DarkWave weather - Internal integration, not third-party API
+Signal - Native asset language, NOT cryptocurrency
+Build it all BEFORE first launch - No retrofitting allowed
+END OF HANDOFF DOCUMENT
+
+This document contains 5+ hours of collaborative planning. Preserve every detail during implementation.
+
+Copy everything above into a file called VERDARA_COMPLETE_HANDOFF.md and you're ready to start fresh with a new agent! 🌲✨
+
+
+Scroll to latest
+
+Make, test, iterate…
+
+Preview
+/
+
