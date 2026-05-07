@@ -25,8 +25,7 @@ const loginSchema = z.object({
 });
 
 const registerSchema = z.object({
-  firstName: z.string().min(1, "First name is required"),
-  lastName: z.string().min(1, "Last name is required"),
+  displayName: z.string().optional(),
   email: z.string().email("Valid email is required"),
   password: z
     .string()
@@ -60,7 +59,7 @@ export default function AuthPage({ onBack }: { onBack?: () => void }) {
 
   const registerForm = useForm<RegisterValues>({
     resolver: zodResolver(registerSchema),
-    defaultValues: { firstName: "", lastName: "", email: "", password: "", confirmPassword: "" },
+    defaultValues: { displayName: "", email: "", password: "", confirmPassword: "" },
   });
 
   const interactionLog = useRef<string[]>([]);
@@ -176,7 +175,7 @@ export default function AuthPage({ onBack }: { onBack?: () => void }) {
       interactions: interactionLog.current.slice(-20),
     });
     registerUser.mutate(
-      { firstName: values.firstName, lastName: values.lastName, email: values.email, password: values.password },
+      { displayName: values.displayName, email: values.email, password: values.password },
       {
         onSuccess: () => {
           trackAuthEvent('register_success', { email: values.email });
@@ -402,44 +401,24 @@ export default function AuthPage({ onBack }: { onBack?: () => void }) {
             ) : mode === "register" ? (
               <Form {...registerForm}>
                 <form onSubmit={registerForm.handleSubmit(onRegister)} className="space-y-4">
-                  <div className="grid grid-cols-2 gap-3">
-                    <FormField
+                  <FormField
                       control={registerForm.control}
-                      name="firstName"
+                      name="displayName"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel>First Name</FormLabel>
+                          <FormLabel>Display Name (optional)</FormLabel>
                           <FormControl>
                             <Input
                               {...field}
-                              {...inputTrackingProps("register-firstname", field.onBlur)}
-                              placeholder="First"
-                              data-testid="input-register-firstname"
+                              {...inputTrackingProps("register-displayname", field.onBlur)}
+                              placeholder="How you'd like to be known"
+                              data-testid="input-register-displayname"
                             />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
                       )}
                     />
-                    <FormField
-                      control={registerForm.control}
-                      name="lastName"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel>Last Name</FormLabel>
-                          <FormControl>
-                            <Input
-                              {...field}
-                              {...inputTrackingProps("register-lastname", field.onBlur)}
-                              placeholder="Last"
-                              data-testid="input-register-lastname"
-                            />
-                          </FormControl>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    />
-                  </div>
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-foreground" htmlFor="register-email-input">Email</label>
                     <input
